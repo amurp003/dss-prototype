@@ -1,4 +1,3 @@
-from pickletools import uint1
 from flask import Flask
 from flask import render_template
 import requests # https://realpython.com/api-integration-in-python/
