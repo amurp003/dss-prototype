@@ -1,48 +1,51 @@
-import flask
+# import flask
 import requests # https://realpython.com/api-integration-in-python/
+from flask import Flask
 from flask import render_template
 
-from opentelemetry import trace
-# from opentelemetry.instrumentation.flask import FlaskInstrumentor
+# from opentelemetry import trace
+from opentelemetry.instrumentation.flask import FlaskInstrumentor
 # from opentelemetry.instrumentation.requests import RequestsInstrumentor
-from opentelemetry.exporter.jaeger.thrift import JaegerExporter
-from opentelemetry.sdk.resources import SERVICE_NAME, Resource
-from opentelemetry.sdk.trace import TracerProvider
-from opentelemetry.sdk.trace.export import BatchSpanProcessor
+# from opentelemetry.exporter.jaeger.thrift import JaegerExporter
+# from opentelemetry.sdk.resources import SERVICE_NAME, Resource
+# from opentelemetry.sdk.trace import TracerProvider
+# from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
 
 # Set up OpenTelemetry in Flask (see #flask_example.py)
 # from https://opentelemetry.io/docs/instrumentation/python/getting-started/
 
-trace.set_tracer_provider(
-    TracerProvider(
-        resource=Resource.create({SERVICE_NAME: "dss-prototype"})
-    )
-)
+# trace.set_tracer_provider(
+#     TracerProvider(
+#         resource=Resource.create({SERVICE_NAME: "dss-prototype"})
+#     )
+# )
 
-jaeger_exporter = JaegerExporter(
-    agent_host_name="localhost",
-    agent_port=6831,
-)
+# jaeger_exporter = JaegerExporter(
+#     agent_host_name="localhost",
+#     agent_port=6831,
+# )
 
-trace.get_tracer_provider().add_span_processor(
-    BatchSpanProcessor(jaeger_exporter)
-)
+# trace.get_tracer_provider().add_span_processor(
+#     BatchSpanProcessor(jaeger_exporter)
+# )
 
-app = flask.Flask(__name__)
-# FlaskInstrumentor().instrument_app(app)
+# app = flask.Flask(__name__)
+app = Flask(__name__)
+
+FlaskInstrumentor().instrument_app(app)
 # RequestsInstrumentor().instrument()
 
-tracer = trace.get_tracer(__name__)
+#tracer = trace.get_tracer(__name__)
 
 @app.route('/')
 def ui():
-    with tracer.start_as_current_span("rendermap") as span:
+    # with tracer.start_as_current_span("rendermap") as span:
         return render_template('leaflet-map-ui.html')
 
 @app.route('/RIC')
 def get_ric_flights():
-    with tracer.start_as_current_span("RIC Flight Data"):
+    # with tracer.start_as_current_span("RIC Flight Data"):
         # Latitude = N/S, Longitude = E/W
         # 1 deg = 60 NM Lat, varies with Lon
         # N and E are positive
@@ -62,7 +65,7 @@ def get_ric_flights():
 
 @app.route('/IAD')
 def get_iad_flights():
-    with tracer.start_as_current_span("IAD Flight Data"):
+    # with tracer.start_as_current_span("IAD Flight Data"):
         # Latitude = N/S, Longitude = E/W
         # 1 deg = 60 NM Lat, varies with Lon
         # N and E are positive
@@ -78,4 +81,4 @@ def get_iad_flights():
 if __name__ == "__main__":
     app.run(debug=True)
 
-app.run(port=5000)
+# app.run(port=5000)

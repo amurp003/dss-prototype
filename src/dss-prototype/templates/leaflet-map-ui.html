@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-    <script src="../../lib/node_modules/milsymbol/dist/milsymbol.js"></script>
-    <script src="situation.json"></script>
+    <script src="{{url_for('static', filename='node_modules/milsymbol/dist/milsymbol.js')}}"></script>
+    <script src="{{url_for('static', filename='situation.json')}}"></script>
 
     <style>
         #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
@@ -34,7 +34,7 @@
             onAdd: function(map) {
                 var img = L.DomUtil.create('img');
 
-                img.src = 'odu-logo.png';
+                img.src = "{{url_for('static', filename='odu-logo.png')}}";
                 img.style.width = '200px';
 
                 return img;

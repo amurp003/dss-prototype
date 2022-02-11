@@ -1,0 +1,33 @@
+var situation = {"name":"Layer","type":"FeatureCollection",
+"crs": {"type": "name","properties": {"name": "EPSG:4326"}},
+"features":[{
+    "type":"Feature",
+    "geometry":{
+        "type":"Point",
+        "coordinates":[-77.4601, 37.7487]
+        },
+        "properties":{
+            "SIDC":"10040104000201000000"
+            }
+        },{
+        "type":"Feature",
+        "geometry":{
+            "type":"Point",
+            "coordinates":[-78.0173, 38.451]
+            },
+            "properties":{
+                "SIDC":"SFGPUCRV---F***"
+                }
+        },{
+            "type":"Feature",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-77.7744, 37.0351]
+                },
+                "properties":{
+                    "SIDC":"SFGPUCD----F***"
+                    }
+        }
+        
+    ]}
+    
