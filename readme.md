@@ -20,6 +20,6 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker run -d -p 5000:5000 dss-prototype
 
-6. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container
+6. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container in detached mode
 
-        docker run -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
+        docker run -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one

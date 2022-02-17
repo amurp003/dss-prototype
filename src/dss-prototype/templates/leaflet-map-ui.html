@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
@@ -8,14 +9,51 @@
     <script src="{{url_for('static', filename='situation.json')}}"></script>
 
     <style>
-        #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+        .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .button1 {background-color: #4CAF50;} /* Green */
+        .button2 {background-color: #008CBA;} /* Blue */
     </style>
+    
+    <style type="text/css">
+        html, body { 
+            height:100%
+        }
+        #map {
+            margin: 1em auto;
+            height:70%;
+            border: 2px dashed black;
+        }                                                                                                                                                                                                            
+    </style>    
 </head>
+
 <body>
-    <div id = "map"></div>
+    <center><h1>Decision Support System (DSS) Prototype</h1>
+    <br>
+    <i>
+        Flight data is for flights within 60 NM of the designated airport.
+    </i>
+    <br>
+        
+    <button onclick="window.location.href='/RIC'" class="button button1">Get RIC Flight Data</button>   
+    <button onclick="window.location.href='/IAD'" class="button button2">Get IAD Flight Data</button>
+    
+    <!-- Specify the map and it's dimensions -->
+    <div id="map" style="width: 960px; height: 500px"></div>
+    
     <script>
         // Initialize map centered around Fredericksburg,VA with zoom-level
-        var map = L.map('map').setView([38.3082, -77.4605], 8);
+        var map = L.map('map').setView([38.3082, -77.4605], 7);
 
         // Pulled the maps from https://cloud.maptiler.com/maps/streets/ (see Raster Tiles)
         // Other maps https://cloud.maptiler.com/maps/
@@ -69,7 +107,7 @@
         }).addTo(map);
         circleIAD.bindPopup("IAD sensor coverage zone");
 
-        var iconSize = {
+        /* var iconSize = {
             "Team/Crew": 5,
             "Squad": 10,
             "Section": 15,
@@ -103,7 +141,19 @@
     
               return L.marker(latlng, { icon: myicon, draggable: true });
             }
-          }).addTo(map);
+          }).addTo(map); */
+
+          var mysymbol = new ms.Symbol("sfgpewrh--mt", {
+            size: 35,
+            quantity: 200,
+            staffComments: "for reinforcements".toUpperCase(),
+            additionalInformation: "added support for JJ".toUpperCase(),
+            direction: (750 * 360) / 6400,
+            type: "machine gun".toUpperCase(),
+            dtg: "30140000ZSEP97",
+            location: "0900000.0E570306.0N"
+          }).asSVG();  
+
 
     </script>
 
