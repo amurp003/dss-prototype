@@ -24,8 +24,14 @@ trace.set_tracer_provider(
 )
 
 # note that agent port is different from the webconsole port 16686
+# localhost within a container refers to the container not the host running the container
+# defined a container network and a alias for the telemetry container; e.g.
+# docker run --network-alias=telem-jaeger --network=dss-net
+# will need localhost (or other known endpoint) to test outside of the container
+
 jaeger_exporter = JaegerExporter(
-    agent_host_name="localhost",
+#    agent_host_name="localhost",
+    agent_host_name="telem-jaeger",
     agent_port=6831,
 )
 
