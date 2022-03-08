@@ -16,10 +16,14 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker images
 
-5. Start the image in detached mode mapping desired port (e.g. 5000) to port 5000 (tbd:5000)
+5. Establish network for containers to connect
 
-        docker run -d -p 5000:5000 dss-prototype
+        docker network create dss-net
 
-6. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container in detached mode
+6. Start the image in detached mode mapping desired port (e.g. 5000) to port 5000 (tbd:5000)
 
-        docker run -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
+        docker run -d -p 5000:5000 --network=dss-net --name=dss-ui dss-prototype
+
+7. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container in detached mode
+
+        docker run --network-alias=telem-jaeger --network=dss-net --name=jaeger -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
