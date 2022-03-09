@@ -88,5 +88,14 @@ def get_iad_flights():
         response = requests.get(api_url)
         return (response.json())
 
+@app.route('/tracks')
+def get_system_tracks():
+    with tracer.start_as_current_span("TM Track Update"):
+
+        url_TM = "http://tm-server:3200/system_tracks"
+        api_url = url_TM
+        response = requests.get(api_url)
+        return (response.json())
+    
 if __name__ == "__main__":
     app.run(debug=True)
