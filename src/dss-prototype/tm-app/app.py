@@ -1,9 +1,9 @@
-from flask import Flask, make_response, jsonify
+# this app uses FastAPI to ensure OpenAPI and JSON compliant interfaces
+# https://fastapi.tiangolo.com
 
-app = Flask(__name__)
+from fastapi import FastAPI
 
-PORT = 3200
-HOST = '0.0.0.0'
+app = FastAPI()
 
 # set initial track data using OpenSky API definitions
 # https://openskynetwork.github.io/opensky-api/rest.html
@@ -96,22 +96,14 @@ system_tracks = {
       }
 }
 
-@app.route('/')
+@app.get('/')
 def index():
     return '<h1>Track Management Service [tm-app] is running...</h1>'
 
-@app.route('/sensor_tracks')
+@app.get('/sensor_tracks')
 def provide_sensor_tracks():
-    res = make_response(jsonify(sensor_tracks,200))
-    return res
+    return sensor_tracks
 
-@app.route('/system_tracks')
+@app.get('/system_tracks')
 def provide_system_tracks():
-    res = make_response(jsonify(system_tracks,200))
-    return res
-
-# always at the end to start server and keep things running
-if __name__ == "__main__":
-    # message to terminal
-    print("TM Service running on port %s" %(PORT))
-    app.run(debug=True, host=HOST, port=PORT)
+    return system_tracks
