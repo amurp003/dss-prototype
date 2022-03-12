@@ -96,14 +96,14 @@ system_tracks = {
       }
 }
 
-@app.get('/')
+@app.get("/")
 def index():
-    return '<h1>Track Management Service [tm-app] is running...</h1>'
+    return {"ID": "Track Management Application"}
 
-@app.get('/sensor_tracks')
+@app.get("/sensor_tracks")
 def provide_sensor_tracks():
     return sensor_tracks
 
-@app.get('/system_tracks')
+@app.get("/system_tracks")
 def provide_system_tracks():
     return system_tracks

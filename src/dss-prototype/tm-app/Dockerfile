@@ -1,15 +1,14 @@
 # syntax=docker/dockerfile:1
+# https://fastapi.tiangolo.com/deployment/docker/
 
 FROM python:3.8-slim-buster
 
-ENV FLASK_APP app.py
-ENV FLASK_CONFIG docker
+WORKDIR /code
 
-WORKDIR /python-docker
+COPY ./requirements.txt /code/requirements.txt
 
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY . .
+COPY ./app /code/app
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD [ "uvicorn", "app.main:app" , "--host", "0.0.0.0", "--port", "3200"]

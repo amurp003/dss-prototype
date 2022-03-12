@@ -20,9 +20,9 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker network create dss-net
 
-6. Start the image in detached mode mapping desired port (e.g. 5000) to port 5000 (tbd:5000)
+6. Start the image in detached mode mapping desired port (e.g. 5000) to port 5000 (tbd:5000). Note: The --rm option is included to clear up dependencies automatically when the container is stopped.
 
-        docker run -d -p 5000:5000 --network=dss-net --name=dss-ui dss-ui-app
+        docker run --rm -d -p 5000:5000 --network=dss-net --name=dss-ui dss-ui-app
 
 7. Build the container image for the Track Management application
 
@@ -31,7 +31,7 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
 8. Start the Track Management server container in detached mode
 
-        docker run --network-alias=tm-server --network=dss-net --name=tm-server -d -p 3200:5000 tm-app
+        docker run --network-alias=tm-server --network=dss-net --name=tm-server --rm -d -p 3200:5000 tm-app
 
 9. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container in detached mode
 
