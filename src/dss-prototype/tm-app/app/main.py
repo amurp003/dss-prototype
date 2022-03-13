@@ -98,10 +98,75 @@ system_tracks = {
 
 @app.get("/")
 def index():
-    return {"ID": "Track Management Application"}
+    """
+    This application returns tracks held within the Decision Support
+    System (DSS). The field definitions align with definitions from 
+    the OpenSky Network API.  
+    https://openskynetwork.github.io/opensky-api/rest.html
+    
+    Go to '/docs' or '/redocs' to see the API documentation.
+    """
+    
+    str = "Go to '/docs' or '/redocs' to see API documentation."
+    return str
 
 @app.get("/sensor_tracks")
 def provide_sensor_tracks():
+    """
+    Returns sensor tracks held within the Decision Support
+    System (DSS).
+    
+    This function simply provides the current sensor_tracks
+    dictionary. Field definitions align with definitions from 
+    the OpenSky Network API.  
+    https://openskynetwork.github.io/opensky-api/rest.html
+    
+    Parameters
+    ----------
+    None.
+    
+    Returns
+    -------
+    icao24 : str
+        Unique ICAO 24-bit address of the transponder 
+        in hex string representation.
+    
+    callsign : str
+        Callsign of the vehicle (8 chars). Can be null
+        if no callsign has been received.
+        
+    origin_country : str
+        Country name inferred from ICAO 24-bit address.
+        
+    last_contact : int
+        Unix timestamp (seconds) for the last update in
+        general. This field is updated for any new, valid
+        message recieved from the transponder.
+        
+    longitude : float
+        WGS-84 longitude in decimal degrees. Can be null.
+        
+    latitude : float
+        WGS-84 latitude in decimal degrees. Can be null.
+        
+    baro_altitude : float
+        Barometric altitude in meters. Can be null.
+        
+    velocity : float
+        Velocity over ground in m/s. Can be null.
+        
+    true_track : float
+        True track in decimal degrees clockwise from north
+        (north=0°). Can be null.
+        
+    vertical_rate : float
+        Vertical rate in m/s. A positive value indicates
+        that the airplane is climbing, a negative value
+        indicates that it descends. Can be null.
+        
+    squawk : str
+        The transponder code aka Squawk. Can be null.
+    """
     return sensor_tracks
 
 @app.get("/system_tracks")
