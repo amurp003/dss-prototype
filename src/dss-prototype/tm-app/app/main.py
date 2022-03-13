@@ -127,48 +127,114 @@ def provide_sensor_tracks():
     
     Returns
     -------
-    icao24 : str
+    icao24 (str) :
         Unique ICAO 24-bit address of the transponder 
         in hex string representation.
     
-    callsign : str
+    callsign (str) :
         Callsign of the vehicle (8 chars). Can be null
         if no callsign has been received.
         
-    origin_country : str
+    origin_country (str) :
         Country name inferred from ICAO 24-bit address.
-        
-    last_contact : int
+    
+    last_contact (int) :
         Unix timestamp (seconds) for the last update in
         general. This field is updated for any new, valid
         message recieved from the transponder.
         
-    longitude : float
+    longitude (float) :
         WGS-84 longitude in decimal degrees. Can be null.
         
-    latitude : float
+    latitude (float) :
         WGS-84 latitude in decimal degrees. Can be null.
         
-    baro_altitude : float
-        Barometric altitude in meters. Can be null.
+    baro_altitude (float) :
+        Barometric altitude in **meters**. Can be null.
         
-    velocity : float
-        Velocity over ground in m/s. Can be null.
+    velocity (float) :
+        Velocity over ground in **m/s**. Can be null.
         
-    true_track : float
+    true_track (float) :
         True track in decimal degrees clockwise from north
         (north=0°). Can be null.
         
-    vertical_rate : float
-        Vertical rate in m/s. A positive value indicates
+    vertical_rate (float) :
+        Vertical rate in **m/s**. A positive value indicates
         that the airplane is climbing, a negative value
         indicates that it descends. Can be null.
         
-    squawk : str
+    squawk (str) :
         The transponder code aka Squawk. Can be null.
     """
     return sensor_tracks
 
 @app.get("/system_tracks")
 def provide_system_tracks():
+    """
+    Returns system tracks held within the Decision Support
+    System (DSS).
+    
+    This function simply provides the current system_tracks
+    dictionary. Field definitions align with definitions from 
+    the OpenSky Network API. Additional definitions added to
+    reflect translation of source data in English units.
+    https://openskynetwork.github.io/opensky-api/rest.html
+    
+    Parameters
+    ----------
+    None.
+    
+    Returns
+    -------
+    icao24 (str) :
+        Unique ICAO 24-bit address of the transponder 
+        in hex string representation.
+    
+    callsign (str) :
+        Callsign of the vehicle (8 chars). Can be null
+        if no callsign has been received.
+        
+    origin_country (str) :
+        Country name inferred from ICAO 24-bit address.
+        
+    last_contact (int) :
+        Unix timestamp (seconds) for the last update in
+        general. This field is updated for any new, valid
+        message recieved from the transponder.
+                
+    bearing (float) :
+        Bearing in decimal degrees from the local reference point 
+        (e.g. airport location) clockwise from north (north=0°).
+        Can be null.
+        
+    range (float) :
+        Range in **nautical miles** (from the local reference point 
+        (e.g. airport location). 1 nmi = 6076 feet.
+        Can be null.
+    
+    elevation (float) :
+        Range in **feet** (from the local reference point 
+        (e.g. airport location). Can be null.
+    
+    longitude (float) :
+        WGS-84 longitude in decimal degrees. Can be null.
+        
+    latitude (float) :
+        WGS-84 latitude in decimal degrees. Can be null.
+        
+    baro_altitude (float) :
+        Barometric altitude in **feet**. Can be null.
+        
+    velocity (float) :
+        Velocity over ground in **knots**. Can be null.
+        
+    vertical_rate (float) :
+        Vertical rate in **knots**. A positive value indicates
+        that the airplane is climbing, a negative value
+        indicates that it descends. Can be null.
+        
+    squawk (str) :
+        The transponder code aka Squawk. Can be null.
+    """
     return system_tracks
