@@ -1,5 +1,6 @@
 # this app uses FastAPI to ensure OpenAPI and JSON compliant interfaces
 # https://fastapi.tiangolo.com
+# default port is 3200
 
 from fastapi import FastAPI
 

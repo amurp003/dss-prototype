@@ -6,9 +6,12 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
 1. Install and initialize Docker
 
-2. Clone the repository from GitHub into a project directory
+2. Clone the repository from GitHub into a project directory; e.g. dss-prototype
 
-3. Build the container image for the user interface front-end
+        cd project-directory
+        git pull -rebase
+
+3. Go into the dss-ui-app source code directory and build the container image for the user interface front-end
 
         docker build --tag dss-ui-app .
 
@@ -24,14 +27,14 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker run --rm -d -p 5000:5000 --network=dss-net --name=dss-ui dss-ui-app
 
-7. Build the container image for the Track Management application
+7. Go into the tm-app source code directory and build the container image for the Track Management application
 
         docker build --tag tm-app .
         docker images
 
 8. Start the Track Management server container in detached mode
 
-        docker run --network-alias=tm-server --network=dss-net --name=tm-server --rm -d -p 3200:5000 tm-app
+        docker run --network-alias=tm-server --network=dss-net --name=tm-server --rm -d -p 3200:3200 tm-app
 
 9. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container in detached mode
 
