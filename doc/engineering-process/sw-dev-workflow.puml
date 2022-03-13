@@ -1,0 +1,28 @@
+' Use Option/Alt-D to Preview Diagrams in VS Code
+
+@startuml
+!theme lightgray
+' !theme sketchy-outline, plain, vibrant, lightgray
+
+
+start
+repeat
+    repeat
+        :Develop/update application;
+        switch (Run application?)
+        case ( Flask application )
+            :Run 'python3 myapp';
+        case ( FastAPI application ) 
+            :Run 'uvicorn myapp:app --reload';
+        endswitch
+        :Run unit tests;
+    repeat while (Pass unit tests?) is (no)
+    ->yes;
+    :Commit updates to software repository;
+    :Build container;
+    :Run software component tests;
+repeat while (Pass software test?) is (no)
+->yes;
+:Proceed to integration testing;
+stop
+@enduml
