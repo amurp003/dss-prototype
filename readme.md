@@ -40,9 +40,9 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker run --network-alias=telem-jaeger --network=dss-net --name=jaeger -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
 
-10. Add Grafana to see visualization dashboards
+10. Add Grafana to see visualization dashboards. The default username and password is admin/admin. You will need to add Jaeger as a data source from http://local-ip-addr/16886
 
-        docker run -d --name=grafana -p 3000:3000 grafana/grafana
+        docker run --network=dss-net --name=grafana --rm -d -p 3000:3000 grafana/grafana
 
 11. Verify that participants are on the dss-network
 
