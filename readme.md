@@ -40,7 +40,11 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker run --network-alias=telem-jaeger --network=dss-net --name=jaeger -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
 
-10. Verify that participants are on the dss-network
+10. Add Grafana to see visualization dashboards
+
+        docker run -d --name=grafana -p 3000:3000 grafana/grafana
+
+11. Verify that participants are on the dss-network
 
         docker network inspect dss-net
 
