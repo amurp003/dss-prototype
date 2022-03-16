@@ -36,7 +36,7 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
         docker run --network-alias=tm-server --network=dss-net --name=tm-server --rm -d -p 3200:3200 tm-app
 
-9. Jaegar tracing is currently enabled using collectin port 6831. Use the following to start Jaegar in a container in detached mode
+9. Jaegar tracing is currently enabled using collection port 6831. Use the following to start Jaegar in a container in detached mode
 
         docker run --network-alias=telem-jaeger --network=dss-net --name=jaeger -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
 
