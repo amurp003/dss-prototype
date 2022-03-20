@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  dss-ui-app:
+    build: ./src/dss-prototype/dss-ui-app
+    container_name: dss-ui
+    # volumes:
+    #   - ./src/dss-prototype/dss-ui-app:/usr/src/app
+    ports:
+      - 5000:5000
+    networks:
+      - dss-net
+
+  tm-app:
+    build: ./src/dss-prototype/tm-app
+    container_name: tm-server
+    ports:
+      - 3200:3200
+    networks:
+      - dss-net
+
+  jaeger:
+    image: jaegertracing/all-in-one
+    container_name: jaeger
+    ports:
+      - 16686:16686
+      - 6831:6831/udp
+    networks:
+      - dss-net
+
+  grafana:
+    image: grafana/grafana
+    # container_name: grafana
+    ports:
+      - 3000:3000
+    networks:
+      - dss-net
+
+networks:
+  dss-net:
