@@ -43,17 +43,17 @@ async def run_tests(num_tests: int = 5, num_requests: int = 5,
 
         # request IAD flight data
         time.sleep(request_delay)
-        requests.get('http://localhost:3200/IAD')
+        requests.get('http://dss-ui:5000/IAD')
     
         # request RIC flight data
         time.sleep(request_delay)
-        requests.get('http://localhost:3200/RIC')
+        requests.get('http://dss-ui:5000/RIC')
     
     for serviceRqst in range(0, num_requests):
 
         # request track data via dss-ui
         time.sleep(request_delay)
-        requests.get('http://localhost:5000/tracks')
+        requests.get('http://dss-ui:5000/tracks')
         
         print(f"     sub-test {(serviceRqst+1)} of \
                 {num_requests} complete ...")

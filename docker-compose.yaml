@@ -21,7 +21,7 @@ services:
 
   jaeger:
     image: jaegertracing/all-in-one
-    container_name: jaeger
+    container_name: telem-jaeger
     ports:
       - 16686:16686
       - 6831:6831/udp
@@ -30,11 +30,29 @@ services:
 
   grafana:
     image: grafana/grafana
-    # container_name: grafana
+    container_name: grafana
     ports:
       - 3000:3000
     networks:
       - dss-net
+
+  jupyter:
+    image: jupyter/r-notebook:latest
+    container_name: notebook
+    ports:
+      - 10000:8888
+    networks:
+      - dss-net
+    volumes:
+       - ./analysis:/home/jovyan/work
+
+  test-app:
+    build: ./test/apps
+    container_name: test-app
+    ports:
+      - 5150:5150
+    networks:
+      - dss-net    
 
 networks:
   dss-net:
