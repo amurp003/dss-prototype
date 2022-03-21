@@ -9,7 +9,7 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 2. Clone the repository from GitHub into a project directory; e.g. dss-prototype
 
         cd project-directory
-        git pull -rebase
+        git pull --rebase
 
 3. Containers may either be built manually or Docker Compose can be used to automate the build and run process. Skip to step #5 for the manual
 process.
