@@ -62,8 +62,12 @@ async def run_tests(num_tests: int = 5, num_requests: int = 5,
 
     end_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    print("Tests complete.")
-    print(f"Start time: {start_time}.")
-    print(f"End time: {end_time}.")        
-        
-    return end_time
+    test_parameters = [{
+        "num_tests": str(num_tests),
+        "num_requests": str(num_requests),
+        "request_delay": str(request_delay),
+        "start_time": str(start_time),
+        "end_time": str(end_time)
+        }]
+    
+    return test_parameters

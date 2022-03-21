@@ -16,10 +16,10 @@ process.
 
 ### Using Docker Compose
 
-4. Navigate the to project main directory and run Docker Compose
+4. Ensure that docker compose is installed on the host machine. Navigate the to project main directory and run Docker Compose
 
         cd project-directory
-        docker compose up
+        docker compose up -d
 
 ### Manual build and run process
 
