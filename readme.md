@@ -11,56 +11,70 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
         cd project-directory
         git pull --rebase
 
-3. Containers may either be built manually or Docker Compose can be used to automate the build and run process. Skip to step #5 for the manual
-process.
+3. We'll use Docker Compose to automatically build and run our containers. However, manual build instructions are included below. 
 
-### Using Docker Compose
-
-4. Ensure that docker compose is installed on the host machine. Navigate the to project main directory and run Docker Compose
+Ensure that docker compose is installed on the host machine. Navigate the to project main directory and run Docker Compose
 
         cd project-directory
         docker compose up -d
 
-### Manual build and run process
+## The following named container endpoints should now be available
 
-5. Go into the dss-ui-app source code directory and build the container image for the user interface front-end
+dss-ui:  http://localhost:5000
+tm-server:  http://localhost:3200
+test-app:  http://localhost:5150/docs
+
+telem-jaeger: http://localhost:16686
+grafana:  http://localhost:3000
+notebook:  http://localhost:10000
+
+-------------------------------------------------------------------------
+## Manual build and run process
+Docker Compose automatically builds and runs the containers; however, these instructions are provided for manual building and running each application individally.
+
+### DSS-UI Application
+Go into the dss-ui-app source code directory and build the container image for the user interface front-end
 
         docker build --tag dss-ui-app .
 
-6. Verify new image exists
+Verify new image exists
 
         docker images
 
-7. Establish network for containers to connect
+Establish network for containers to connect
 
         docker network create dss-net
 
-8. Start the image in detached mode mapping desired port (e.g. 5000) to port 5000 (tbd:5000). Note: The --rm option is included to clear up dependencies automatically when the container is stopped.
+Start the image in detached mode mapping desired port (e.g. 5000) to port 5000 (tbd:5000). Note: The --rm option is included to clear up dependencies automatically when the container is stopped.
 
         docker run --rm -d -p 5000:5000 --network=dss-net --name=dss-ui dss-ui-app
 
-9. Go into the tm-app source code directory and build the container image for the Track Management application
+### Track Management Application
+Go into the tm-app source code directory and build the container image for the Track Management application
 
         docker build --tag tm-app .
         docker images
 
-10. Start the Track Management server container in detached mode
+Start the Track Management server container in detached mode
 
         docker run --network-alias=tm-server --network=dss-net --name=tm-server --rm -d -p 3200:3200 tm-app
 
-11. Jaegar tracing is currently enabled using collection port 6831. Use the following to start Jaegar in a container in detached mode
+### Jaeger
+Jaegar tracing is enabled using collection port 6831. Use the following to start Jaegar in a container in detached mode
 
         docker run --network-alias=telem-jaeger --network=dss-net --name=jaeger -d -p 16686:16686 -p 6831:6831/udp jaegertracing/all-in-one
 
-12. Add Grafana to see visualization dashboards. The default username and password is admin/admin. You will need to add Jaeger as a data source from http://local-ip-addr:16686
+### Grafana
+Add Grafana to see visualization dashboards and for exporting data via .CSV. The default username and password is admin/admin. You will need to add Jaeger as a data source from http://local-ip-addr:16686
 
         docker run --network=dss-net --name=grafana --rm -d -p 3000:3000 grafana/grafana
 
-13. Verify that participants are on the dss-network
+Verify that participants are on the dss-network
 
         docker network inspect dss-net
 
-14. Add Jupyter Notebook from within the analysis/data directory
+### Jupyter Notebook
+Add Jupyter Notebook from within the analysis/data directory
 
         docker run -it --rm -d -p 10000:8888 -v ${PWD}:/home/jovyan/work --name notebook jupyter/r-notebook:latest
         
@@ -68,6 +82,7 @@ To find the token from the container:
 
         docker exec -it notebook jupyter server list
 
-15. Install and run the automated test application
+### Test Application
+Install and run the automated test application
 
         docker run  --network=dss-net --name=test-app  --rm -d -p 5150:5150 test-app
