@@ -1,0 +1,99 @@
+' Use Option/Alt-D to Preview Diagrams
+
+@startuml Context Diagram
+skinparam dpi 300
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+LAYOUT_LEFT_RIGHT()
+
+title Context Diagram for AI Microservices
+
+Person(tao, Operator, "Service User")
+System(AI, "AI Microservices", "Provides services to system users to support decision making")
+System_Ext(Sensor, "Sensors", "Available SoS Sensors")
+System_Ext(Wep, "Effectors", "Available SoS Weapons")
+SystemDb_Ext(C2, "SoS Database", "SoS track states, system statuses, and curent tasking")
+
+Rel(tao, AI, "Uses")
+Rel(C2,AI, "Provides SoS data")
+Rel(Sensor,C2, "Provides sensor data")
+Rel(Wep, C2, "Provides statuses")
+
+@enduml
+
+@startuml Component Diagram v1
+skinparam dpi 300
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Component.puml
+
+
+LAYOUT_LEFT_RIGHT()
+
+title Component Diagram for CMS AI Services
+
+Person(tao, TAO, "Service User")
+Container_Boundary(AI, "AI Microservices"){
+
+    Component(TE, "Trial Engage AI App", "Python", "Provides trial engage assessment via a JSON/HTTPS API.")
+    Component(WA, "Wpn Assessment AI App", "Python", "Provides weapon assessment via a JSON/HTTPS API.")
+    }
+
+SystemDb_Ext(C2, "SoS track states, system statuses, and curent tasking")
+
+Rel(tao, TE, "Uses")
+Rel(tao, WA, "Uses")
+Rel(C2,TE, "Provides SoS data")
+Rel(C2, WA, "Provides SoS data")
+@enduml
+
+
+@startuml Deployment Diagram
+skinparam dpi 200
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Deployment.puml
+
+
+LAYOUT_LEFT_RIGHT()
+
+title Deployment Diagram for CMS AI Services
+
+Person(tao, TAO, "Service User")
+System_Boundary(CMS, "Combat Management System (CMS)") {
+    
+    Deployment_Node(UI, "User Interface", "Provides operator interface to AI services.")
+    SystemDb_Ext(C2, "SoS track states, system statuses, and curent tasking")
+
+    System_Boundary(mesh, "Istio Service Mesh"){
+        Deployment_Node(AInode, "AI Proxy Pod", "CentOS 8"){
+            Container(AIproxy, "AI Proxy", "Istio")
+            }
+        Deployment_Node(TEnode, "Trial Eng Pod", "CentOS 8"){
+            Container(ProxyTE, "TE Proxy", "Istio")
+            Container(TE, "Trial Engage AI App", "Python", "Provides trial engage assessment via a JSON/HTTPS API.")
+            }
+    
+        Deployment_Node(WAnode, "Wpn Assmt Pod", "CentOS 8"){
+            Container(ProxyWA, "WA Proxy", "Istio")
+            Container(WA, "Wpn Assessment AI App", "Python", "Provides weapon assessment via a JSON/HTTPS API.")
+        }
+        }
+    }
+
+Rel(tao, UI, "Uses")
+Rel(UI, AIproxy, "AI Request", HTTPS/JSON)
+Rel(AIproxy, UI, "AI Response", HTTPS/JSON)
+Rel(AIproxy, ProxyTE, "TE AI Request", HTTPS/JSON)
+Rel(ProxyTE, AIproxy, "TE AI Response", HTTPS/JSON)
+Rel(ProxyTE, TE, "TE AI Request", HTTPS/JSON)
+Rel(TE, ProxyTE, "TE AI Response", HTTPS/JSON)
+Rel(AIproxy, ProxyWA, "WA AI Request", HTTPS/JSON)
+Rel(ProxyWA, AIproxy, "WA AI Response", HTTPS/JSON)
+Rel(ProxyWA, WA, "WA AI Request", HTTPS/JSON)
+Rel(WA, ProxyWA, WA AI Response, HTTPS/JSON)
+Rel(C2,TE, "Provides SoS data")
+Rel(C2, WA, "Provides SoS data")
+@enduml

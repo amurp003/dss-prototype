@@ -1,0 +1,101 @@
+' Use Option/Alt-D to Preview Diagrams
+
+' https://github.com/plantuml-stdlib/C4-PlantUML
+
+@startuml Context Diagram
+skinparam dpi 300
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+LAYOUT_LEFT_RIGHT()
+
+title Context Diagram for Decision Support Service Prototype
+
+Person(tao, Operator, "Service User")
+System(AI, "DSS Prototype", "Provides services to system users to support decision making")
+SystemDb_Ext(C2, "OpenSky API Database", "Live aircraft flight data from opensky-network.org")
+
+Rel(tao, AI, "Uses")
+Rel(C2,AI, "Provides Aircraft Flight Data")
+
+@enduml
+
+@startuml Component Diagram v1
+skinparam dpi 300
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Component.puml
+
+
+LAYOUT_LANDSCAPE()
+
+title Component Diagram for CMS AI Services
+
+Person(tao, TAO, "Service User")
+Container_Boundary(AI, "DSS Prototype"){
+
+    Component(UI, "DSS UI App", "Python", "Provides user interface to decision support services.")
+    Component(TM, "Track Management App", "Python", "Maintains track data for decision support services.")
+    Component(TE, "Test App", "Python", "Runs automated tests")
+    Component(Grafana, "Grafana Visualization", "Go/Node", "Provides visualization of collected metrics; e.g. duration")
+    Component(Jaeger, "Jaeger OpenTracing App", "Go", "Collects span data to capture DSS response durations")
+    Component(Jupyter, "Jupyter Notebook", "Python/R", "Provides for data analysis")
+    }
+
+SystemDb_Ext(C2, "OpenSky API Database", "Live aircraft flight data from opensky-network.org")
+
+Rel(C2,TM, "Provides sensor track data", "HTTP/JSON")
+Rel(C2,UI, "Provides sensor track data", "HTTP/JSON")
+Rel(tao,UI, "Uses")
+Rel(tao,TE, "Uses")
+Rel(TM,UI, "Provides track data", "HTTP/JSON")
+Rel(TE,UI, "Generates automated tests", "HTTP/REST")
+Rel(UI,Jaeger, "Reports spans", "UDP")
+Rel(Jaeger,Grafana, "Provides span data", "JSON")
+Rel(Grafana,Jupyter, "Provide .csv data for analysis", "CSV")
+@enduml
+
+
+@startuml Deployment Diagram
+skinparam dpi 200
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Deployment.puml
+
+
+LAYOUT_LANDSCAPE()
+
+title Deployment Diagram for DSS Prototype
+
+Person(tao, TAO, "Service User")
+Person(sme, Analyst, "Service Developer")
+SystemDb_Ext(C2, "OpenSky API Database", "Live aircraft flight data from opensky-network.org")
+
+System_Boundary(DSS, "DSS Prototype") {
+    
+    Deployment_Node(UI, "User Interface", "Web Browser")
+    
+    System_Boundary(pc, "Docker"){
+        Container(DSSUI, "dss-ui", "Python 3.8", "Provides user interface to DSS")
+        Container(TM, "tm-server", "Python 3.8", "Provides track data to DSS")
+        Container(NB, "notebook", "Python/R", "Provides Jupyter Notebook for analysis")
+        Container(TE, "test-app", "Python 3.8", "Provides test application for automated testing")
+        Container(G, "grafana", "Go/Node", "Provides data visualization and export to CSV")
+        Container(J, "telem-jaeger", "Go", "Provides collection of span data for OpenTracing")
+    }
+}
+
+Rel(tao, UI, "Uses")
+Rel(C2,TM, "Provides sensor track data", "HTTP/JSON")
+Rel(C2,DSSUI, "Provides sensor track data", "HTTP/JSON")
+Rel(TM,DSSUI, "Provides track data", "HTTP/JSON")
+Rel(TE,DSSUI, "Generates automated tests", "HTTP/REST")
+Rel(DSSUI,J, "Reports spans", "UDP")
+Rel(J,G, "Provides span data", "JSON")
+Rel(G,NB, "Provide .csv data for analysis", "CSV")
+Rel(DSSUI,UI, "Renders UI", "html")
+Rel(NB,sme, "Reviews analysis results")
+Rel(G,sme, "Reviews visualization and exports data")
+Rel(J,sme, "Reviews telemetry data")
+@enduml
