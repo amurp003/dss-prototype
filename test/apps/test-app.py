@@ -30,13 +30,13 @@ def index():
     str = "Go to '/docs' or '/redocs' to see API documentation."
     return str
 @app.get("/test_tm/")
-async def tm_test():
+def tm_test():
     tracks = requests.get('http://tm-server:3200/tracks')
     return tracks
 
 
 @app.get("/test/")
-async def run_tests(num_tests: int = 5, num_requests: int = 5,
+def run_tests(num_tests: int = 5, num_requests: int = 5,
                     request_delay: int = 1):
     
     print ("Starting tests ...")
