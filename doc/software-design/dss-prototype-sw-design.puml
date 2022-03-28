@@ -28,7 +28,7 @@ skinparam dpi 300
 ' !include C4_Component.puml
 
 
-LAYOUT_LANDSCAPE()
+' LAYOUT_LANDSCAPE()
 
 title Component Diagram for CMS AI Services
 
@@ -64,7 +64,7 @@ skinparam dpi 200
 ' !include C4_Deployment.puml
 
 
-LAYOUT_LANDSCAPE()
+' LAYOUT_LANDSCAPE()
 
 title Deployment Diagram for DSS Prototype
 

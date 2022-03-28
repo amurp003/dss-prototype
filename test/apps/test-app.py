@@ -29,6 +29,10 @@ def index():
     
     str = "Go to '/docs' or '/redocs' to see API documentation."
     return str
+@app.get("/test_tm/")
+async def tm_test():
+    tracks = requests.get('http://tm-server:3200/tracks')
+    return tracks
 
 
 @app.get("/test/")
