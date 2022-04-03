@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="{{url_for('static', filename='node_modules/milsymbol/dist/milsymbol.js')}}"></script>
+    <script src="{{url_for('static', filename='situation.json')}}"></script>
+
+    <style>
+        .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .button1 {background-color: #4CAF50;} /* Green */
+        .button2 {background-color: #008CBA;} /* Blue */
+    </style>
+    
+    <style type="text/css">
+        html, body { 
+            height:100%
+        }
+        #map {
+            margin: 1em auto;
+            height:70%;
+            border: 2px dashed black;
+        }                                                                                                                                                                                                            
+    </style>    
+</head>
+
+<body>
+    <center><h1>Decision Support System (DSS) Prototype</h1>
+    <br>
+    <i>
+        Flight data is for flights within 60 NM of the designated airport from https://opensky-network.org.
+    </i>
+    <br>
+        
+    <button onclick="window.location.href='/RIC'" class="button button1">Get RIC Flight Data</button>   
+    <button onclick="window.location.href='/IAD'" class="button button2">Get IAD Flight Data</button>
+    <button onclick="window.location.href='/tracks'" class="button button2">Get Local Tracks</button>
+
+    <!-- Specify the map and it's dimensions -->
+    <div id="map" style="width: 960px; height: 500px"></div>
+    
+    <script>
+        // Initialize map centered around Fredericksburg,VA with zoom-level
+        var map = L.map('map').setView([38.3082, -77.4605], 7);
+
+        // Pulled the maps from https://cloud.maptiler.com/maps/streets/ (see Raster Tiles)
+        // Other maps https://cloud.maptiler.com/maps/
+        L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=rvsx2mBK05Qj4r7lVDMX', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        L.control.scale({
+            metric: true,
+            imperial: true,
+            position: 'topright'
+        }).addTo(map);
+
+
+        L.Control.Watermark = L.Control.extend({
+            onAdd: function(map) {
+                var img = L.DomUtil.create('img');
+
+                img.src = "{{url_for('static', filename='odu-logo.png')}}";
+                img.style.width = '200px';
+
+                return img;
+            },
+            onRemove: function(map) {},
+        });
+
+        L.control.watermark = function(opts){
+            return new L.Control.Watermark(opts);
+        }
+
+        L.control.watermark({position: 'bottomleft'}).addTo(map);
+
+        var markerFXBG = L.marker([38.3032, -77.4605]).addTo(map); // Fredericksburg Marker
+        markerFXBG.bindPopup("City of Fredericskburg, VA").openPopup();
+
+        // Centered around RIC 37.5407 N, 77.4360 W with a radius of 60 NM
+        var circleRIC = L.circle([37.5407, -77.4360], {
+            color: 'green',
+            fillcolor: '#fo3',
+            fillopacity: 0.5,
+            radius: 111120
+        }).addTo(map);
+        circleRIC.bindPopup("RIC sensor coverage zone");
+
+        // Centered around IAD 38.9531 N, 77.4565 W with a radius of 60 NM
+        var circleIAD = L.circle([38.9531, -77.4565], {
+            color: 'blue',
+            fillcolor: '#fo3',
+            fillopacity: 0.5,
+            radius: 111120
+        }).addTo(map);
+        circleIAD.bindPopup("IAD sensor coverage zone");
+
+        /* var iconSize = {
+            "Team/Crew": 5,
+            "Squad": 10,
+            "Section": 15,
+            "Platoon/detachment": 20,
+            "Company/battery/troop": 25,
+            "Battalion/squadron": 30,
+            "Regiment/group": 35,
+            "Brigade": 40,
+            "Division": 45,
+            "Corps/MEF": 50,
+            "Army": 55,
+            "Army Group/front": 60,
+            "Region/Theater": 65,
+            "Command": 70
+        };
+
+        L.geoJson(situation, {
+            pointToLayer: function (feature, latlng) {
+    
+              var mysymbol = new ms.Symbol(
+                feature.properties.SIDC, {
+                  uniqueDesignation: feature.properties.name
+                })
+              // Now that we have a symbol we can ask for the echelon and set the symbol size
+              mysymbol = mysymbol.setOptions({ size: iconSize[mysymbol.getMetadata().echelon] });
+    
+              var myicon = L.icon({
+                iconUrl: mysymbol.toDataURL(),
+                iconAnchor: [mysymbol.getAnchor().x, mysymbol.getAnchor().y],
+              });
+    
+              return L.marker(latlng, { icon: myicon, draggable: true });
+            }
+          }).addTo(map); */
+
+          var mysymbol = new ms.Symbol("sfgpewrh--mt", {
+            size: 35,
+            quantity: 200,
+            staffComments: "for reinforcements".toUpperCase(),
+            additionalInformation: "added support for JJ".toUpperCase(),
+            direction: (750 * 360) / 6400,
+            type: "machine gun".toUpperCase(),
+            dtg: "30140000ZSEP97",
+            location: "0900000.0E570306.0N"
+          }).asSVG();  
+
+
+    </script>
+
+</body>
+</html>
