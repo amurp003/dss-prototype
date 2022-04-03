@@ -19,6 +19,14 @@ services:
     networks:
       - dss-net
 
+  test-app:
+    build: ./src/dss-prototype/test-app
+    container_name: test-app
+    ports:
+      - 5150:5150
+    networks:
+      - dss-net    
+
   jaeger:
     image: jaegertracing/all-in-one
     container_name: telem-jaeger
@@ -46,13 +54,6 @@ services:
     volumes:
        - ./analysis:/home/jovyan/work
 
-  test-app:
-    build: ./test/apps
-    container_name: test-app
-    ports:
-      - 5150:5150
-    networks:
-      - dss-net    
-
+ 
 networks:
   dss-net:
