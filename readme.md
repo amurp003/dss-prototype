@@ -21,9 +21,9 @@ Ensure that docker compose is installed on the host machine. Navigate the to pro
 ## The following named container endpoints should now be available
 
 dss-ui:  http://localhost:5000  
-tm-server:  http://localhost:3200/docs
-wa-app:  http://localhost:3201/docs
-te-app:  http://localhost:3202/docs
+tm-server:  http://localhost:3200/docs  
+wa-app:  http://localhost:3201/docs  
+te-app:  http://localhost:3202/docs  
 test-app:  http://localhost:5150/docs 
   
 telem-jaeger: http://localhost:16686  
