@@ -2,7 +2,7 @@ version: '3'
 
 services:
   dss-ui-app:
-    build: ./src/dss-prototype/dss-ui-app
+    build: ./src/dss-ui-app
     container_name: dss-ui
     # volumes:
     #   - ./src/dss-prototype/dss-ui-app:/usr/src/app
@@ -12,15 +12,32 @@ services:
       - dss-net
 
   tm-app:
-    build: ./src/dss-prototype/tm-app
+    build: ./src/tm-app
     container_name: tm-server
     ports:
       - 3200:3200
     networks:
       - dss-net
 
+  wa-app:
+    build: ./src/wa-app
+    container_name: wa-app
+    ports:
+      - 3201:3201
+    networks:
+      - dss-net
+  
+  te-app:
+    build: ./src/te-app
+    container_name: te-app
+    ports:
+      - 3202:3202
+    networks:
+      - dss-net
+
+
   test-app:
-    build: ./src/dss-prototype/test-app
+    build: ./src/test-app
     container_name: test-app
     ports:
       - 5150:5150

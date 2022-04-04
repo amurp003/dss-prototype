@@ -21,8 +21,10 @@ Ensure that docker compose is installed on the host machine. Navigate the to pro
 ## The following named container endpoints should now be available
 
 dss-ui:  http://localhost:5000  
-tm-server:  http://localhost:3200  
-test-app:  http://localhost:5150/docs  
+tm-server:  http://localhost:3200/docs
+wa-app:  http://localhost:3201/docs
+te-app:  http://localhost:3202/docs
+test-app:  http://localhost:5150/docs 
   
 telem-jaeger: http://localhost:16686  
 grafana:  http://localhost:3000  
@@ -58,6 +60,28 @@ Go into the tm-app source code directory and build the container image for the T
 Start the Track Management server container in detached mode
 
         docker run --network-alias=tm-server --network=dss-net --name=tm-server --rm -d -p 3200:3200 tm-app
+
+### Weapons Assessment Service Application
+Go into the wa-app source code directory and build the container image for the Weapons Assessment service
+
+        docker build --tag wa-app .
+        docker images
+
+Start the Threat Evaluation service container in detached mode
+
+        docker run --network-alias=wa-app --network=dss-net --name=wa-app --rm -d -p 3201:3201 wa-app
+
+
+### Threat Evaluation Service Application
+Go into the te-app source code directory and build the container image for the Threat Evaluation service
+
+        docker build --tag te-app .
+        docker images
+
+Start the Threat Evaluation service container in detached mode
+
+        docker run --network-alias=te-app --network=dss-net --name=te-app --rm -d -p 3202:3202 te-app
+
 
 ### Jaeger
 Jaegar tracing is enabled using collection port 6831. Use the following to start Jaegar in a container in detached mode
