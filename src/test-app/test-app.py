@@ -13,6 +13,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+tm_url = "http://tm-server:3200/system_tracks"
+
 # set default values
 num_tests = 5      # consider 10
 num_requests = 5   # number of local requests per test; e.g. 50
@@ -32,8 +34,9 @@ def index():
 
 @app.get("/test/")
 def tm_test():
-    tracks = requests.get('http://tm-server:3200/tracks')
-    return tracks
+    
+    tracks = requests.get(tm_url)
+    return {"message": "attempted to poll the track server"}
 
 
 @app.get("/test-remove/")

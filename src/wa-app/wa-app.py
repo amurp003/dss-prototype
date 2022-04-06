@@ -30,8 +30,8 @@ resp_e = {"TN": "2453",
               "OptEval": "3"}
 
 @app.get("/")
-def read_root():
-    return {"WA": "The Weapon Assessment App is alive."}
+def readme():
+    return {"wa-app": "The Weapon Assessment App is alive."}
 
 
 @app.get("/demo/")

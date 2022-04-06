@@ -4,8 +4,8 @@ services:
   dss-ui-app:
     build: ./src/dss-ui-app
     container_name: dss-ui
-    # volumes:
-    #   - ./src/dss-prototype/dss-ui-app:/usr/src/app
+    volumes:
+      - ./src/dss-ui-app:/app
     ports:
       - 5000:5000
     networks:
@@ -26,7 +26,9 @@ services:
       - 3201:3201
     networks:
       - dss-net
-  
+    volumes:
+       - ./src/wa-app:/code
+
   te-app:
     build: ./src/te-app
     container_name: te-app
@@ -34,7 +36,8 @@ services:
       - 3202:3202
     networks:
       - dss-net
-
+    volumes:
+       - ./src/te-app:/code
 
   test-app:
     build: ./src/test-app
