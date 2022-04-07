@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # https://fastapi.tiangolo.com/deployment/docker/
 
-FROM python:3.8-slim-buster
+FROM python:3.9
 
 WORKDIR /code
 
@@ -9,7 +9,7 @@ COPY ./requirements.txt /code/requirements.txt
 
 RUN pip3 install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY . /code/app
+COPY ./test-app.py /code/
 
-CMD [ "uvicorn", "app.test-app:app" , "--host", "0.0.0.0", "--port", "5150"]
+CMD [ "uvicorn", "test-app:app" , "--host", "0.0.0.0", "--port", "5150"]
 

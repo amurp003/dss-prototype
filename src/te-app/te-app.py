@@ -101,6 +101,6 @@ def trial_engage():
     """
     
     tracks = requests.get(tm_url)
-    print(tracks)
+    tracks_json = tracks.json()
 
-    return resp_a
+    return resp_a, tracks_json

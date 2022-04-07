@@ -65,7 +65,7 @@ sensor_tracks = {
 }
 # this should use common data model naming conventions
 system_tracks = {
-      "1237": {
+      "1232": {
          "icao24" : "a88e98",
          "callsign" : "",
          "origin_country" : "",
@@ -80,7 +80,7 @@ system_tracks = {
          "vertical_rate" : "",
          "squawk" : "",
      },
-      "5235": {
+      "2365": {
          "icao24" : "e08443",
          "callsign" : "LVHQC   ",
          "origin_country" : "Argentina",

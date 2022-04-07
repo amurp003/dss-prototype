@@ -36,7 +36,8 @@ def index():
 def tm_test():
     
     tracks = requests.get(tm_url)
-    return {"message": "attempted to poll the track server"}
+    tracks_json = tracks.json()
+    return tracks_json
 
 
 @app.get("/test-remove/")
