@@ -32,7 +32,7 @@ def index():
     str = "Go to '/docs' or '/redocs' to see API documentation."
     return str
 
-@app.get("/test/")
+@app.get("/test-tm/")
 def tm_test():
     
     tracks = requests.get(tm_url)
@@ -40,12 +40,13 @@ def tm_test():
     return tracks_json
 
 
-@app.get("/test-remove/")
+@app.get("/test/")
 def run_tests(num_tests: int = 5, num_requests: int = 5,
                     request_delay: int = 1):
     
     print ("Starting tests ...")
 
+    # time in UTC
     start_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     for test in range(0, num_tests):
@@ -58,16 +59,16 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
         time.sleep(request_delay)
         requests.get('http://dss-ui:5000/IAD')
     
-    for serviceRqst in range(0, num_requests):
+        for serviceRqst in range(0, num_requests):
 
-        # request track data via dss-ui
-        time.sleep(request_delay)
-        requests.get('http://dss-ui:5000/tracks')
+            # request track data via dss-ui
+            time.sleep(request_delay)
+            requests.get('http://dss-ui:5000/tracks')
         
-        print(f"     sub-test {(serviceRqst+1)} of \
+            print(f"     sub-test {(serviceRqst+1)} of \
                 {num_requests} complete ...")
         
-    print(f"Test {(test+1)}  of {num_tests} complete ...")
+        print(f"Test {(test+1)}  of {num_tests} complete ...")
 
     end_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
