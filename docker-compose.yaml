@@ -39,6 +39,16 @@ services:
     volumes:
        - ./src/te-app:/code
 
+  opensky-int:
+    build: ./src/opensky-int
+    container_name: opensky-int
+    ports:
+      - 3203:3203
+    networks:
+      - dss-net
+    volumes:
+       - ./src/opensky-int:/code
+
   test-app:
     build: ./src/test-app
     container_name: test-app

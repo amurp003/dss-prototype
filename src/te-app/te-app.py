@@ -41,8 +41,8 @@ def readme():
 @app.get("/unit_test/")
 def trial_engage():
     """
-    WA = Weapon Assessment AI Service. Determines what weapons have
-    capability against the track with subject TN. This version of the services
+    TE = Trial Engagement AI Service. Determines the lethality of a particular
+    weapon against the track with subject TN. This version of the services
     operates standalone and does not make external calls.
     
     Parameters
@@ -73,9 +73,9 @@ def trial_engage():
 @app.get("/prod/")
 def trial_engage():
     """
-    WA = Weapon Assessment AI Service. Determines what weapons have
-    capability against the track with subject TN. This version of the services calls
-    the track service before returning a response.
+    TE = Trial Engagement AI Service. Determines the lethality of a particular
+    weapon against the track with subject TN. This version of the services
+    operates standalone and does not make external calls.
     
     Parameters
     ----------
