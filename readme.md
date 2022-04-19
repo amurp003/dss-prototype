@@ -23,7 +23,7 @@ Ensure that docker compose is installed on the host machine. Navigate the to pro
 dss-ui:         http://localhost:5000  
 tm-server:      http://localhost:3200/docs  
 wa-app:         http://localhost:3201/docs  
-te-app:         http://localhost:3202/docs
+te-app:         http://localhost:3202/docs   
 opensky-int:    http://localhost:3203/docs  
 test-app:       http://localhost:5150/docs 
   

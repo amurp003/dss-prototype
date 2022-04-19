@@ -9,29 +9,29 @@ tm_url = "http://tm-server:3200/system_tracks"
 
 
 resp_a = {"TN": "1232", 
-            "Range": "25",
+            "Range": 25,
             "Type": "Type-C",
-            "OptEval": "2"}
+            "OptEval": 2}
     
 resp_b = {"TN": "3242",
-            "Range": "100", 
+            "Range": 100, 
             "Type": "N/A",
-            "OptEval": "1"}
+            "OptEval": 1}
 
 resp_c = {"TN": "2367",
-            "Range": "74", 
+            "Range": 74, 
             "Type": "N/A",
-            "OptEval": "1"}
+            "OptEval": 1}
        
 resp_d = {"TN": "2453",
-            "Range": "76",
+            "Range": 76,
             "Type": "Type-C",
-            "OptEval": "1"}
+            "OptEval": 1}
     
 resp_e = {"TN": "2453",
-            "Range": "72",
+            "Range": 72,
             "Type": "Type-B",
-            "OptEval": "1"}  
+            "OptEval": 1}  
 
 @app.get("/")
 def readme():
