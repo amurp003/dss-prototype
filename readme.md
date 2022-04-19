@@ -20,15 +20,16 @@ Ensure that docker compose is installed on the host machine. Navigate the to pro
 
 ## The following named container endpoints should now be available
 
-dss-ui:  http://localhost:5000  
-tm-server:  http://localhost:3200/docs  
-wa-app:  http://localhost:3201/docs  
-te-app:  http://localhost:3202/docs  
-test-app:  http://localhost:5150/docs 
+dss-ui:         http://localhost:5000  
+tm-server:      http://localhost:3200/docs  
+wa-app:         http://localhost:3201/docs  
+te-app:         http://localhost:3202/docs
+opensky-int:    http://localhost:3203/docs  
+test-app:       http://localhost:5150/docs 
   
-telem-jaeger: http://localhost:16686  
-grafana:  http://localhost:3000  
-notebook:  http://localhost:10000  
+telem-jaeger:   http://localhost:16686  
+grafana:        http://localhost:3000  
+notebook:       http://localhost:10000  
 
 -------------------------------------------------------------------------
 ## Manual build and run process
@@ -67,20 +68,30 @@ Go into the wa-app source code directory and build the container image for the W
         docker build --tag wa-app .
         docker images
 
-Start the Threat Evaluation service container in detached mode
+Start the Threat Evaluation Service Container in detached mode
 
         docker run --network-alias=wa-app --network=dss-net --name=wa-app --rm -d -p 3201:3201 wa-app
 
 
-### Threat Evaluation Service Application
-Go into the te-app source code directory and build the container image for the Threat Evaluation service
+### Trial Engage Service Application
+Go into the te-app source code directory and build the container image for the Trial Engage Service
 
         docker build --tag te-app .
         docker images
 
-Start the Threat Evaluation service container in detached mode
+Start the Trial Engage Service Container in detached mode
 
         docker run --network-alias=te-app --network=dss-net --name=te-app --rm -d -p 3202:3202 te-app
+
+### OpenSky Interface
+Go into the opensky-int source code directory and build the container image for the OpenSky Interface
+
+        docker build --tag opensky-int .
+        docker images
+
+Start the OpenSky Interface Container in detached mode
+
+        docker run --network-alias=opensky-int --network=dss-net --name=opensky-int --rm -d -p 3203:3203 opensky-int
 
 
 ### Jaeger
