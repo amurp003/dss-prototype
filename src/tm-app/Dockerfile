@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # https://fastapi.tiangolo.com/deployment/docker/
 
-FROM python:3.8-slim-buster
+FROM python:3.9
 
 WORKDIR /code
 

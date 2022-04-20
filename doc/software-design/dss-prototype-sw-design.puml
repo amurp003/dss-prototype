@@ -37,7 +37,10 @@ Container_Boundary(AI, "DSS Prototype"){
 
     Component(UI, "DSS UI App", "Python", "Provides user interface to decision support services.")
     Component(TM, "Track Management App", "Python", "Maintains track data for decision support services.")
-    Component(TE, "Test App", "Python", "Runs automated tests")
+    Component(TnE, "Test App", "Python", "Runs automated tests")
+    Component(TE,"Trial Eng App", "Python", "Predicts engagement success.")
+    Component(WA, "Wpn Assmt App", "Python", "Predicts useable weapons against target.")
+    Component(SI, "Sensor Int", "Python", "Provides OpenSky Interface for flight data.")
     Component(Grafana, "Grafana Visualization", "Go/Node", "Provides visualization of collected metrics; e.g. duration")
     Component(Jaeger, "Jaeger OpenTracing App", "Go", "Collects span data to capture DSS response durations")
     Component(Jupyter, "Jupyter Notebook", "Python/R", "Provides for data analysis")
@@ -45,13 +48,17 @@ Container_Boundary(AI, "DSS Prototype"){
 
 SystemDb_Ext(C2, "OpenSky API Database", "Live aircraft flight data from opensky-network.org")
 
-Rel(C2,TM, "Provides sensor track data", "HTTP/JSON")
-Rel(C2,UI, "Provides sensor track data", "HTTP/JSON")
+Rel(C2,SI, "Provides sensor track interface", "HTTP/JSON")
+Rel(SI,TM, "Provides sensor track data", "HTTP/JSON")
 Rel(tao,UI, "Uses")
-Rel(tao,TE, "Uses")
+Rel(tao,TnE, "Uses")
 Rel(TM,UI, "Provides track data", "HTTP/JSON")
-Rel(TE,UI, "Generates automated tests", "HTTP/REST")
+Rel(TnE,UI, "Generates automated tests", "HTTP/REST")
+Rel(TE,UI, "Provides predicted engagement success", "HTTP/JSON")
+Rel(WA,UI, "Predicts usable weapons against target", "HTTP/JSON")
+Rel(TM,WA, "Real-time track data", "HTTP/JSON")
 Rel(UI,Jaeger, "Reports spans", "UDP")
+Rel(SI,Jaeger, "Reports spans", "UDP")
 Rel(Jaeger,Grafana, "Provides span data", "JSON")
 Rel(Grafana,Jupyter, "Provide .csv data for analysis", "CSV")
 @enduml
@@ -77,24 +84,35 @@ System_Boundary(DSS, "DSS Prototype") {
     Deployment_Node(UI, "User Interface", "Web Browser")
     
     System_Boundary(pc, "Docker"){
-        Container(DSSUI, "dss-ui", "Python 3.8", "Provides user interface to DSS")
-        Container(TM, "tm-server", "Python 3.8", "Provides track data to DSS")
+        Container(DSSUI, "dss-ui", "Python 3.9", "Provides user interface to DSS")
+        Container(TnE, "test-app", "Python 3.9", "Provides test application for automated testing")
+ 
+        Container(TM, "tm-server", "Python 3.9", "Provides track data to DSS")
+        Container(WA, "wa-app", "Python 3.9", "Predicts useable weapons")
+        Container(TE, "te-app", "Python 3.9", "Predicts enagement success")
+        Container(TI, "opensky-int", "Python 3.9", "Provides interface to OpenSky API")
+        
         Container(NB, "notebook", "Python/R", "Provides Jupyter Notebook for analysis")
-        Container(TE, "test-app", "Python 3.8", "Provides test application for automated testing")
         Container(G, "grafana", "Go/Node", "Provides data visualization and export to CSV")
         Container(J, "telem-jaeger", "Go", "Provides collection of span data for OpenTracing")
     }
 }
 
 Rel(tao, UI, "Uses")
-Rel(C2,TM, "Provides sensor track data", "HTTP/JSON")
-Rel(C2,DSSUI, "Provides sensor track data", "HTTP/JSON")
+Rel(TnE, UI, "Provides test controls", "HTML")
+Rel(DSSUI,UI, "Renders UI", "HTML")
+
+Rel(WA, DSSUI, "Weapon/Target assessment", "HTTP/JSON")
+Rel(TE, DSSUI, "Trial engage results", "HTTP/JSON")
+Rel(TnE,DSSUI, "Generates automated tests", "HTTP/REST")
+
+Rel(TM, WA, "System track data", "HTTP/JSON")
+Rel(C2,TI, "Sensor track data", "HTTP/JSON")
+Rel(TI, TM, "Sensor track data", "HTTP/JSON")
 Rel(TM,DSSUI, "Provides track data", "HTTP/JSON")
-Rel(TE,DSSUI, "Generates automated tests", "HTTP/REST")
 Rel(DSSUI,J, "Reports spans", "UDP")
 Rel(J,G, "Provides span data", "JSON")
 Rel(G,NB, "Provide .csv data for analysis", "CSV")
-Rel(DSSUI,UI, "Renders UI", "html")
 Rel(NB,sme, "Reviews analysis results")
 Rel(G,sme, "Reviews visualization and exports data")
 Rel(J,sme, "Reviews telemetry data")
