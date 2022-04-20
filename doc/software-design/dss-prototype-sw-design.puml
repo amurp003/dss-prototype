@@ -51,7 +51,6 @@ SystemDb_Ext(C2, "OpenSky API Database", "Live aircraft flight data from opensky
 Rel(C2,SI, "Provides sensor track interface", "HTTP/JSON")
 Rel(SI,TM, "Provides sensor track data", "HTTP/JSON")
 Rel(tao,UI, "Uses")
-Rel(tao,TnE, "Uses")
 Rel(TM,UI, "Provides track data", "HTTP/JSON")
 Rel(TnE,UI, "Generates automated tests", "HTTP/REST")
 Rel(TE,UI, "Provides predicted engagement success", "HTTP/JSON")
@@ -99,7 +98,7 @@ System_Boundary(DSS, "DSS Prototype") {
 }
 
 Rel(tao, UI, "Uses")
-Rel(TnE, UI, "Provides test controls", "HTML")
+Rel(TnE, sme, "Provides test controls", "HTML")
 Rel(DSSUI,UI, "Renders UI", "HTML")
 
 Rel(WA, DSSUI, "Weapon/Target assessment", "HTTP/JSON")
