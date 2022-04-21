@@ -56,18 +56,8 @@ def ui():
 @app.route('/RIC')
 def get_ric_flights():
     with tracer.start_as_current_span("RIC Flight Data"):
-        # Latitude = N/S, Longitude = E/W
-        # 1 deg = 60 NM Lat, varies with Lon
-        # N and E are positive
 
-        #RIC 37.5407 N, 77.4360 W
-        # Richmond box
-        # lamin=37.5407 - 1 =36.5407
-        # lomin=-77.4360 - 1=-78.4360 W
-        # lamax=37.5407 + 1 = 38.5407 N
-        # lomax=-77.4360 + 1 = -76.4360 W
-
-        url_RIC = "https://opensky-network.org/api/states/all?lamin=36.5407&lomin=-78.4360&lamax=38.5407&lomax=-76.4360"
+        url_RIC = "http://tm-server:3200/track-init/RIC"
    
         api_url = url_RIC
         response = requests.get(api_url)
@@ -76,13 +66,8 @@ def get_ric_flights():
 @app.route('/IAD')
 def get_iad_flights():
     with tracer.start_as_current_span("IAD Flight Data"):
-        # Latitude = N/S, Longitude = E/W
-        # 1 deg = 60 NM Lat, varies with Lon
-        # N and E are positive
 
-        # IAD 38.9531 N, 77.4565 W 
-
-        url_IAD = "https://opensky-network.org/api/states/all?lamin=37.9537&lomin=-78.4565&lamax=39.9537&lomax=-76.4565"
+        url_IAD = "http://tm-server:3200/track-init/IAD"
 
         api_url = url_IAD
         response = requests.get(api_url)
@@ -96,6 +81,24 @@ def get_system_tracks():
         api_url = url_TM
         response = requests.get(api_url)
         return (response.json())
-    
+
+@app.route('/TE')
+def trial_engage():
+    with tracer.start_as_current_span("Trial Engage"):
+
+        url_TE = "http://te-app:3202/prod"
+        api_url = url_TE
+        response = requests.get(api_url)
+        return (response.json())
+
+@app.route('/WA')
+def weapon_assmt():
+    with tracer.start_as_current_span("Weapon Assmt"):
+
+        url_WA = "http://wa-app:3201/prod"
+        api_url = url_WA
+        response = requests.get(api_url)
+        return (response.json())
+        
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')

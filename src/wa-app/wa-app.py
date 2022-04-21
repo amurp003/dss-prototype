@@ -98,4 +98,5 @@ def wpn_assmt():
     tracks = requests.get(tm_url)
     tracks_json = tracks.json()
 
-    return resp_a, tracks_json
+    # return resp_a, tracks_json
+    return resp_a

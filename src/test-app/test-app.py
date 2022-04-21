@@ -64,6 +64,15 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
             # request track data via dss-ui
             time.sleep(request_delay)
             requests.get('http://dss-ui:5000/tracks')
+            
+            # request trail engage via dss-ui
+            time.sleep(request_delay)
+            requests.get('http://dss-ui:5000/TE')
+
+            # request wpn assessment
+            time.sleep(request_delay)
+            requests.get('http://dss-ui:5000/WA')
+            
         
             print(f"     sub-test {(serviceRqst+1)} of \
                 {num_requests} complete ...")

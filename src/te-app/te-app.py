@@ -5,7 +5,7 @@ import requests
 
 app = FastAPI()
 
-tm_url = "http://tm-server:3200/system_tracks"
+# tm_url = "http://tm-server:3200/system_tracks"
 
 
 resp_a = {"TN": "1232", 
@@ -100,7 +100,9 @@ def trial_engage():
         multiple intercept profiles.
     """
     
-    tracks = requests.get(tm_url)
-    tracks_json = tracks.json()
+    # assume that track kinematics are in the request and not request track data
+    # tracks = requests.get(tm_url)
+    # tracks_json = tracks.json()
 
-    return resp_a, tracks_json
+    # return resp_a, tracks_json
+    return resp_a
