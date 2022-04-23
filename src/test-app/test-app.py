@@ -16,8 +16,8 @@ app = FastAPI()
 tm_url = "http://tm-server:3200/system_tracks"
 
 # set default values
-num_tests = 5      # consider 10
-num_requests = 5   # number of local requests per test; e.g. 50
+num_tests = 5      # consider 50
+num_requests = 5   # number of local requests per test; e.g. 5
 request_delay = 1   # seconds to wait before sending a request
                     # to avoid collisions
                     
@@ -65,7 +65,7 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
             time.sleep(request_delay)
             requests.get('http://dss-ui:5000/tracks')
             
-            # request trail engage via dss-ui
+            # request trial engage via dss-ui
             time.sleep(request_delay)
             requests.get('http://dss-ui:5000/TE')
 
