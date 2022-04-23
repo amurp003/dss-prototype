@@ -17,7 +17,7 @@ tm_url = "http://tm-server:3200/system_tracks"
 
 # set default values
 num_tests = 5      # consider 50
-num_requests = 5   # number of local requests per test; e.g. 5
+num_requests = 5   # number of local requests per test; e.g. 10
 request_delay = 1   # seconds to wait before sending a request
                     # to avoid collisions
                     
