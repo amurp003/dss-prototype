@@ -11,6 +11,51 @@ import time
 from datetime import datetime
 from fastapi import FastAPI
 
+# opentelemetry libraries
+from opentelemetry import trace
+
+# bring in automatic tracing of FastAPI operations and Requests
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+from opentelemetry.instrumentation.requests import RequestsInstrumentor
+
+# export traces to Jaeger
+# https://opentelemetry-python.readthedocs.io/en/latest/exporter/jaeger/jaeger.html
+from opentelemetry.exporter.jaeger.thrift import JaegerExporter
+from opentelemetry.sdk.resources import SERVICE_NAME, Resource
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+
+# add opentelemetry propogator code
+from opentelemetry.propagate import set_global_textmap
+from opentelemetry.propagators.b3 import B3Format
+
+set_global_textmap(B3Format())
+
+trace.set_tracer_provider(
+   TracerProvider(
+       resource=Resource.create({SERVICE_NAME: "dss-automated-test"})
+   )
+)
+
+# note that agent port is different from the webconsole port 16686
+# localhost within a container refers to the container not the host running the container
+# defined a container network and a alias for the telemetry container; e.g.
+# docker run --network-alias=telem-jaeger --network=dss-net
+# will need localhost (or other known endpoint) to test outside of the container
+
+jaeger_exporter = JaegerExporter(
+#    agent_host_name="localhost",
+   agent_host_name="telem-jaeger",
+   agent_port=6831,
+)
+
+trace.get_tracer_provider().add_span_processor(
+   BatchSpanProcessor(jaeger_exporter)
+)
+
+tracer = trace.get_tracer(__name__)
+
+
 app = FastAPI()
 
 tm_url = "http://tm-server:3200/system_tracks"
@@ -50,34 +95,41 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
     start_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     for test in range(0, num_tests):
-
-        # request IAD flight data
-        time.sleep(request_delay)
-        requests.get('http://dss-ui:5000/RIC')
-    
-        # request RIC flight data
-        time.sleep(request_delay)
-        requests.get('http://dss-ui:5000/IAD')
-    
-        for serviceRqst in range(0, num_requests):
-
-            # request track data via dss-ui
-            time.sleep(request_delay)
-            requests.get('http://dss-ui:5000/tracks')
+        
+        with tracer.start_as_current_span("start test"):
             
-            # request trial engage via dss-ui
+            # request IAD flight data
             time.sleep(request_delay)
-            requests.get('http://dss-ui:5000/TE')
+            with tracer.start_as_current_span("test: RIC"):
+                requests.get('http://dss-ui:5000/RIC')
+    
+            # request RIC flight data
+            time.sleep(request_delay)
+            with tracer.start_as_current_span("test: IAD"):
+                requests.get('http://dss-ui:5000/IAD')
+                        
+            for serviceRqst in range(0, num_requests):
 
-            # request wpn assessment
-            time.sleep(request_delay)
-            requests.get('http://dss-ui:5000/WA')
+                # request track data via dss-ui
+                time.sleep(request_delay)
+                with tracer.start_as_current_span("test: tracks"):
+                    requests.get('http://dss-ui:5000/tracks')
+            
+                # request trial engage via dss-ui
+                time.sleep(request_delay)
+                with tracer.start_as_current_span("test: TE"):
+                    requests.get('http://dss-ui:5000/TE')
+
+                # request wpn assessment
+                time.sleep(request_delay)
+                with tracer.start_as_current_span("test: WA"):
+                    requests.get('http://dss-ui:5000/WA')
             
         
-            print(f"     sub-test {(serviceRqst+1)} of \
-                {num_requests} complete ...")
+                print(f"     sub-test {(serviceRqst+1)} of \
+                    {num_requests} complete ...")
         
-        print(f"Test {(test+1)}  of {num_tests} complete ...")
+            print(f"Test {(test+1)}  of {num_tests} complete ...")
 
     end_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
