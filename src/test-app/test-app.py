@@ -26,10 +26,10 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
 # add opentelemetry propogator code
-from opentelemetry.propagate import set_global_textmap
-from opentelemetry.propagators.b3 import B3Format
+# from opentelemetry.propagate import set_global_textmap
+# from opentelemetry.propagators.b3 import B3Format
 
-set_global_textmap(B3Format())
+# set_global_textmap(B3Format())
 
 trace.set_tracer_provider(
    TracerProvider(
@@ -97,19 +97,19 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
     for test in range(0, num_tests):
         
         with tracer.start_as_current_span("start test"):
-            
-            # request IAD flight data
-            time.sleep(request_delay)
-            with tracer.start_as_current_span("test: RIC"):
-                requests.get('http://dss-ui:5000/RIC')
-    
-            # request RIC flight data
-            time.sleep(request_delay)
-            with tracer.start_as_current_span("test: IAD"):
-                requests.get('http://dss-ui:5000/IAD')
                         
             for serviceRqst in range(0, num_requests):
 
+                # request IAD flight data
+                time.sleep(request_delay)
+                with tracer.start_as_current_span("test: RIC"):
+                    requests.get('http://dss-ui:5000/RIC')
+    
+                # request RIC flight data
+                time.sleep(request_delay)
+                with tracer.start_as_current_span("test: IAD"):
+                    requests.get('http://dss-ui:5000/IAD')                
+                
                 # request track data via dss-ui
                 time.sleep(request_delay)
                 with tracer.start_as_current_span("test: tracks"):
@@ -125,7 +125,6 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
                 with tracer.start_as_current_span("test: WA"):
                     requests.get('http://dss-ui:5000/WA')
             
-        
                 print(f"     sub-test {(serviceRqst+1)} of \
                     {num_requests} complete ...")
         
