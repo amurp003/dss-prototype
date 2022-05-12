@@ -54,6 +54,7 @@ trace.get_tracer_provider().add_span_processor(
 )
 
 tracer = trace.get_tracer(__name__)
+current_span = trace.get_current_span()
 
 
 app = FastAPI()
@@ -96,33 +97,33 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
 
     for test in range(0, num_tests):
         
-        with tracer.start_as_current_span("start test"):
+        with tracer.start_as_current_span("start test") as span:
                         
             for serviceRqst in range(0, num_requests):
 
                 # request IAD flight data
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: RIC"):
+                with tracer.start_as_current_span("test: RIC") as child:
                     requests.get('http://dss-ui:5000/RIC')
     
                 # request RIC flight data
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: IAD"):
+                with tracer.start_as_current_span("test: IAD")as child:
                     requests.get('http://dss-ui:5000/IAD')                
                 
                 # request track data via dss-ui
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: tracks"):
+                with tracer.start_as_current_span("test: tracks") as child:
                     requests.get('http://dss-ui:5000/tracks')
             
                 # request trial engage via dss-ui
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: TE"):
+                with tracer.start_as_current_span("test: TE")as child:
                     requests.get('http://dss-ui:5000/TE')
 
                 # request wpn assessment
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: WA"):
+                with tracer.start_as_current_span("test: WA") as child:
                     requests.get('http://dss-ui:5000/WA')
             
                 print(f"     sub-test {(serviceRqst+1)} of \

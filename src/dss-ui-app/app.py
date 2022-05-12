@@ -47,15 +47,21 @@ FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 
 tracer = trace.get_tracer(__name__)
+current_span = trace.get_current_span()
+ctx = trace.get_current_span().get_span_context()
+link_from_current = trace.Link(ctx)
+
 
 @app.route('/')
 def ui():
-    with tracer.start_as_current_span("rendermap"):
+    with tracer.start_as_current_span("rendermap",
+                                      links=[link_from_current]) as new_span:
         return render_template('leaflet-map-ui.html')
 
 @app.route('/RIC')
 def get_ric_flights():
-    with tracer.start_as_current_span("RIC Flight Data"):
+    with tracer.start_as_current_span("RIC Flight Data",
+                                      links=[link_from_current]) as new_span:
 
         url_RIC = "http://tm-server:3200/track-init/RIC"
    
@@ -65,7 +71,8 @@ def get_ric_flights():
 
 @app.route('/IAD')
 def get_iad_flights():
-    with tracer.start_as_current_span("IAD Flight Data"):
+    with tracer.start_as_current_span("IAD Flight Data",
+                                      links=[link_from_current]) as new_span:
 
         url_IAD = "http://tm-server:3200/track-init/IAD"
 
@@ -75,7 +82,8 @@ def get_iad_flights():
 
 @app.route('/tracks')
 def get_system_tracks():
-    with tracer.start_as_current_span("TM Track Update"):
+    with tracer.start_as_current_span("TM Track Update",
+                                      links=[link_from_current]) as new_span:
 
         url_TM = "http://tm-server:3200/system_tracks"
         api_url = url_TM
@@ -84,7 +92,8 @@ def get_system_tracks():
 
 @app.route('/TE')
 def trial_engage():
-    with tracer.start_as_current_span("Trial Engage"):
+    with tracer.start_as_current_span("Trial Engage",
+                                      links=[link_from_current]) as new_span:
 
         url_TE = "http://te-app:3202/prod"
         api_url = url_TE
@@ -93,7 +102,8 @@ def trial_engage():
 
 @app.route('/WA')
 def weapon_assmt():
-    with tracer.start_as_current_span("Weapon Assmt"):
+    with tracer.start_as_current_span("Weapon Assmt",
+                                      links=[link_from_current]) as new_span:
 
         url_WA = "http://wa-app:3201/prod"
         api_url = url_WA

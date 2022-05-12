@@ -43,6 +43,9 @@ trace.get_tracer_provider().add_span_processor(
 )
 
 tracer = trace.get_tracer(__name__)
+current_span = trace.get_current_span()
+ctx = trace.get_current_span().get_span_context()
+link_from_current = trace.Link(ctx)
 
 app = FastAPI()
 
@@ -361,7 +364,8 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
     
     if airport == "IAD":
         
-        with tracer.start_as_current_span("IAD Source Tracks"):
+        with tracer.start_as_current_span("IAD Source Tracks",
+                                          links=[link_from_current]) as new_span:
 
             url_IAD = "http://opensky-int:3203/flights/IAD"
             
@@ -370,7 +374,8 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
         
     elif airport == "RIC":
     
-        with tracer.start_as_current_span("RIC Source Tracks"):
+        with tracer.start_as_current_span("RIC Source Tracks",
+                                          links=[link_from_current]) as new_span:
         
             url_RIC = "http://opensky-int:3203/flights/RIC"
             
