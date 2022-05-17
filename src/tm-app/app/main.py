@@ -47,7 +47,10 @@ current_span = trace.get_current_span()
 ctx = trace.get_current_span().get_span_context()
 link_from_current = trace.Link(ctx)
 
-app = FastAPI()
+app = FastAPI(
+    title="tm-app",
+    description="Track Management Application",
+)
 
 # set initial track data using OpenSky API definitions
 # https://openskynetwork.github.io/opensky-api/rest.html

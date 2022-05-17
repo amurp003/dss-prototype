@@ -3,7 +3,10 @@ from typing import Optional
 from fastapi import FastAPI
 import requests
 
-app = FastAPI()
+app = FastAPI(
+    title="wa-app",
+    description="Weapon Assessment Application",
+)
 
 tm_url = "http://tm-server:3200/system_tracks"
 

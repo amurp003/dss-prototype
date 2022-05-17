@@ -57,7 +57,10 @@ tracer = trace.get_tracer(__name__)
 current_span = trace.get_current_span()
 
 
-app = FastAPI()
+app = FastAPI(
+    title="test-app",
+    description="DSS automated test application",
+)
 
 tm_url = "http://tm-server:3200/system_tracks"
 
