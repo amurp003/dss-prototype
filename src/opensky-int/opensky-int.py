@@ -50,7 +50,10 @@ trace.get_tracer_provider().add_span_processor(
     BatchSpanProcessor(jaeger_exporter)
 )
 
-app = FastAPI()
+app = FastAPI(
+    title="opensky-int",
+    description="Interface to Opensky for Flight data", 
+)
 
 # Capture FastAPI operations
 FastAPIInstrumentor.instrument_app(app)
