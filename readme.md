@@ -18,7 +18,7 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 Ensure that docker compose is installed on the host machine. Navigate the to project main directory and run Docker Compose
 
         cd project-directory
-        docker compose up -d
+        docker-compose up -d
 
 ## The following named container endpoints should now be available
 
