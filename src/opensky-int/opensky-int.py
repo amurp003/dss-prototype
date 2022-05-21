@@ -52,7 +52,7 @@ trace.get_tracer_provider().add_span_processor(
 
 app = FastAPI(
     title="opensky-int",
-    description="Interface to Opensky for Flight data", 
+    description="Interface to Opensky for flight data", 
 )
 
 # Capture FastAPI operations
