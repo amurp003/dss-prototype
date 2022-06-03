@@ -3,7 +3,7 @@
 ' https://github.com/plantuml-stdlib/C4-PlantUML
 
 @startuml Context Diagram
-skinparam dpi 300
+skinparam dpi 150
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 ' uncomment the following line and comment the first to use locally
 ' !include C4_Context.puml
@@ -22,7 +22,7 @@ Rel(C2,AI, "Provides Aircraft Flight Data")
 @enduml
 
 @startuml Component Diagram v1
-skinparam dpi 300
+skinparam dpi 150
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 ' uncomment the following line and comment the first to use locally
 ' !include C4_Component.puml
@@ -64,7 +64,7 @@ Rel(Grafana,Jupyter, "Provide .csv data for analysis", "CSV")
 
 
 @startuml Deployment Diagram
-skinparam dpi 200
+skinparam dpi 150
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
 ' uncomment the following line and comment the first to use locally
 ' !include C4_Deployment.puml
