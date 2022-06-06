@@ -83,6 +83,10 @@ def index():
 
 @app.get("/test-tm/")
 def tm_test():
+    """
+    This endpoint merely requests track data from the tm-app and outputs
+    the response.
+    """
     
     tracks = requests.get(tm_url)
     tracks_json = tracks.json()
@@ -92,7 +96,46 @@ def tm_test():
 @app.get("/test/")
 def run_tests(num_tests: int = 5, num_requests: int = 5,
                     request_delay: int = 1):
+    """
+    This endpoint runs a series of automated tests based upon user
+    supplied number of tests, number of requests, and a request
+    delay.
     
+    Parameters
+    ----------
+    num_tests (int) :   
+       Number of tests to run.
+    
+    num_requests (int) :
+        Number of request cycles within each test. Each cycle consists of:  
+            *1. Request Dulles (IAD) flight data*  
+            *2. Request Richmond (RIC) flight data*  
+            *3. Request local tracks*  
+            *4. Request trial engagement*  
+            *5. Request weapon assessment*   
+    
+    request_delay (int) :
+        Delay between request in seconds to avoid overloading internal
+        and external servers.
+    
+    Returns
+    -------
+    num_tests (str) :  
+        Converted string. See parameters above.
+        
+    num_requests (str) :  
+        Converted string. See parameters above.
+        
+    request_delay (str) :  
+        Converted string. See parameters above.
+        
+    start_time (str) :  
+        Test start time in GMT; e.g. "2022-06-06 23:21:26"
+    
+    end_time (str) :  
+        Test end time in GMT; e.g. "2022-06-06 23:21:59"
+    """
+   
     print ("Starting tests ...")
 
     # time in UTC
