@@ -8,11 +8,11 @@ The United States Department of Defense (DoD) is rapidly working with DoD Servic
 
 2. Clone the repository from GitHub into a project directory; e.g. dss-prototype
 
-        #### Fresh Install
+#### Fresh Install
 
         git clone https://github.com/amurp003/dss-prototype.git
 
-        #### Re-install with Discard Changes
+#### Re-install with Discard Changes
 
         cd project-directory
         git status
