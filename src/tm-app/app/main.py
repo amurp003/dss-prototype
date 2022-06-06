@@ -22,7 +22,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
 trace.set_tracer_provider(
     TracerProvider(
-        resource=Resource.create({SERVICE_NAME: "opensky-interface"})
+        resource=Resource.create({SERVICE_NAME: "tm-app"})
     )
 )
 
@@ -47,10 +47,10 @@ current_span = trace.get_current_span()
 ctx = trace.get_current_span().get_span_context()
 link_from_current = trace.Link(ctx)
 
-extracted_context = tracer.extract(
-    format=opentracing.HTTP_HEADER_FORMAT,
-    carrier=request.headers
-)
+# extracted_context = tracer.extract(
+#     format=opentracing.HTTP_HEADER_FORMAT,
+#     carrier=request.headers
+# )
 
 app = FastAPI(
     title="tm-app",
@@ -372,16 +372,16 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
     
     if airport == "IAD":
         
-        if extracted_context is None:
-            span = tracer.start_span(operation_name="GET IAD Source Tracks")
-        else:
-            span = tracer.start_span(operation_name="GET IAD Source Tracks", child_of=extracted_context)
+        # if extracted_context is None:
+        #     span = tracer.start_span(operation_name="GET IAD Source Tracks")
+        # else:
+        #     span = tracer.start_span(operation_name="GET IAD Source Tracks", child_of=extracted_context)
             
             
-        # with tracer.start_as_current_span("IAD Source Tracks",
-        #                                   links=[link_from_current]) as new_span:
+        with tracer.start_as_current_span("IAD Source Tracks",
+                                          links=[link_from_current]) as new_span:
 
-        #     url_IAD = "http://opensky-int:3203/flights/IAD"
+            url_IAD = "http://opensky-int:3203/flights/IAD"
             
             api_url = url_IAD
             flights = requests.get(api_url).json()
@@ -389,13 +389,13 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
     elif airport == "RIC":
     
 
-        if extracted_context is None:
-            span = tracer.start_span(operation_name="GET IAD Source Tracks")
-        else:
-            span = tracer.start_span(operation_name="GET IAD Source Tracks", child_of=extracted_context)
+        # if extracted_context is None:
+        #     span = tracer.start_span(operation_name="GET IAD Source Tracks")
+        # else:
+        #     span = tracer.start_span(operation_name="GET IAD Source Tracks", child_of=extracted_context)
             
-        # with tracer.start_as_current_span("RIC Source Tracks",
-        #                                   links=[link_from_current]) as new_span:
+        with tracer.start_as_current_span("RIC Source Tracks",
+                                          links=[link_from_current]) as new_span:
         
             url_RIC = "http://opensky-int:3203/flights/RIC"
             
