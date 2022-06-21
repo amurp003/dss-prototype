@@ -33,7 +33,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
 trace.set_tracer_provider(
    TracerProvider(
-       resource=Resource.create({SERVICE_NAME: "dss-automated-test"})
+       resource=Resource.create({SERVICE_NAME: "DSS-test-app"})
    )
 )
 
@@ -143,39 +143,42 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
 
     for test in range(0, num_tests):
         
-        with tracer.start_as_current_span("start test") as span:
+        with tracer.start_as_current_span("start-test") as span:
+            
+            current_span = trace.get_current_span()
                         
             for serviceRqst in range(0, num_requests):
 
                 # request IAD flight data
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: RIC") as child:
+                with tracer.start_as_current_span("RIC") as child:
                     requests.get('http://dss-ui:5000/RIC')
+                    current_span.set_attribute("operation.value", 1)
     
                 # request RIC flight data
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: IAD")as child:
+                with tracer.start_as_current_span("IAD")as child:
                     requests.get('http://dss-ui:5000/IAD')                
                 
                 # request track data via dss-ui
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: tracks") as child:
+                with tracer.start_as_current_span("tracks") as child:
                     requests.get('http://dss-ui:5000/tracks')
             
                 # request trial engage via dss-ui
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: TE")as child:
+                with tracer.start_as_current_span("Trial-Eng")as child:
                     requests.get('http://dss-ui:5000/TE')
 
                 # request wpn assessment
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("test: WA") as child:
+                with tracer.start_as_current_span("Wpn-Assmt") as child:
                     requests.get('http://dss-ui:5000/WA')
             
-                print(f"     sub-test {(serviceRqst+1)} of \
-                    {num_requests} complete ...")
+            #     print(f"     sub-test {(serviceRqst+1)} of \
+            #         {num_requests} complete ...")
         
-            print(f"Test {(test+1)}  of {num_tests} complete ...")
+            # print(f"Test {(test+1)}  of {num_tests} complete ...")
 
     end_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 

@@ -1,9 +1,21 @@
+import requests
 from typing import Optional
 
-from fastapi import FastAPI
-import requests
+from opentelemetry import trace # do we want this
+# from fastapi import FastAPI
+tracer = trace.get_tracer(__name__) # do we want this
 
-app = FastAPI(
+import fastapi
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+
+from opentelemetry.exporter.jaeger.thrift import JaegerExporter
+jaeger_exporter = JaegerExporter(
+#    agent_host_name="localhost",
+   agent_host_name="telem-jaeger",
+   agent_port=6831,
+)
+
+app = fastapi.FastAPI(
     title="te-app",
     description="Trial Engage Application",
 )
@@ -70,8 +82,9 @@ def trial_engage():
         provide an indication of processing complexity. Multiple TE options indicates
         multiple intercept profiles.
     """
-    
-    return resp_a
+    with tracer.start_as_current_span("trial_eng") as trial_engage_span:
+        trial_engage_span.set_attribute("response", resp_a)
+        return resp_a
 
 @app.get("/prod/")
 def trial_engage():
@@ -108,4 +121,9 @@ def trial_engage():
     # tracks_json = tracks.json()
 
     # return resp_a, tracks_json
-    return resp_a
+    with tracer.start_as_current_span("trial_eng") as trial_engage_span:
+        trial_engage_span.set_attribute("response", resp_a)
+        return resp_a
+    
+FastAPIInstrumentor.instrument_app(app)
+    
