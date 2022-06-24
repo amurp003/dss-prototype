@@ -10,6 +10,7 @@ import requests
 import time
 from datetime import datetime
 from fastapi import FastAPI
+import psutil
 
 # opentelemetry libraries
 from opentelemetry import trace
@@ -54,7 +55,7 @@ trace.get_tracer_provider().add_span_processor(
 )
 
 tracer = trace.get_tracer(__name__)
-current_span = trace.get_current_span()
+span = trace.get_current_span()
 
 
 app = FastAPI(
@@ -145,7 +146,21 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
         
         with tracer.start_as_current_span("start-test") as span:
             
-            current_span = trace.get_current_span()
+            span = trace.get_current_span()
+            
+            # log compute metrics
+            loadavg = psutil.getloadavg()
+            numcpu = psutil.cpu_count()
+            net_io_count = psutil.net_io_counters()
+            
+            span.set_attribute("cpu.load.avg", loadavg)
+            span.set_attribute("num.cpu", numcpu)
+            span.set_attribute("net.io.count", net_io_count)
+            span.add_event( "start test", {
+                "test.number": test,
+                "num.tests": num_tests,
+                "request.delay": request_delay,
+            })
                         
             for serviceRqst in range(0, num_requests):
 
@@ -153,7 +168,6 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
                 time.sleep(request_delay)
                 with tracer.start_as_current_span("RIC") as child:
                     requests.get('http://dss-ui:5000/RIC')
-                    current_span.set_attribute("operation.value", 1)
     
                 # request RIC flight data
                 time.sleep(request_delay)
