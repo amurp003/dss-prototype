@@ -1,10 +1,4 @@
 # this app uses FastAPI to ensure OpenAPI and JSON compliant interfaces
-# https://fastapi.tiangolo.com
-# default port is 3200
-
-# https://www.geeksforgeeks.org/http-request-methods-python-requests/
-# https://docs.python-requests.org/en/latest/api/
-# pip3 install requests
 
 import requests
 import time
@@ -20,29 +14,17 @@ from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 
 # export traces to Jaeger
-# https://opentelemetry-python.readthedocs.io/en/latest/exporter/jaeger/jaeger.html
 from opentelemetry.exporter.jaeger.thrift import JaegerExporter
 from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
-# add opentelemetry propogator code
-# from opentelemetry.propagate import set_global_textmap
-# from opentelemetry.propagators.b3 import B3Format
-
-# set_global_textmap(B3Format())
 
 trace.set_tracer_provider(
    TracerProvider(
        resource=Resource.create({SERVICE_NAME: "DSS-test-app"})
    )
 )
-
-# note that agent port is different from the webconsole port 16686
-# localhost within a container refers to the container not the host running the container
-# defined a container network and a alias for the telemetry container; e.g.
-# docker run --network-alias=telem-jaeger --network=dss-net
-# will need localhost (or other known endpoint) to test outside of the container
 
 jaeger_exporter = JaegerExporter(
 #    agent_host_name="localhost",
@@ -164,30 +146,73 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
                         
             for serviceRqst in range(0, num_requests):
 
-                # request IAD flight data
-                time.sleep(request_delay)
-                with tracer.start_as_current_span("RIC") as child:
-                    requests.get('http://dss-ui:5000/RIC')
-    
                 # request RIC flight data
                 time.sleep(request_delay)
+                with tracer.start_as_current_span("RIC") as child:
+                    
+                    span = trace.get_current_span()
+                    
+                    net_io_count = psutil.net_io_counters()
+                    
+                    requests.get('http://dss-ui:5000/RIC')
+                    
+                    addio = psutil.net_io_counters()
+                    span.set_attribute("start.io.count", net_io_count)
+                    span.set_attribute("end.io.count", addio)
+    
+                # request IAD flight data
+                time.sleep(request_delay)
                 with tracer.start_as_current_span("IAD")as child:
-                    requests.get('http://dss-ui:5000/IAD')                
+                    
+                    span = trace.get_current_span()
+                    net_io_count = psutil.net_io_counters()
+                    
+                    requests.get('http://dss-ui:5000/IAD') 
+                    
+                    addio = psutil.net_io_counters()
+                    span.set_attribute("start.io.count", net_io_count)
+                    span.set_attribute("end.io.count", addio)                                   
                 
                 # request track data via dss-ui
                 time.sleep(request_delay)
                 with tracer.start_as_current_span("tracks") as child:
+                    
+                    span = trace.get_current_span()
+                    net_io_count = psutil.net_io_counters()
+                                    
                     requests.get('http://dss-ui:5000/tracks')
+                    
+                    addio = psutil.net_io_counters()
+                    span.set_attribute("start.io.count", net_io_count)
+                    span.set_attribute("end.io.count", addio) 
             
                 # request trial engage via dss-ui
                 time.sleep(request_delay)
                 with tracer.start_as_current_span("Trial-Eng")as child:
+                    
+                    span = trace.get_current_span()
+                    net_io_count = psutil.net_io_counters()
+                
                     requests.get('http://dss-ui:5000/TE')
+                    
+                    addio = psutil.net_io_counters()
+                    span.set_attribute("start.io.count", net_io_count)
+                    span.set_attribute("end.io.count", addio) 
 
                 # request wpn assessment
                 time.sleep(request_delay)
                 with tracer.start_as_current_span("Wpn-Assmt") as child:
+                    
+                    span = trace.get_current_span()
+                    net_io_count = psutil.net_io_counters()
+                    
                     requests.get('http://dss-ui:5000/WA')
+                    
+                    addio = psutil.net_io_counters()
+                    span.set_attribute("start.io.count", net_io_count)
+                    span.set_attribute("end.io.count", addio)
+                    
+            span.end()
             
             #     print(f"     sub-test {(serviceRqst+1)} of \
             #         {num_requests} complete ...")

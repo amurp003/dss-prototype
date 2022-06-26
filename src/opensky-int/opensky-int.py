@@ -59,7 +59,6 @@ app = FastAPI(
 FastAPIInstrumentor.instrument_app(app)
 RequestsInstrumentor().instrument()
 
-tracer = trace.get_tracer(__name__)
 
 @app.get("/")
 def index():
@@ -154,9 +153,15 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
         16 - Origin of this state’s position: 0 = ADS-B, 1 = ASTERIX, 2 = MLAT
     """
     
+    tracer = trace.get_tracer(__name__)
+    span = trace.get_current_span()
+    
+    net_io_count = psutil.net_io_counters()
+    span.set_attribute("net.io.count", net_io_count)
+    
     if airport == "IAD":
         
-        with tracer.start_as_current_span("IAD Flight Data"):
+        with tracer.start_as_current_span("IAD Flight Data") as child:
             # Latitude = N/S, Longitude = E/W
             # 1 deg = 60 NM Lat, varies with Lon
             # N and E are positive
@@ -167,10 +172,22 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
 
             api_url = url_IAD
             flights = requests.get(api_url).json()
+            
+            
+            span = trace.get_current_span()
+                    
+            net_io_count = psutil.net_io_counters()
+                    
+            requests.get('http://dss-ui:5000/RIC')
+                    
+            addio = psutil.net_io_counters()
+            span.set_attribute("start.io.count", net_io_count)
+            span.set_attribute("end.io.count", addio)
+
         
     elif airport == "RIC":
     
-        with tracer.start_as_current_span("RIC Flight Data"):
+        with tracer.start_as_current_span("RIC Flight Data") as child:
             # Latitude = N/S, Longitude = E/W
             # 1 deg = 60 NM Lat, varies with Lon
             # N and E are positive
