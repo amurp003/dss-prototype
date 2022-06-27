@@ -1,21 +1,39 @@
-import requests
-from typing import Optional
+from fastapi import FastAPI
 
-from opentelemetry import trace # do we want this
-# from fastapi import FastAPI
-tracer = trace.get_tracer(__name__) # do we want this
+# opentelemetry libraries
+from opentelemetry import trace
 
-import fastapi
+# bring in automatic tracing of FastAPI operations and Requests
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+from opentelemetry.instrumentation.requests import RequestsInstrumentor
 
+# export traces to Jaeger
 from opentelemetry.exporter.jaeger.thrift import JaegerExporter
+from opentelemetry.sdk.resources import SERVICE_NAME, Resource
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+
+trace.set_tracer_provider(
+   TracerProvider(
+       resource=Resource.create({SERVICE_NAME: "trial-engage-app"})
+   )
+)
+
 jaeger_exporter = JaegerExporter(
 #    agent_host_name="localhost",
    agent_host_name="telem-jaeger",
    agent_port=6831,
 )
 
-app = fastapi.FastAPI(
+trace.get_tracer_provider().add_span_processor(
+   BatchSpanProcessor(jaeger_exporter)
+)
+
+tracer = trace.get_tracer(__name__)
+span = trace.get_current_span()
+
+
+app = FastAPI(
     title="te-app",
     description="Trial Engage Application",
 )
@@ -82,8 +100,8 @@ def trial_engage():
         provide an indication of processing complexity. Multiple TE options indicates
         multiple intercept profiles.
     """
-    with tracer.start_as_current_span("trial_eng") as trial_engage_span:
-        trial_engage_span.set_attribute("response", resp_a)
+    with tracer.start_as_current_span("trial_eng") as span:
+        span.set_attribute("response", resp_a)
         return resp_a
 
 @app.get("/prod/")
@@ -121,8 +139,8 @@ def trial_engage():
     # tracks_json = tracks.json()
 
     # return resp_a, tracks_json
-    with tracer.start_as_current_span("trial_eng") as trial_engage_span:
-        trial_engage_span.set_attribute("response", resp_a)
+    with tracer.start_as_current_span("trial_eng") as span:
+        span.set_attribute("response", resp_a)
         return resp_a
     
 FastAPIInstrumentor.instrument_app(app)

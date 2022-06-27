@@ -8,6 +8,7 @@
 import requests # https://realpython.com/api-integration-in-python/
 import json
 import pandas as pd
+import psutil
 from fastapi import FastAPI
 
 # set initial track data using OpenSky API definitions
@@ -18,7 +19,6 @@ from opentelemetry import trace
 
 # bring in automatic tracing of FastAPI operations
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
-
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 
 # export traces to Jaeger
@@ -49,6 +49,9 @@ jaeger_exporter = JaegerExporter(
 trace.get_tracer_provider().add_span_processor(
     BatchSpanProcessor(jaeger_exporter)
 )
+
+tracer = trace.get_tracer(__name__)
+span = trace.get_current_span()
 
 app = FastAPI(
     title="opensky-int",
@@ -153,9 +156,6 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
         16 - Origin of this state’s position: 0 = ADS-B, 1 = ASTERIX, 2 = MLAT
     """
     
-    tracer = trace.get_tracer(__name__)
-    span = trace.get_current_span()
-    
     net_io_count = psutil.net_io_counters()
     span.set_attribute("net.io.count", net_io_count)
     
@@ -174,15 +174,15 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
             flights = requests.get(api_url).json()
             
             
-            span = trace.get_current_span()
+            # span = trace.get_current_span()
                     
             net_io_count = psutil.net_io_counters()
                     
-            requests.get('http://dss-ui:5000/RIC')
+            # requests.get('http://dss-ui:5000/RIC')
                     
             addio = psutil.net_io_counters()
-            span.set_attribute("start.io.count", net_io_count)
-            span.set_attribute("end.io.count", addio)
+            child.set_attribute("start.io.count", net_io_count)
+            child.set_attribute("end.io.count", addio)
 
         
     elif airport == "RIC":
@@ -205,9 +205,9 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
             flights = requests.get(api_url).json()
             
    # load pandas dataframe
-    col_name =['icao24','callsign','origin_country','time_position','last_contact','longitude','latitude',
-           'baro_altitude','on_ground','velocity','true_track','vertical_rate','sensors','geo_altitude',
-           'squawk','spi','position_source']
+    # col_name =['icao24','callsign','origin_country','time_position','last_contact','longitude','latitude',
+    #        'baro_altitude','on_ground','velocity','true_track','vertical_rate','sensors','geo_altitude',
+    #        'squawk','spi','position_source']
     
     # flight_df=pd.DataFrame(flights['states'])
     # flight_df=flight_df.tolist()

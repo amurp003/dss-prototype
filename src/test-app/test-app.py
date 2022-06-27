@@ -188,7 +188,7 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
             
                 # request trial engage via dss-ui
                 time.sleep(request_delay)
-                with tracer.start_as_current_span("Trial-Eng")as child:
+                with tracer.start_as_current_span("Trial-Eng") as child:
                     
                     span = trace.get_current_span()
                     net_io_count = psutil.net_io_counters()
