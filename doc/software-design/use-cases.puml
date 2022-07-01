@@ -1,0 +1,31 @@
+' Use Option/Alt-D to Preview Diagrams
+
+@startuml
+skinparam actorStyle awesome
+
+actor TAO
+
+rectangle DSS {
+    
+    (Review Predicted Weapon Effectiveness) as (UC1) <<Trail Engage>>
+    (Review Tactical Information) as (UC2)
+    (Review Weapon Recommendations) as (UC3) <<Weapon Assessment>>
+    
+    TAO -- UC1
+    TAO -- UC2
+    TAO -- UC3
+
+    (Manage Tactical Information) as (UC4)
+    (Manage Threat Data) as (UC5)
+    (Manage Tracks) as (UC6)
+    (Manage System Status) as (UC7)
+
+    UC4 -- UC5
+    UC4 -- UC6
+    UC4 -- UC7
+
+    UC2 ..> UC4
+    UC3 ..> UC2
+}
+
+@enduml
