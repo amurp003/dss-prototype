@@ -139,7 +139,7 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
             span.set_attribute("num.cpu", numcpu)
             span.set_attribute("net.io.count", net_io_count)
             span.add_event( "start test", {
-                "test.number": test,
+                "test.number": (test + 1),
                 "num.tests": num_tests,
                 "request.delay": request_delay,
             })

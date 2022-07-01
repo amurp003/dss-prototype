@@ -161,7 +161,8 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
     
     if airport == "IAD":
         
-        with tracer.start_as_current_span("IAD Flight Data") as child:
+        with tracer.start_as_current_span("IAD Flight Data"):
+            trace.get_current_span()
             # Latitude = N/S, Longitude = E/W
             # 1 deg = 60 NM Lat, varies with Lon
             # N and E are positive
@@ -173,21 +174,17 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
             api_url = url_IAD
             flights = requests.get(api_url).json()
             
-            
-            # span = trace.get_current_span()
-                    
+            # add metrics to trace
             net_io_count = psutil.net_io_counters()
-                    
-            # requests.get('http://dss-ui:5000/RIC')
-                    
             addio = psutil.net_io_counters()
-            child.set_attribute("start.io.count", net_io_count)
-            child.set_attribute("end.io.count", addio)
+            span.set_attribute("start.io.count", net_io_count)
+            span.set_attribute("end.io.count", addio)
 
         
     elif airport == "RIC":
     
-        with tracer.start_as_current_span("RIC Flight Data") as child:
+        with tracer.start_as_current_span("RIC Flight Data"):
+            trace.get_current_span()
             # Latitude = N/S, Longitude = E/W
             # 1 deg = 60 NM Lat, varies with Lon
             # N and E are positive
@@ -203,23 +200,13 @@ def get_flights(airport: str = {'IAD', 'RIC'}):
    
             api_url = url_RIC
             flights = requests.get(api_url).json()
-            
-   # load pandas dataframe
-    # col_name =['icao24','callsign','origin_country','time_position','last_contact','longitude','latitude',
-    #        'baro_altitude','on_ground','velocity','true_track','vertical_rate','sensors','geo_altitude',
-    #        'squawk','spi','position_source']
-    
-    # flight_df=pd.DataFrame(flights['states'])
-    # flight_df=flight_df.tolist()
-    # flight_df=flight_df.loc[:,0:16]
-    # flight_df.columns=col_name
-    # flight_df=flight_df.fillna('No Data') # replace NaN
-    # flight_df_json=flight_df.to_json(orient="records")
-    # parsed = json.loads(flight_df_json)
-    # flight_df_pandas = flight_df
-    # flight_json = json.dumps(parsed, indent=4)
 
-    # return flight_df_pandas, flight_json
+            # add metrics to trace
+            net_io_count = psutil.net_io_counters()
+            addio = psutil.net_io_counters()
+            span.set_attribute("start.io.count", net_io_count)
+            span.set_attribute("end.io.count", addio)
+            
     return flights
 
 if __name__ == "__main__":
