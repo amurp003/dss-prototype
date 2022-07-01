@@ -24,8 +24,16 @@ rectangle DSS {
     UC4 -- UC6
     UC4 -- UC7
 
-    UC2 ..> UC4
-    UC3 ..> UC2
+    UC2 ..> UC4 : <<include>>
+    UC3 ..> UC2 : <<include>>
 }
+
+@enduml
+
+@startuml
+actor Actor as TAO
+
+actor -> DSS_UI: Review Tactical Information
+DSS-UI
 
 @enduml
