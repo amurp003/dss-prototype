@@ -1,0 +1,5164 @@
+{
+    "request": {
+      "url": "api/datasources/proxy/1/api/traces?service=DSS-test-app&start=1657491630058000&end=1657664430058000&lookback=custom",
+      "hideFromInspector": false
+    },
+    "response": {
+      "data": [
+        {
+          "traceID": "dd4578b451dfc40d6bd822184794f32c",
+          "spans": [
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "7019001376519659",
+              "flags": 1,
+              "operationName": "RIC",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586870791678,
+              "duration": 774212,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(79922, 468387, 600, 636, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 1008011,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "8e876ef8ba9f99c3",
+              "flags": 1,
+              "operationName": "IAD",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586872567408,
+              "duration": 502584,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(80795, 493440, 611, 647, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(79922, 468387, 600, 636, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 2783741,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "a7e4da3754cc05a2",
+              "flags": 1,
+              "operationName": "tracks",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586874071435,
+              "duration": 14296,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(82675, 494964, 623, 658, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(81931, 493584, 614, 649, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 4287768,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "54d39f136f178493",
+              "flags": 1,
+              "operationName": "Trial-Eng",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586875087771,
+              "duration": 75236,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(83499, 495937, 634, 670, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(82759, 495048, 625, 660, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 5304104,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "2a22b7089fd4ea59",
+              "flags": 1,
+              "operationName": "Wpn-Assmt",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586876164482,
+              "duration": 84434,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(84239, 496834, 643, 680, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(83499, 495937, 634, 670, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 6380815,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "bf869ff1883330a6",
+              "flags": 1,
+              "operationName": "RIC",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586877250331,
+              "duration": 560307,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(85046, 509786, 653, 690, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(84239, 496834, 643, 680, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 7466664,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "050c741a352fa55b",
+              "flags": 1,
+              "operationName": "IAD",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586878812797,
+              "duration": 516295,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(88061, 535576, 669, 704, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(85046, 509786, 653, 690, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 9029130,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "bdb54f2d527a80e5",
+              "flags": 1,
+              "operationName": "Wpn-Assmt",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586882374712,
+              "duration": 48688,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(90351, 538528, 697, 730, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(89611, 537705, 688, 721, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 12591045,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "1d37f74df2e91e9b",
+              "flags": 1,
+              "operationName": "tracks",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586880330985,
+              "duration": 15542,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(88805, 536956, 678, 713, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(88061, 535576, 669, 704, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 10547318,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "764304d0ea11bcbe",
+              "flags": 1,
+              "operationName": "Trial-Eng",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586881348284,
+              "duration": 24022,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(89545, 537639, 687, 720, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(88805, 536956, 678, 713, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 11564617,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "2bd051028e927e8b",
+              "flags": 1,
+              "operationName": "Wpn-Assmt",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586888476729,
+              "duration": 47844,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(96420, 580151, 750, 779, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(95680, 579328, 741, 770, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 18693062,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "d8e9a4159036eb29",
+              "flags": 1,
+              "operationName": "RIC",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586883424836,
+              "duration": 496858,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(93257, 551595, 711, 742, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(90351, 538528, 697, 730, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 13641169,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "a65a4069c9d12118",
+              "flags": 1,
+              "operationName": "IAD",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586884922595,
+              "duration": 509283,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(94130, 577067, 722, 751, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(93257, 551595, 711, 742, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 15138928,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "858364ed51c77db5",
+              "flags": 1,
+              "operationName": "tracks",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586886433448,
+              "duration": 15237,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(94940, 578513, 732, 761, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(94196, 577133, 723, 752, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 16649781,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "f5a9885df707ff91",
+              "flags": 1,
+              "operationName": "Trial-Eng",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586887449946,
+              "duration": 26023,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(95680, 579328, 741, 770, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(94940, 578513, 732, 761, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 17666279,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "1c7e74ad16bc8942",
+              "flags": 1,
+              "operationName": "Trial-Eng",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586893561778,
+              "duration": 19110,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(102140, 620588, 793, 818, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(101400, 619905, 784, 811, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 23778111,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "48c0741df42aa038",
+              "flags": 1,
+              "operationName": "RIC",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586889526530,
+              "duration": 491499,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(99783, 593228, 764, 791, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(98976, 580295, 754, 781, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 19742863,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "568827cb95bfbba2",
+              "flags": 1,
+              "operationName": "IAD",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586890998561,
+              "duration": 538112,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(100656, 618525, 775, 802, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(99783, 593228, 764, 791, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 21214894,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "fff532e3b32ab020",
+              "flags": 1,
+              "operationName": "tracks",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586892538630,
+              "duration": 21632,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(101400, 619905, 784, 811, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(100656, 618525, 775, 802, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 22754963,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "063387206b92a055",
+              "flags": 1,
+              "operationName": "tracks",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586898853462,
+              "duration": 14788,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(107467, 661238, 837, 860, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(106723, 659858, 828, 851, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 29069795,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "9f2a3c2e8805e2a0",
+              "flags": 1,
+              "operationName": "Wpn-Assmt",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586894581601,
+              "duration": 35516,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(105043, 621621, 807, 830, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(104303, 620798, 798, 821, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 24797934,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "ded649e0687f859c",
+              "flags": 1,
+              "operationName": "RIC",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586895618727,
+              "duration": 555667,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(105850, 634554, 817, 840, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(105043, 621621, 807, 830, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 25835060,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "9964d9088fa17127",
+              "flags": 1,
+              "operationName": "IAD",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586897175457,
+              "duration": 676461,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(106723, 659858, 828, 851, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(105850, 634554, 817, 840, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 27391790,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "faf8213d7cbb8a10",
+              "flags": 1,
+              "operationName": "start-test",
+              "references": [],
+              "startTime": 1657586869783667,
+              "duration": 31149449,
+              "tags": [
+                {
+                  "key": "cpu.load.avg",
+                  "type": "string",
+                  "value": "(0.56, 0.57, 0.56)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "net.io.count",
+                  "type": "string",
+                  "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "num.cpu",
+                  "type": "int64",
+                  "value": 3
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [
+                {
+                  "timestamp": 1657586869790005,
+                  "fields": [
+                    {
+                      "key": "message",
+                      "type": "string",
+                      "value": "start test"
+                    },
+                    {
+                      "key": "num.tests",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "request.delay",
+                      "type": "int64",
+                      "value": 1
+                    },
+                    {
+                      "key": "test.number",
+                      "type": "int64",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 0,
+              "depth": 0,
+              "hasChildren": true,
+              "childSpanCount": 25
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "805b339c44cab1d3",
+              "flags": 1,
+              "operationName": "Trial-Eng",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586899870048,
+              "duration": 26869,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(110308, 662065, 850, 869, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(109568, 661382, 841, 862, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 30086381,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            },
+            {
+              "traceID": "dd4578b451dfc40d6bd822184794f32c",
+              "spanID": "9e61cb19870b1129",
+              "flags": 1,
+              "operationName": "Wpn-Assmt",
+              "references": [
+                {
+                  "refType": "CHILD_OF",
+                  "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                  "spanID": "faf8213d7cbb8a10",
+                  "span": {
+                    "traceID": "dd4578b451dfc40d6bd822184794f32c",
+                    "spanID": "faf8213d7cbb8a10",
+                    "flags": 1,
+                    "operationName": "start-test",
+                    "references": [],
+                    "startTime": 1657586869783667,
+                    "duration": 31149449,
+                    "tags": [
+                      {
+                        "key": "cpu.load.avg",
+                        "type": "string",
+                        "value": "(0.56, 0.57, 0.56)"
+                      },
+                      {
+                        "key": "internal.span.format",
+                        "type": "string",
+                        "value": "proto"
+                      },
+                      {
+                        "key": "net.io.count",
+                        "type": "string",
+                        "value": "(79115, 455213, 590, 623, 0, 0, 0, 0)"
+                      },
+                      {
+                        "key": "num.cpu",
+                        "type": "int64",
+                        "value": 3
+                      },
+                      {
+                        "key": "otel.library.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.library.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "otel.scope.name",
+                        "type": "string",
+                        "value": "test-app"
+                      },
+                      {
+                        "key": "otel.scope.version",
+                        "type": "string",
+                        "value": ""
+                      },
+                      {
+                        "key": "service.name",
+                        "type": "string",
+                        "value": "DSS-test-app"
+                      },
+                      {
+                        "key": "span.kind",
+                        "type": "string",
+                        "value": "internal"
+                      },
+                      {
+                        "key": "telemetry.sdk.language",
+                        "type": "string",
+                        "value": "python"
+                      },
+                      {
+                        "key": "telemetry.sdk.name",
+                        "type": "string",
+                        "value": "opentelemetry"
+                      },
+                      {
+                        "key": "telemetry.sdk.version",
+                        "type": "string",
+                        "value": "1.12.0rc1"
+                      }
+                    ],
+                    "logs": [
+                      {
+                        "timestamp": 1657586869790005,
+                        "fields": [
+                          {
+                            "key": "message",
+                            "type": "string",
+                            "value": "start test"
+                          },
+                          {
+                            "key": "num.tests",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "request.delay",
+                            "type": "int64",
+                            "value": 1
+                          },
+                          {
+                            "key": "test.number",
+                            "type": "int64",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "processID": "p1",
+                    "warnings": [],
+                    "process": {
+                      "serviceName": "DSS-test-app",
+                      "tags": []
+                    },
+                    "relativeStartTime": 0,
+                    "depth": 0,
+                    "hasChildren": true,
+                    "childSpanCount": 25
+                  }
+                }
+              ],
+              "startTime": 1657586900897373,
+              "duration": 33625,
+              "tags": [
+                {
+                  "key": "end.io.count",
+                  "type": "string",
+                  "value": "(111114, 662822, 860, 877, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "internal.span.format",
+                  "type": "string",
+                  "value": "proto"
+                },
+                {
+                  "key": "otel.library.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.library.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "otel.scope.name",
+                  "type": "string",
+                  "value": "test-app"
+                },
+                {
+                  "key": "otel.scope.version",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "key": "service.name",
+                  "type": "string",
+                  "value": "DSS-test-app"
+                },
+                {
+                  "key": "span.kind",
+                  "type": "string",
+                  "value": "internal"
+                },
+                {
+                  "key": "start.io.count",
+                  "type": "string",
+                  "value": "(110374, 662131, 851, 870, 0, 0, 0, 0)"
+                },
+                {
+                  "key": "telemetry.sdk.language",
+                  "type": "string",
+                  "value": "python"
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "type": "string",
+                  "value": "opentelemetry"
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "type": "string",
+                  "value": "1.12.0rc1"
+                }
+              ],
+              "logs": [],
+              "processID": "p1",
+              "warnings": [],
+              "process": {
+                "serviceName": "DSS-test-app",
+                "tags": []
+              },
+              "relativeStartTime": 31113706,
+              "depth": 1,
+              "hasChildren": false,
+              "childSpanCount": 0
+            }
+          ],
+          "processes": {
+            "p1": {
+              "serviceName": "DSS-test-app",
+              "tags": []
+            }
+          },
+          "warnings": null
+        }
+      ],
+      "total": 0,
+      "limit": 0,
+      "offset": 0,
+      "errors": null
+    }
+  }

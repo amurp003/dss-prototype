@@ -31,9 +31,40 @@ rectangle DSS {
 @enduml
 
 @startuml
-actor Actor as TAO
 
-actor -> DSS_UI: Review Tactical Information
-DSS-UI
+actor TAO as TAO
+note across: Review Tactical Information Use Case
+
+TAO -> "User Interface" as UI: Review Tactical Information
+UI -> "Track Management\nApp" as TM: Request Track Data
+
+participant "Weapon Assessment\nApp" as WA
+participant "Trial Engage\nApp" as TE
+
+TM -> "Sensor\nInterface" as SI: Request Flight Data
+
+database "OpenSky API\nFlight Data" as API
+
+SI -> API: Get Flight Data
+API --> SI: API Flight Data
+SI --> TM: Normalized Flight Data
+TM --> UI: Flight Tracks
+UI --> TAO: Tactical Picture
+
+note across: Review Weapon Recommendations Use Case
+
+TAO -> UI: Weapon Assessment
+UI -> WA: Request Wpn Assessment
+WA -> TM: Request Track Data
+TM --> WA: Track Data
+WA --> UI: Wpn Assessment
+UI --> TAO: Wpn Assessment
+
+note across: Review Predicted Weapon Effectiveness Use Case
+
+TAO -> UI: Trial Engage
+UI -> TE: Request Wpn Effectiveness
+TE --> UI: Effectiveness Prediction
+UI --> TAO: Predicted Effectiveness
 
 @enduml
