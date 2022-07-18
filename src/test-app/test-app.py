@@ -19,7 +19,7 @@ from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
-
+# changed the services name
 trace.set_tracer_provider(
    TracerProvider(
        resource=Resource.create({SERVICE_NAME: "DSS-test-app"})
@@ -48,10 +48,10 @@ app = FastAPI(
 tm_url = "http://tm-server:3200/system_tracks"
 
 # set default values
-num_tests = 5      # consider 50
-num_requests = 5   # number of local requests per test; e.g. 10
+num_tests = 5      # consider 5
+num_requests = 5   # number of local requests per test; e.g. 5
 request_delay = 1   # seconds to wait before sending a request
-                    # to avoid collisions
+                    # to avoid collisions; e.g. 1
                     
 @app.get("/")
 def index():
