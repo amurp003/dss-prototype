@@ -98,6 +98,7 @@ def wpn_assmt():
         provide an indication of processing complexity. 
     """
 
+    # pull in tracks from track manager but processing may be future
     tracks = requests.get(tm_url)
     tracks_json = tracks.json()
 
