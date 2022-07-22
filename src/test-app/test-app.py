@@ -6,6 +6,18 @@ from datetime import datetime
 from fastapi import FastAPI
 import psutil
 
+
+# psutil.net_io_counters returns a named tuple including the following attributes:
+
+# bytes_sent: number of bytes sent
+# bytes_recv: number of bytes received
+# packets_sent: number of packets sent
+# packets_recv: number of packets received
+# errin: total number of errors while receiving
+# errout: total number of errors while sending
+# dropin: total number of incoming packets which were dropped
+# dropout: total number of outgoing packets which were dropped (always 0 on macOS and BSD)
+
 # opentelemetry libraries
 from opentelemetry import trace
 
