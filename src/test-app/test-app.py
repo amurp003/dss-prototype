@@ -96,6 +96,16 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
     supplied number of tests, number of requests, and a request
     delay.
     
+    The "start-test" span will report the following with the
+    span attributes:  
+        cpu.load.avg  
+        num.cpu  
+        net.io.count  
+      
+    Each API request will report the following additional attributes:  
+        start.io.count  
+        end.io.count  
+      
     Parameters
     ----------
     num_tests (int) :   
