@@ -1,0 +1,1002 @@
+﻿"Trace ID","Trace name","Start time","Duration"
+d0b79d9b2799e54938aaa693443b616b,dss-prototype: /TE,2022-08-16 15:35:42.640,8.71 ms
+10b4102c975f1c15fbc7837eab612cee,dss-prototype: /tracks,2022-08-16 15:35:41.626,5.28 ms
+8c492609e0e9293db0f5a35a83a6c79a,dss-prototype: IAD Flight Data,2022-08-16 15:35:40.304,309 ms
+bacfe758fe8a36e32d447cfe30ee2229,dss-prototype: RIC Flight Data,2022-08-16 15:35:38.774,516 ms
+9ae731e4d06d34fced2668992002e39d,dss-prototype: /WA,2022-08-16 15:35:37.757,11.5 ms
+da98677d3951f63a1a3c4c7748841f77,dss-prototype: /TE,2022-08-16 15:35:36.742,9.76 ms
+86a490d9864e5f70021b8fe44d12924b,dss-prototype: /tracks,2022-08-16 15:35:35.731,5.63 ms
+c3b39f3e466b9daef48e669571ad1c20,dss-prototype: IAD Flight Data,2022-08-16 15:35:34.377,340 ms
+47ec840ce887497eb305462288fdcda4,dss-prototype: RIC Flight Data,2022-08-16 15:35:33.052,312 ms
+7e17440d11caa32bd02e61db4fdfca73,dss-prototype: /WA,2022-08-16 15:35:32.033,13.5 ms
+a863aee42bef54f6e37013e5a249760e,dss-prototype: /TE,2022-08-16 15:35:31.007,8.72 ms
+8f690b7a8dde14ef5cbf0369d93e2d91,dss-prototype: /tracks,2022-08-16 15:35:29.996,5.96 ms
+816d2373e95ab75e528744bb71a5996d,dss-prototype: IAD Flight Data,2022-08-16 15:35:28.670,313 ms
+4b0ac656433c1292ef0fad132994114c,dss-prototype: RIC Flight Data,2022-08-16 15:35:26.941,716 ms
+c8152a63679d695cf8e06bf8bdb2d3ea,dss-prototype: /WA,2022-08-16 15:35:25.922,12.4 ms
+7317e36a0d7fccb3fe6155bdbbd2fe36,dss-prototype: /TE,2022-08-16 15:35:24.907,9.47 ms
+71c6d1a234543393c531f21192e7e498,dss-prototype: /tracks,2022-08-16 15:35:23.895,5.95 ms
+08e4bc4f98300ffc6014a80b82174e9d,dss-prototype: IAD Flight Data,2022-08-16 15:35:22.536,346 ms
+4678fac7bfe657b949c2fd2cfe65a157,dss-prototype: RIC Flight Data,2022-08-16 15:35:21.212,311 ms
+615084ccbd2c3eeec2a2142063efe811,dss-prototype: /WA,2022-08-16 15:35:20.194,12.0 ms
+63ecd2d8d3c2e41096cfdf680ff6f813,dss-prototype: /TE,2022-08-16 15:35:19.178,9.76 ms
+d9704259f5c69b129858d46772cada9e,dss-prototype: /tracks,2022-08-16 15:35:18.168,4.89 ms
+91fee01d5e7bb1d811613a7bd471b7fc,dss-prototype: IAD Flight Data,2022-08-16 15:35:16.834,321 ms
+73a4f7ce92f887d6c3389e980d97fca3,dss-prototype: RIC Flight Data,2022-08-16 15:35:15.503,318 ms
+e4ee55a112a188939bb034a7851f1473,dss-prototype: /WA,2022-08-16 15:35:14.483,12.6 ms
+cc360b141126513235e7faa619618154,dss-prototype: /TE,2022-08-16 15:35:13.467,10.1 ms
+94e7f1d85a258472d64342dc4e740ca7,dss-prototype: /tracks,2022-08-16 15:35:12.455,5.40 ms
+02fd56e1eafd0b346fea8a8d5cfec45c,dss-prototype: IAD Flight Data,2022-08-16 15:35:11.126,315 ms
+30539ec101b62d5dad4a22badba43c36,dss-prototype: RIC Flight Data,2022-08-16 15:35:09.789,323 ms
+902a94d28d0cb67629982d2f021cfeb6,dss-prototype: /WA,2022-08-16 15:35:08.772,11.7 ms
+4f4910cb2b0f170eb7c6306c6b92f879,dss-prototype: /TE,2022-08-16 15:35:07.756,9.24 ms
+e67b3c52b9454c35becc73d1af731641,dss-prototype: /tracks,2022-08-16 15:35:06.745,5.86 ms
+4b1a552e104cd155863c98e053f64163,dss-prototype: IAD Flight Data,2022-08-16 15:35:05.419,313 ms
+cd56f19535612252545c0242d14c2243,dss-prototype: RIC Flight Data,2022-08-16 15:35:04.079,324 ms
+82a53317b6fcb0bdf47f80377565e2e7,dss-prototype: /WA,2022-08-16 15:35:03.052,12.4 ms
+d2f3fbafa6b48dc2310022f096679b1d,dss-prototype: /TE,2022-08-16 15:35:02.037,9.39 ms
+f2f6297bcbfcf4128a51af6bf3b2448a,dss-prototype: /tracks,2022-08-16 15:35:01.026,5.72 ms
+c3ea95ce96648b8ca7c0776e8269cd98,dss-prototype: IAD Flight Data,2022-08-16 15:34:59.702,311 ms
+52252d1603df9fae5f552030375e3e4d,dss-prototype: RIC Flight Data,2022-08-16 15:34:58.357,329 ms
+9153f621fc4a9907eccc696453618992,dss-prototype: /WA,2022-08-16 15:34:57.339,12.2 ms
+aa1f62fd08962183c1fe1653f6a3be0f,dss-prototype: /TE,2022-08-16 15:34:56.323,9.47 ms
+7bfd24807b4587974f896f3a0501873e,dss-prototype: /tracks,2022-08-16 15:34:55.312,5.04 ms
+830e21876ddb797e1924e78d0ae9ffbf,dss-prototype: IAD Flight Data,2022-08-16 15:34:53.993,306 ms
+8662a9186b712dbea30f13928cdc09ee,dss-prototype: RIC Flight Data,2022-08-16 15:34:52.649,327 ms
+d31d4d0c9f5bf86d16f29f68cd14567c,dss-prototype: /WA,2022-08-16 15:34:51.631,12.0 ms
+c44838dae16f185022bdf13531d17f65,dss-prototype: /TE,2022-08-16 15:34:50.616,8.83 ms
+757f89cbe05d938562b32a14aab46514,dss-prototype: /tracks,2022-08-16 15:34:49.605,6.51 ms
+747d25525eb15c0892363cd0c92fdd00,dss-prototype: IAD Flight Data,2022-08-16 15:34:48.074,519 ms
+5d4957501bff2dea0a59e0eed634174a,dss-prototype: RIC Flight Data,2022-08-16 15:34:46.748,312 ms
+8f76bb5bf4548daae43db078c478d82c,dss-prototype: /WA,2022-08-16 15:34:45.729,12.1 ms
+c6a665926d76c6b4f0811a3b71a15ebf,dss-prototype: /TE,2022-08-16 15:34:44.715,9.01 ms
+44b6649723ab57f43aa1a0915336422e,dss-prototype: /tracks,2022-08-16 15:34:43.703,6.67 ms
+ad9e7df1cf878090737eb3f3be3b34d8,dss-prototype: IAD Flight Data,2022-08-16 15:34:42.378,312 ms
+68bfea9a5172206f45a112b7d6d99a85,dss-prototype: RIC Flight Data,2022-08-16 15:34:41.056,308 ms
+291cca5f51342ac51d5e962cb0cd78dd,dss-prototype: /WA,2022-08-16 15:34:40.037,12.5 ms
+affd68f6cec98a8c016a4fa6c66c3436,dss-prototype: /TE,2022-08-16 15:34:39.021,9.83 ms
+bf060b1d30424df85b832e5bab35e517,dss-prototype: /tracks,2022-08-16 15:34:38.010,5.54 ms
+a6ac918d8a36077d63660213eeb3941b,dss-prototype: IAD Flight Data,2022-08-16 15:34:36.681,313 ms
+85023bda21c1c6afba952675bf31a15a,dss-prototype: RIC Flight Data,2022-08-16 15:34:35.352,316 ms
+e3ba0967b60d92ddba81cfb415b82ac0,dss-prototype: /WA,2022-08-16 15:34:34.332,12.9 ms
+b1b90b8707ba683905290623fd762b3d,dss-prototype: /TE,2022-08-16 15:34:33.316,10.2 ms
+0dde490ddd88052dddab364e3af21d41,dss-prototype: /tracks,2022-08-16 15:34:32.304,5.47 ms
+348b5686ab59a90781545c903b697cdc,dss-prototype: IAD Flight Data,2022-08-16 15:34:30.966,323 ms
+0aab39b80ea2ba854197757d1f4eda8e,dss-prototype: RIC Flight Data,2022-08-16 15:34:29.643,310 ms
+e62b923339e3d77840abd34350c24b69,dss-prototype: /WA,2022-08-16 15:34:28.625,12.0 ms
+25db63fc7c08b853fac161f7e9a035d3,dss-prototype: /TE,2022-08-16 15:34:27.610,9.26 ms
+3a2b610d98af2642fe0072c9399e56fe,dss-prototype: /tracks,2022-08-16 15:34:26.598,5.37 ms
+2140fa7d457c55a415bcaa256374341c,dss-prototype: IAD Flight Data,2022-08-16 15:34:25.274,311 ms
+fd3e7146ad2ef621a5603e913a79c510,dss-prototype: RIC Flight Data,2022-08-16 15:34:23.931,330 ms
+2ffc29039f2bab9cda522802d38382f1,dss-prototype: /WA,2022-08-16 15:34:22.912,12.6 ms
+4f31924ed797cc77c736d91cbc9a5538,dss-prototype: /TE,2022-08-16 15:34:21.898,8.79 ms
+e9d7ff8a728c6381107ee7678864762f,dss-prototype: /tracks,2022-08-16 15:34:20.887,5.34 ms
+89986e921d2575113eb57169baaa2ab7,dss-prototype: IAD Flight Data,2022-08-16 15:34:19.554,320 ms
+51acfac8418f926d4702aa8c8a1bd114,dss-prototype: RIC Flight Data,2022-08-16 15:34:18.223,317 ms
+7f31facee45567dc6b90371be12a25ef,dss-prototype: /WA,2022-08-16 15:34:17.205,11.8 ms
+694942157f464aa8d774da202da6f2a1,dss-prototype: /TE,2022-08-16 15:34:16.190,9.19 ms
+b43b52635994b8e088d5bb4514464d05,dss-prototype: /tracks,2022-08-16 15:34:15.178,6.52 ms
+53bcd4f7f1dfecbde0dcfd10f99d685a,dss-prototype: IAD Flight Data,2022-08-16 15:34:13.857,309 ms
+61e6f74f429476f1339ee27569dbf203,dss-prototype: RIC Flight Data,2022-08-16 15:34:12.521,321 ms
+e47b02d48acaee2491eb3148e9014985,dss-prototype: /WA,2022-08-16 15:34:11.503,11.5 ms
+63776a35842905ad4a034070adaa4dbb,dss-prototype: /TE,2022-08-16 15:34:10.489,9.21 ms
+d949ecb8cd55ffd42b1d08d4642ce36d,dss-prototype: /tracks,2022-08-16 15:34:09.467,15.1 ms
+f87a579d0c39e81d17198da6d0228e2c,dss-prototype: IAD Flight Data,2022-08-16 15:34:06.946,1.51 s
+65514285ab25b36a6fa71b28f6a6eadf,dss-prototype: RIC Flight Data,2022-08-16 15:34:05.620,312 ms
+a03a638be057a65173a64f5c34112251,dss-prototype: /WA,2022-08-16 15:34:04.601,12.8 ms
+177b5aad0f967e96e6c4c6101c515b00,dss-prototype: /TE,2022-08-16 15:34:03.586,9.50 ms
+d044a9cb9d83932c89f38aa5b00b8d4f,dss-prototype: /tracks,2022-08-16 15:34:02.574,5.58 ms
+3a7c84a66073bf29f3029ca40b7dfc7f,dss-prototype: IAD Flight Data,2022-08-16 15:34:01.252,310 ms
+c088a297b57f8ffbbfd46ad82859f8d1,dss-prototype: RIC Flight Data,2022-08-16 15:33:59.862,377 ms
+6f0f7543d4d200a9a4dbcc1a6e8ac2ba,dss-prototype: /WA,2022-08-16 15:33:58.844,12.1 ms
+a64858ff1e27947ed21d6e0d1b8e6778,dss-prototype: /TE,2022-08-16 15:33:57.829,9.45 ms
+17db92e5b8bd8ef3997cf1fa1cab15e0,dss-prototype: /tracks,2022-08-16 15:33:56.818,5.31 ms
+4f3a2feedabeea956f8dc5d44b218122,dss-prototype: IAD Flight Data,2022-08-16 15:33:55.364,441 ms
+3563891ad7cca195a6cad87a88f58726,dss-prototype: RIC Flight Data,2022-08-16 15:33:54.023,327 ms
+775e9cdf0dee9c60931920d3a6e9d465,dss-prototype: /WA,2022-08-16 15:33:53.005,12.1 ms
+d7c3700369a4b6e7ec9efecefe4659f5,dss-prototype: /TE,2022-08-16 15:33:51.984,10.4 ms
+da99943ba0e12d7df0490fe1f66ef313,dss-prototype: /tracks,2022-08-16 15:33:50.973,5.51 ms
+5b28bae783437fecb66adf73b6b87417,dss-prototype: IAD Flight Data,2022-08-16 15:33:49.252,707 ms
+e321052fe173013ffcec755012d8c609,dss-prototype: RIC Flight Data,2022-08-16 15:33:47.914,325 ms
+0dc5c7b96bee41b5f5188fad08e9942d,dss-prototype: /WA,2022-08-16 15:33:46.895,12.4 ms
+d716d653e8b576134f3b6b09ede52224,dss-prototype: /TE,2022-08-16 15:33:45.880,9.26 ms
+b99631c2c041a3fd5267613deec36155,dss-prototype: /tracks,2022-08-16 15:33:44.868,5.14 ms
+16aeb76a052fadd32b4205a8bcbb3f2e,dss-prototype: IAD Flight Data,2022-08-16 15:33:43.543,311 ms
+96191f3ca7a3e6c9a8f8f0c22df1d049,dss-prototype: RIC Flight Data,2022-08-16 15:33:42.211,319 ms
+50ad04ab9281f3ea036e50ba75b104ce,dss-prototype: /WA,2022-08-16 15:33:41.192,12.2 ms
+e91fc442952e7faf037082e22154a3cd,dss-prototype: /TE,2022-08-16 15:33:40.177,9.85 ms
+e3514ccaeb475b0f00318c7404863559,dss-prototype: /tracks,2022-08-16 15:33:39.165,6.58 ms
+fa65e5be5be8051aa0c6de6899024926,dss-prototype: IAD Flight Data,2022-08-16 15:33:37.845,306 ms
+eaea794784d8a6e5081dfa83f6862b17,dss-prototype: RIC Flight Data,2022-08-16 15:33:36.515,314 ms
+579b8f3b4827d3ebe5779cc6ac6efdc5,dss-prototype: /WA,2022-08-16 15:33:35.497,11.5 ms
+3ff0e806a44d7e625d7799196fa1d734,dss-prototype: /TE,2022-08-16 15:33:34.481,10.4 ms
+bd2f463ac5279742629c6dd9cfa47e2a,dss-prototype: /tracks,2022-08-16 15:33:33.469,6.09 ms
+4e8d8d89f979a0c28279730c7fe148e5,dss-prototype: IAD Flight Data,2022-08-16 15:33:31.737,719 ms
+d19852255860754d97f83ab83e08d8c0,dss-prototype: RIC Flight Data,2022-08-16 15:33:30.411,312 ms
+9f3566a9b7f0629aa5ff3cebc0d5eaa9,dss-prototype: /WA,2022-08-16 15:33:29.393,12.5 ms
+52b35ea354be907bf068b7e21a6f892e,dss-prototype: /TE,2022-08-16 15:33:28.379,9.03 ms
+654c0d1726b3e9d1eef5a25bab59705b,dss-prototype: /tracks,2022-08-16 15:33:27.367,5.15 ms
+8d5d58bafb26db6cfd907947c9ef8b2b,dss-prototype: IAD Flight Data,2022-08-16 15:33:25.857,497 ms
+6c57928d80ccf707b8116480662fa207,dss-prototype: RIC Flight Data,2022-08-16 15:33:24.523,320 ms
+706b78cd9b46c00bef853989392b1165,dss-prototype: /WA,2022-08-16 15:33:23.505,12.2 ms
+dc8c6d89c5ada8d32680683bfe9ea6cb,dss-prototype: /TE,2022-08-16 15:33:22.490,8.97 ms
+eb46ada7363797d97cb48d9df8f2cbbd,dss-prototype: /tracks,2022-08-16 15:33:21.479,6.00 ms
+8236692fa5705edc4c8fce3191cab347,dss-prototype: IAD Flight Data,2022-08-16 15:33:20.153,312 ms
+6cdbad31400c3d728a429a396816568b,dss-prototype: RIC Flight Data,2022-08-16 15:33:18.816,324 ms
+41f3779d0e24fa01b31fb94c6dfb4976,dss-prototype: /WA,2022-08-16 15:33:17.798,11.7 ms
+a4f8ca1986e728be62c747ab87cb2612,dss-prototype: /TE,2022-08-16 15:33:16.783,9.46 ms
+4c5ebd5c8dc5d2c0ebc9c5cb8d677190,dss-prototype: /tracks,2022-08-16 15:33:15.771,5.20 ms
+a82b8f4d332df887529de798086292c6,dss-prototype: IAD Flight Data,2022-08-16 15:33:14.411,347 ms
+3573111d9a09e6ad3266079e8f746ebf,dss-prototype: RIC Flight Data,2022-08-16 15:33:13.079,318 ms
+8745b63f00bf1df50ebfb80a6f6178dd,dss-prototype: /WA,2022-08-16 15:33:12.060,12.1 ms
+264023038ccbafdbcd6bd9f3293d47cf,dss-prototype: /TE,2022-08-16 15:33:11.045,9.47 ms
+1c86db341673926eb3b3d43d5ddaddd3,dss-prototype: /tracks,2022-08-16 15:33:10.034,5.49 ms
+1acbd67df8a887cdfd0a5f6ca37fab7b,dss-prototype: IAD Flight Data,2022-08-16 15:33:08.700,321 ms
+9817af34e08a4fae2129e55209e82c74,dss-prototype: RIC Flight Data,2022-08-16 15:33:07.369,316 ms
+6738a0a488ceba76447ff0f4bc16f0b5,dss-prototype: /WA,2022-08-16 15:33:06.349,13.4 ms
+709f9d7d9aed3c445cd6f72bd5c59eef,dss-prototype: /TE,2022-08-16 15:33:05.334,9.82 ms
+4b20760c27cbbe682871b8606731eba3,dss-prototype: /tracks,2022-08-16 15:33:04.320,7.05 ms
+d0e0b5edba63e221299da51034fe1d12,dss-prototype: IAD Flight Data,2022-08-16 15:33:02.996,311 ms
+377f82705c9e4280819d9fda3ac4961b,dss-prototype: RIC Flight Data,2022-08-16 15:33:01.668,312 ms
+0129cc6f3cba2d2ddd63393ff2f9a7ca,dss-prototype: /WA,2022-08-16 15:33:00.650,11.5 ms
+214e996c798bd82d9661d0a6f08feef2,dss-prototype: /TE,2022-08-16 15:32:59.635,9.73 ms
+a71674a4104350b8cb5f3d0ec077d3d3,dss-prototype: /tracks,2022-08-16 15:32:58.623,6.24 ms
+4f2305a7a552bbc819beee4b87b43530,dss-prototype: IAD Flight Data,2022-08-16 15:32:57.246,364 ms
+e034bb8bba18f8a2f6bce69a92d5f9e6,dss-prototype: RIC Flight Data,2022-08-16 15:32:55.918,313 ms
+388d7ad0e32dded998321ea5db017b6f,dss-prototype: /WA,2022-08-16 15:32:54.898,12.8 ms
+69a76f445f98403f0ceccf134f0cb8c1,dss-prototype: /TE,2022-08-16 15:32:53.883,9.75 ms
+7675f6bac4e433e3d3529b4be93a2653,dss-prototype: /tracks,2022-08-16 15:32:52.871,5.28 ms
+e8b67528a2eeedc790e4ea280f630810,dss-prototype: IAD Flight Data,2022-08-16 15:32:51.332,526 ms
+2cc0cd8a3d7afe0cc051cb08ce3b0bde,dss-prototype: RIC Flight Data,2022-08-16 15:32:49.983,336 ms
+6810e664cdc48106dfa6eab29b62d0de,dss-prototype: /WA,2022-08-16 15:32:48.964,11.9 ms
+b1bc2988e7aa5ac0428f20c30e72fcce,dss-prototype: /TE,2022-08-16 15:32:47.950,8.85 ms
+9a59c7d9e0562cfa24a0dfae1abe320a,dss-prototype: /tracks,2022-08-16 15:32:46.939,5.51 ms
+a31255777b68b625b644d19afd8e0325,dss-prototype: IAD Flight Data,2022-08-16 15:32:45.554,372 ms
+3729531d91d67bcf699b77736a5bda7d,dss-prototype: RIC Flight Data,2022-08-16 15:32:44.222,317 ms
+d344e2b164c227fd3d20066635f52845,dss-prototype: /WA,2022-08-16 15:32:43.204,12.0 ms
+71997d4a48924956728ee1536e712ade,dss-prototype: /TE,2022-08-16 15:32:42.187,10.6 ms
+e6b484dd79796009b01ca20be090dee7,dss-prototype: /tracks,2022-08-16 15:32:41.169,5.22 ms
+ffb4e44f3f5d7c0ccaab43f4b5b955e7,dss-prototype: IAD Flight Data,2022-08-16 15:32:39.830,325 ms
+5337fdbddcd5fd7568b1f6b6273ae0b1,dss-prototype: RIC Flight Data,2022-08-16 15:32:38.503,314 ms
+b3789403171b8a5f2fef42006cd5a5f7,dss-prototype: /WA,2022-08-16 15:32:37.484,12.6 ms
+9943dc04f649c9c91c653b66de450744,dss-prototype: /TE,2022-08-16 15:32:36.469,9.49 ms
+7b0904e3e9a36abb87856100d4ff46f4,dss-prototype: /tracks,2022-08-16 15:32:35.457,5.73 ms
+9897c54b8d9ca318867724693224ea51,dss-prototype: IAD Flight Data,2022-08-16 15:32:34.130,313 ms
+1e004512b3631defec22a6867fd74a74,dss-prototype: RIC Flight Data,2022-08-16 15:32:32.798,317 ms
+a9b55898486c9af9502d50cd1972a4c0,dss-prototype: /WA,2022-08-16 15:32:31.780,11.8 ms
+0ee7ea9d1f94e4c8bcb74f94d22edc7d,dss-prototype: /TE,2022-08-16 15:32:30.765,9.50 ms
+37c6a298e2387e418e671d4b02be4663,dss-prototype: /tracks,2022-08-16 15:32:29.752,6.88 ms
+cdbfe6e7dbb2bfb2498c700752558d51,dss-prototype: IAD Flight Data,2022-08-16 15:32:28.427,311 ms
+1f0e0ee97cbe474031f44083340cb41d,dss-prototype: RIC Flight Data,2022-08-16 15:32:27.087,327 ms
+2a7303d77b36948e11dfd91a0d1aec8d,dss-prototype: /WA,2022-08-16 15:32:26.068,12.8 ms
+1bad4a8372c58edb78f4f04a41e993be,dss-prototype: /TE,2022-08-16 15:32:25.053,9.40 ms
+48ce6e821b9b97ef2f4e5cc8c9587bcf,dss-prototype: /tracks,2022-08-16 15:32:24.041,6.12 ms
+d3bdb79cd5fd77efa50da1cb1675d395,dss-prototype: IAD Flight Data,2022-08-16 15:32:22.706,322 ms
+6e429addaedcdf86dba08a828cddae53,dss-prototype: RIC Flight Data,2022-08-16 15:32:21.380,312 ms
+dff5c6a703f90deac32faffe66806e64,dss-prototype: /WA,2022-08-16 15:32:20.361,12.1 ms
+de53c74736603ff9b0f6aaca9809f5d1,dss-prototype: /TE,2022-08-16 15:32:19.345,10.1 ms
+871462f7e761bc1a784756fb81e91bec,dss-prototype: /tracks,2022-08-16 15:32:18.333,5.93 ms
+54cc5555577f9f0e99ce0f8d2f917efe,dss-prototype: IAD Flight Data,2022-08-16 15:32:17.001,319 ms
+b475466df7c389fba4c348246bcad6dd,dss-prototype: RIC Flight Data,2022-08-16 15:32:15.656,332 ms
+d24b7774b1163532baacab7ddbe8b51c,dss-prototype: /WA,2022-08-16 15:32:14.636,12.4 ms
+0acd957909fd5f6f62981f0648b2f252,dss-prototype: /TE,2022-08-16 15:32:13.621,9.23 ms
+7292dedb331ae9eab42f50db0ef0d003,dss-prototype: /tracks,2022-08-16 15:32:12.610,6.06 ms
+84077a74435ad54e3d2e847fd524ee54,dss-prototype: IAD Flight Data,2022-08-16 15:32:11.286,311 ms
+74665a66b2a1a1847aacc53e62f1a473,dss-prototype: RIC Flight Data,2022-08-16 15:32:09.924,348 ms
+1ace146c3c907c8af97dbdb80a271742,dss-prototype: /WA,2022-08-16 15:32:08.904,11.9 ms
+408207e79f3e814157e95f305407a988,dss-prototype: /TE,2022-08-16 15:32:07.891,8.78 ms
+7c67562be226dd55cb26c434d707efde,dss-prototype: /tracks,2022-08-16 15:32:06.878,6.29 ms
+2531f69641af01e14c8cadd6fb2375c9,dss-prototype: IAD Flight Data,2022-08-16 15:32:05.539,326 ms
+c7cd90e62d19a2e7d2d9286b543d9702,dss-prototype: RIC Flight Data,2022-08-16 15:32:04.211,312 ms
+3fec151cfda5aa132afdab937de28b4d,dss-prototype: /WA,2022-08-16 15:32:03.191,13.9 ms
+cf1e009f13c2daf5d16a3a791e2f23b1,dss-prototype: /TE,2022-08-16 15:32:02.171,9.73 ms
+a3f5d0325b36a868f3ebaec923f7ea42,dss-prototype: /tracks,2022-08-16 15:32:01.160,5.27 ms
+b9f1484ca4dcc791dec9ea5a78bd5532,dss-prototype: IAD Flight Data,2022-08-16 15:31:59.829,318 ms
+5090d94e742e61d80a401ed409e4f65c,dss-prototype: RIC Flight Data,2022-08-16 15:31:58.420,395 ms
+6d49ef088b02c6fda0f689ff876aa281,dss-prototype: /WA,2022-08-16 15:31:57.401,12.2 ms
+ba443e8f256f19405c6bd47fc9d9c805,dss-prototype: /TE,2022-08-16 15:31:56.387,8.64 ms
+3dd40ca5097e1b1a2b2e00e58de00b70,dss-prototype: /tracks,2022-08-16 15:31:55.375,6.28 ms
+fc2d0659f973ccf68468b32e533c15fe,dss-prototype: IAD Flight Data,2022-08-16 15:31:54.049,312 ms
+5955df8584f381ca1f12e5622a2a9d38,dss-prototype: RIC Flight Data,2022-08-16 15:31:52.696,337 ms
+d6e55e0a75a242118222d65757236b5b,dss-prototype: /WA,2022-08-16 15:31:51.676,12.2 ms
+317cacb2efa96e9c09a60e0034d0ddfe,dss-prototype: /TE,2022-08-16 15:31:50.662,8.90 ms
+bccee850d8bebade98c8092a910946b9,dss-prototype: /tracks,2022-08-16 15:31:49.650,6.44 ms
+10de82b69b7f00c9e7f979717f5e8416,dss-prototype: IAD Flight Data,2022-08-16 15:31:48.323,313 ms
+b162a1e6de18ca45f384cd3be61bd8df,dss-prototype: RIC Flight Data,2022-08-16 15:31:46.986,322 ms
+6b29d26cb314ad8a7725f12926715844,dss-prototype: /WA,2022-08-16 15:31:45.967,13.3 ms
+31233f5b17933789de315b9866b9be7f,dss-prototype: /TE,2022-08-16 15:31:44.951,8.56 ms
+39d565a93505d65bbe7570acf69fab23,dss-prototype: /tracks,2022-08-16 15:31:43.939,6.92 ms
+130b8aaaaec9b3d530e046cd9b5c1c90,dss-prototype: IAD Flight Data,2022-08-16 15:31:42.602,324 ms
+dc9ad185e6e37bddc8341c083f221772,dss-prototype: RIC Flight Data,2022-08-16 15:31:41.282,305 ms
+36e36d8250845acd95ae2741efde97f5,dss-prototype: /WA,2022-08-16 15:31:40.264,12.7 ms
+8779eb596461fd23333a8557947e1acd,dss-prototype: /TE,2022-08-16 15:31:39.250,8.85 ms
+4a9f1db3c5587b95f60171bbc1ba9907,dss-prototype: /tracks,2022-08-16 15:31:38.239,6.06 ms
+4cecc8f713c7481fcb335b5c5aff9598,dss-prototype: IAD Flight Data,2022-08-16 15:31:36.911,315 ms
+e650847e63ff82bdee008d823c5c797c,dss-prototype: RIC Flight Data,2022-08-16 15:31:35.543,354 ms
+fc1e39c444b04820b311415b23bcbd89,dss-prototype: /WA,2022-08-16 15:31:34.524,12.6 ms
+766bd02edb60ab6111c25835ab7fd312,dss-prototype: /TE,2022-08-16 15:31:33.508,9.88 ms
+43d94bbde8c28e090072a9e2be2e49c4,dss-prototype: /tracks,2022-08-16 15:31:32.497,5.49 ms
+4c82334089ce42b49c12f91102b09ce2,dss-prototype: IAD Flight Data,2022-08-16 15:31:31.171,311 ms
+4a066aaaa2f9872d7fd5c94f0f789716,dss-prototype: RIC Flight Data,2022-08-16 15:31:29.842,316 ms
+14a91ceb7ddb97cd1f293145495d3358,dss-prototype: /WA,2022-08-16 15:31:28.823,11.9 ms
+764a0803f4f70ed05f1f5cee37274f49,dss-prototype: /TE,2022-08-16 15:31:27.807,9.70 ms
+93adfee7c972c40ae9ec053010b18c2f,dss-prototype: /tracks,2022-08-16 15:31:26.795,5.56 ms
+d5fe6fc800ed4fe91311aff68b6d968c,dss-prototype: IAD Flight Data,2022-08-16 15:31:25.472,309 ms
+9882d114fc980977a3e8fb11e6c5fdad,dss-prototype: RIC Flight Data,2022-08-16 15:31:24.138,320 ms
+75c2361ba578f1a7171f4dbbd2941bfd,dss-prototype: /WA,2022-08-16 15:31:23.118,12.5 ms
+e77f1d5f51936371a206f1ab277942cc,dss-prototype: /TE,2022-08-16 15:31:22.104,8.59 ms
+cc4eff9ec2071e036280ec67d8f8fb4d,dss-prototype: /tracks,2022-08-16 15:31:21.092,5.57 ms
+2d72c62d017575bcdb577830326f76c9,dss-prototype: IAD Flight Data,2022-08-16 15:31:19.757,322 ms
+8fc4e99566a8d4e8f029958581498093,dss-prototype: RIC Flight Data,2022-08-16 15:31:18.390,352 ms
+fc111a2d3f142ca669ffa9a84d11ea2e,dss-prototype: /WA,2022-08-16 15:31:17.370,12.4 ms
+257c7784d5043ca707ce971b676d1e36,dss-prototype: /TE,2022-08-16 15:31:16.354,8.99 ms
+60109c90d07a43ae971cc6f05a385d4f,dss-prototype: /tracks,2022-08-16 15:31:15.343,5.26 ms
+3b2ed33464e2a55e007275c823a4d4dc,dss-prototype: IAD Flight Data,2022-08-16 15:31:13.992,337 ms
+3c2ef1d7ce5bfa2cd7b1ba396444da7d,dss-prototype: RIC Flight Data,2022-08-16 15:31:12.637,331 ms
+0d8c57f4dfbb7b7a7be9787d4c6be91c,dss-prototype: /WA,2022-08-16 15:31:11.617,13.2 ms
+2ff98ad5ac20100d18e92ab91c754996,dss-prototype: /TE,2022-08-16 15:31:10.602,8.83 ms
+a0fe1d87569e48dc3bd07e7dd97b5a5c,dss-prototype: /tracks,2022-08-16 15:31:09.590,6.53 ms
+43ac6cfe5929bec6510810a574d4f5b9,dss-prototype: IAD Flight Data,2022-08-16 15:31:08.088,487 ms
+3f1a174720a189240c54499107a48d17,dss-prototype: RIC Flight Data,2022-08-16 15:31:06.755,319 ms
+b7b9f7b5c501d9c3b81af6cb68e24da4,dss-prototype: /WA,2022-08-16 15:31:05.736,12.8 ms
+a8d29b5fc5b1176e6af4a47907724529,dss-prototype: /TE,2022-08-16 15:31:04.720,9.48 ms
+f8e1f8500fae9a7cf088bb3d8628f3f4,dss-prototype: /tracks,2022-08-16 15:31:03.708,6.19 ms
+53f9a625652118249db748d913067264,dss-prototype: IAD Flight Data,2022-08-16 15:31:02.384,311 ms
+b41483d31cdc4617c98327011cefe8a9,dss-prototype: RIC Flight Data,2022-08-16 15:31:01.041,329 ms
+2a44b77e416e908c01c1aed5c84ce432,dss-prototype: /WA,2022-08-16 15:31:00.022,12.7 ms
+3f9931d2ca5d0d55ec894d2a46e8fb04,dss-prototype: /TE,2022-08-16 15:30:59.007,9.44 ms
+512082d029ed9b6651c45bf400ec9674,dss-prototype: /tracks,2022-08-16 15:30:57.996,5.35 ms
+38a5317b97bc8ccf6af485997e46d371,dss-prototype: IAD Flight Data,2022-08-16 15:30:56.672,309 ms
+3e368e23a54cb45e9c9fad87c55aa754,dss-prototype: RIC Flight Data,2022-08-16 15:30:55.320,338 ms
+3deb50901d4a0b4787debbff4b8c2ae5,dss-prototype: /WA,2022-08-16 15:30:54.301,12.6 ms
+b3b236f4a853b850e2ffccc42077813d,dss-prototype: /TE,2022-08-16 15:30:53.286,9.42 ms
+f362183aa9c0a01e101bac827f1d473b,dss-prototype: /tracks,2022-08-16 15:30:52.274,5.69 ms
+e3471f5985e797d9f50cccb52594ec08,dss-prototype: IAD Flight Data,2022-08-16 15:30:50.934,325 ms
+131abc357dec3cafffe94f4f58c6cb01,dss-prototype: RIC Flight Data,2022-08-16 15:30:49.597,322 ms
+b5ebf8c4cd2a2b0d03b2363cc3bb3bd6,dss-prototype: /WA,2022-08-16 15:30:48.578,12.9 ms
+0110210d6f70e3e3033104a29a1fa054,dss-prototype: /TE,2022-08-16 15:30:47.564,8.25 ms
+50a095c82e7eb4f9958e078b38a3fa1f,dss-prototype: /tracks,2022-08-16 15:30:46.552,5.84 ms
+fbff1ba445490d040b80b58cbb9fa620,dss-prototype: IAD Flight Data,2022-08-16 15:30:45.212,326 ms
+3a3898a18c02c567e7f14520e675ecdf,dss-prototype: RIC Flight Data,2022-08-16 15:30:43.884,313 ms
+ac966f481f46316f87766b7fb3b8681e,dss-prototype: /WA,2022-08-16 15:30:42.867,11.8 ms
+ef516bcdd7c6cd42899dbb53ef3bad46,dss-prototype: /TE,2022-08-16 15:30:41.853,8.03 ms
+bd4f51fcce66868abd9ed0c68ba4bfa7,dss-prototype: /tracks,2022-08-16 15:30:40.842,5.54 ms
+3f4f61848caabc8497c6b5753f94b279,dss-prototype: IAD Flight Data,2022-08-16 15:30:39.506,322 ms
+7264a3ec41a4e126874d01581fbfaf19,dss-prototype: RIC Flight Data,2022-08-16 15:30:37.968,525 ms
+a6ae2252b912971f4fff189f5ea383e8,dss-prototype: /WA,2022-08-16 15:30:36.951,11.9 ms
+0cbf2de5512b33d28cbf418b0e56555d,dss-prototype: /TE,2022-08-16 15:30:35.936,8.14 ms
+4888c84ababc2461ec5d2383972607d0,dss-prototype: /tracks,2022-08-16 15:30:34.925,5.57 ms
+61bb3f7b61f018b89a025572fd89d876,dss-prototype: IAD Flight Data,2022-08-16 15:30:33.529,382 ms
+aeaf85679ea35b59f03d046e6cd5291a,dss-prototype: RIC Flight Data,2022-08-16 15:30:32.203,313 ms
+d44405747de7d3c981e84c1220b75934,dss-prototype: /WA,2022-08-16 15:30:31.185,12.0 ms
+1f897a2f3de599e970332be0c451049d,dss-prototype: /TE,2022-08-16 15:30:30.172,7.78 ms
+624d33d4a232de121f1e23fb342f3d9d,dss-prototype: /tracks,2022-08-16 15:30:29.161,5.97 ms
+950e6b5a3c9a569f280566e72d7a089f,dss-prototype: IAD Flight Data,2022-08-16 15:30:27.778,369 ms
+4fa2b492b7ac980a0a4bf786161dce54,dss-prototype: RIC Flight Data,2022-08-16 15:30:26.437,327 ms
+ed906f42609fecda26bb537b9a84540f,dss-prototype: /WA,2022-08-16 15:30:25.419,12.0 ms
+152d98027cdcbeb04f25dc51ce545df3,dss-prototype: /TE,2022-08-16 15:30:24.405,8.08 ms
+e482a920c0f8c29f6de4dec9e51b39b8,dss-prototype: /tracks,2022-08-16 15:30:23.391,6.94 ms
+651335d1aa7f35c92f48adbf7ebf6427,dss-prototype: IAD Flight Data,2022-08-16 15:30:22.061,316 ms
+5f6a98ced338ec6f2e0875657fa306b5,dss-prototype: RIC Flight Data,2022-08-16 15:30:20.734,312 ms
+a6c2366aadff9ecce73a223e224f96e5,dss-prototype: /WA,2022-08-16 15:30:19.716,12.2 ms
+c83c210858d4e9ed280ecdc5065044d7,dss-prototype: /TE,2022-08-16 15:30:18.701,8.60 ms
+916be592c318c21b7e13c227a8b6526a,dss-prototype: /tracks,2022-08-16 15:30:17.690,5.38 ms
+4a9d501f4761f3f51e3194a38b8b3641,dss-prototype: IAD Flight Data,2022-08-16 15:30:16.364,313 ms
+9da568afb729182aec7244ecd7da6f19,dss-prototype: RIC Flight Data,2022-08-16 15:30:15.040,310 ms
+fa2e6a3b0923f571ec9776182de81d8b,dss-prototype: /WA,2022-08-16 15:30:14.022,13.2 ms
+353c9bd6ef4567d14e9186623d803ea3,dss-prototype: /TE,2022-08-16 15:30:13.008,7.94 ms
+1e441200bd566b498dddcc203721e634,dss-prototype: /tracks,2022-08-16 15:30:11.996,5.45 ms
+cdc129833a99a69c0abde7e4c9b20d05,dss-prototype: IAD Flight Data,2022-08-16 15:30:10.671,313 ms
+29d7d536345ecc8e1872e2983c8a6412,dss-prototype: RIC Flight Data,2022-08-16 15:30:09.338,319 ms
+6ff166e297e3edb76dff126ebdbd958d,dss-prototype: /WA,2022-08-16 15:30:08.320,12.1 ms
+1514d7b6a165a35805172bc3ae4c7bb5,dss-prototype: /TE,2022-08-16 15:30:07.306,7.64 ms
+50278fc03aa213d5b0be4da1623808d4,dss-prototype: /tracks,2022-08-16 15:30:06.294,5.31 ms
+5fc8cd6ebe050b588d09e7fa839626d7,dss-prototype: IAD Flight Data,2022-08-16 15:30:04.950,331 ms
+2aa6119dddcace9322471c8ceb601e13,dss-prototype: RIC Flight Data,2022-08-16 15:30:03.621,314 ms
+15c36de6899b5b92e63bdec116911d52,dss-prototype: /WA,2022-08-16 15:30:02.602,13.6 ms
+c0143d90db9ba91f454d9956284a5f0c,dss-prototype: /TE,2022-08-16 15:30:01.587,8.46 ms
+eb6180ca87bd26efea624159ed91fea9,dss-prototype: /tracks,2022-08-16 15:30:00.577,5.51 ms
+68cd8628846097d6e62c524de3545f58,dss-prototype: IAD Flight Data,2022-08-16 15:29:59.248,314 ms
+a039878da9f6667aa46594b8efc69376,dss-prototype: RIC Flight Data,2022-08-16 15:29:57.921,314 ms
+26babb43e7ffce822299daefa1a615dd,dss-prototype: /WA,2022-08-16 15:29:56.903,11.9 ms
+11f09654f82a6878a136092784836c19,dss-prototype: /TE,2022-08-16 15:29:55.889,8.42 ms
+58f33f7d774741088720de4f9f1917b6,dss-prototype: /tracks,2022-08-16 15:29:54.878,5.42 ms
+ab9ce626ac47001cfef701f561096a0c,dss-prototype: IAD Flight Data,2022-08-16 15:29:53.551,314 ms
+a7d331c07db9de1984aafe54b2d60ea4,dss-prototype: RIC Flight Data,2022-08-16 15:29:52.193,332 ms
+aa07ba4cb195ebf546d989167bd869b5,dss-prototype: /WA,2022-08-16 15:29:51.174,12.6 ms
+76c09553fff04fefb12b3f6d772f3536,dss-prototype: /TE,2022-08-16 15:29:50.159,9.04 ms
+277336395afc931f8c0f6af22b96f037,dss-prototype: /tracks,2022-08-16 15:29:49.147,6.00 ms
+babf13905c04792af5440a07bb3226a8,dss-prototype: IAD Flight Data,2022-08-16 15:29:47.813,320 ms
+6adc1e3f8b275e972c8f8b7b492855ce,dss-prototype: RIC Flight Data,2022-08-16 15:29:46.490,309 ms
+ff05f69dd2114aa03bef688dea029612,dss-prototype: /WA,2022-08-16 15:29:45.471,12.5 ms
+3ce24ac74d07bb2a6169761959544278,dss-prototype: /TE,2022-08-16 15:29:44.458,8.23 ms
+96c6d6939011226705ca86546bd97be8,dss-prototype: /tracks,2022-08-16 15:29:43.445,6.61 ms
+9a6da493a9c33f2763b4d469080a49cf,dss-prototype: IAD Flight Data,2022-08-16 15:29:42.101,321 ms
+b2d3caebe97c0c35f4995f6b4d21f7ae,dss-prototype: RIC Flight Data,2022-08-16 15:29:40.773,315 ms
+392ff7548f275396d93496704e346c49,dss-prototype: /WA,2022-08-16 15:29:39.755,11.5 ms
+ea15ee5d4c7b2a04c72f983a0c746126,dss-prototype: /TE,2022-08-16 15:29:38.741,8.12 ms
+a6747384424782b1c44076bc6b2b71e0,dss-prototype: /tracks,2022-08-16 15:29:37.729,6.10 ms
+8e88b9c4b43262386c9aa11d14ca3149,dss-prototype: IAD Flight Data,2022-08-16 15:29:36.393,322 ms
+2d54f8919082dcdd112c0545f040e511,dss-prototype: RIC Flight Data,2022-08-16 15:29:35.068,312 ms
+201a096e21b21e0dde8d7cb76dfc78b7,dss-prototype: /WA,2022-08-16 15:29:34.049,13.2 ms
+e803677c367dcf7e9a3625c87cb6d8e5,dss-prototype: /TE,2022-08-16 15:29:33.024,8.64 ms
+01297e0ce6d514939ab0dc76c06b2645,dss-prototype: /tracks,2022-08-16 15:29:32.012,5.69 ms
+30ba26023c0bc0c7e12738e28191ef96,dss-prototype: IAD Flight Data,2022-08-16 15:29:30.686,314 ms
+4c38c9367fa51877a086cec050a2f0c1,dss-prototype: RIC Flight Data,2022-08-16 15:29:29.356,317 ms
+40e0ef0f778746af9b2e53e4bfe8ee50,dss-prototype: /WA,2022-08-16 15:29:28.337,12.0 ms
+59eb53c0fc0adde56e9bffd6a5d03028,dss-prototype: /TE,2022-08-16 15:29:27.324,7.77 ms
+65279e8db50025b2c94fb4a7dcb11b6d,dss-prototype: /tracks,2022-08-16 15:29:26.313,5.49 ms
+182fe72dc56181ada57a48a549feac8e,dss-prototype: IAD Flight Data,2022-08-16 15:29:24.989,311 ms
+f0fe00915edae152193d772eb56d3ec6,dss-prototype: RIC Flight Data,2022-08-16 15:29:23.665,310 ms
+8f48920707dd4f56d8c9539cceaa793f,dss-prototype: /WA,2022-08-16 15:29:22.648,11.4 ms
+c4800eabbd3b223558c42d8224746491,dss-prototype: /TE,2022-08-16 15:29:21.635,7.75 ms
+fed9caa990fc788388c3fd2a47590826,dss-prototype: /tracks,2022-08-16 15:29:20.623,5.32 ms
+d5191394b0ed4edc05ff00d3ab19e4da,dss-prototype: IAD Flight Data,2022-08-16 15:29:19.297,313 ms
+01eac702ac7522f12680bbeccace3270,dss-prototype: RIC Flight Data,2022-08-16 15:29:17.966,317 ms
+9db5c70ccc048e4d49424be0d8d7651b,dss-prototype: /WA,2022-08-16 15:29:16.944,11.9 ms
+03d845fbe714f3a85248d58e2e13723f,dss-prototype: /TE,2022-08-16 15:29:15.930,7.85 ms
+fcd0d0c26a0791111cca229aa7ac7ad7,dss-prototype: /tracks,2022-08-16 15:29:14.918,5.85 ms
+d8fbd770227bb39e0fbac52d3c6e172e,dss-prototype: IAD Flight Data,2022-08-16 15:29:13.581,324 ms
+870349e77492cb8740cc4c371a4ed624,dss-prototype: RIC Flight Data,2022-08-16 15:29:12.255,312 ms
+6ed8ed323ff31bd5d585baf232956a6d,dss-prototype: /WA,2022-08-16 15:29:11.236,11.9 ms
+a5ec099c9cc4d16d151b07784b6cce8a,dss-prototype: /TE,2022-08-16 15:29:10.223,7.92 ms
+c58eeea0a2fb7c736fd36c14b2b5d011,dss-prototype: /tracks,2022-08-16 15:29:09.211,5.80 ms
+afe21bf59174b8ac6685aa46b34a9809,dss-prototype: IAD Flight Data,2022-08-16 15:29:07.643,553 ms
+d0e82cac085ad00511943cd2e1d6086b,dss-prototype: RIC Flight Data,2022-08-16 15:29:06.302,328 ms
+8d2852ae159afd2aabc5513b417d1614,dss-prototype: /WA,2022-08-16 15:29:05.284,11.3 ms
+d7e29262a22bb3d034ec6b3a4ea0e365,dss-prototype: /TE,2022-08-16 15:29:04.270,8.21 ms
+4b4d95fded08d508be49bd21ffa2d81c,dss-prototype: /tracks,2022-08-16 15:29:03.257,6.56 ms
+3b28b0bcd85d36afa27bb2cd3ec9a2cd,dss-prototype: IAD Flight Data,2022-08-16 15:29:01.928,316 ms
+d14eeaccaeaa7b2f5ad17c5e391b8665,dss-prototype: RIC Flight Data,2022-08-16 15:29:00.606,307 ms
+6e832a8f8c8b44e8ede14fa761b0658e,dss-prototype: /WA,2022-08-16 15:28:59.587,12.4 ms
+b5222aa2ab20a484f38a069c05f6eb7c,dss-prototype: /TE,2022-08-16 15:28:58.573,8.36 ms
+a0ff0feef529316203f65a64b1bdb9a2,dss-prototype: /tracks,2022-08-16 15:28:57.562,5.73 ms
+095dc68383292145f72ee3773bd7ac87,dss-prototype: IAD Flight Data,2022-08-16 15:28:56.237,311 ms
+2004e6a02486f1a0e9097227e2cabd5d,dss-prototype: RIC Flight Data,2022-08-16 15:28:54.907,317 ms
+50533e05e148880c60660cfba60b9739,dss-prototype: /WA,2022-08-16 15:28:53.889,12.0 ms
+d9fcfe5353e30ffbf97eb89b4b85124f,dss-prototype: /TE,2022-08-16 15:28:52.875,8.02 ms
+e2192af222e076b838bff0fc99e975c2,dss-prototype: /tracks,2022-08-16 15:28:51.864,5.36 ms
+a92af6e49b2f5a1f752cab4bce2707a6,dss-prototype: IAD Flight Data,2022-08-16 15:28:50.508,343 ms
+9f0a98f9c08cde2f9da6b09c34a24c82,dss-prototype: RIC Flight Data,2022-08-16 15:28:49.169,325 ms
+d404896b563f22c09844772967b9f8d7,dss-prototype: /WA,2022-08-16 15:28:48.150,12.4 ms
+5607ec4b9c4931a833aa6383f754e660,dss-prototype: /TE,2022-08-16 15:28:47.137,7.97 ms
+120e9a13f9247d5451c749b193821501,dss-prototype: /tracks,2022-08-16 15:28:46.126,5.07 ms
+fe6d5fad3f8e16e12a6955e5ae25bd4a,dss-prototype: IAD Flight Data,2022-08-16 15:28:44.794,316 ms
+34bfed85138e1a89684c49f94960198d,dss-prototype: RIC Flight Data,2022-08-16 15:28:43.440,340 ms
+b9cd315c33a66acc0e4034c9ebcc851e,dss-prototype: /WA,2022-08-16 15:28:42.413,11.9 ms
+45ce9840422d4efa82c05bb44519f13a,dss-prototype: /TE,2022-08-16 15:28:41.399,8.26 ms
+e1769f9a0aff4dd29742b606a105bb30,dss-prototype: /tracks,2022-08-16 15:28:40.388,5.26 ms
+c566b12979ca1bba4b3831f376c424c6,dss-prototype: IAD Flight Data,2022-08-16 15:28:39.062,313 ms
+79109db7469fc8ae422aeec0f971ad0d,dss-prototype: RIC Flight Data,2022-08-16 15:28:37.738,311 ms
+bbe3960e57ccdb3e40ba6ab4f7291d44,dss-prototype: /WA,2022-08-16 15:28:36.719,11.6 ms
+f41c16a5abfa996bcacbc61fe929d07a,dss-prototype: /TE,2022-08-16 15:28:35.706,7.71 ms
+3041a5498d2c0cf30bc709a837164dd3,dss-prototype: /tracks,2022-08-16 15:28:34.694,6.24 ms
+1deeb29a82e0cbc9df279c300fbbd78d,dss-prototype: IAD Flight Data,2022-08-16 15:28:33.342,339 ms
+c9e33ff258e85656cc50aff653e6446c,dss-prototype: RIC Flight Data,2022-08-16 15:28:32.009,320 ms
+bf9d66a28d0988cebf9e1f857b1d9605,dss-prototype: /WA,2022-08-16 15:28:30.992,11.6 ms
+07b59a14e6ee02b961b91730e709869d,dss-prototype: /TE,2022-08-16 15:28:29.977,9.08 ms
+337a859c85931392436b241200ea6c36,dss-prototype: /tracks,2022-08-16 15:28:28.964,6.58 ms
+0b35abbeb1ad7fb5958899a23e53f201,dss-prototype: IAD Flight Data,2022-08-16 15:28:27.639,312 ms
+f28201bd58ad0888ec940d46f345a446,dss-prototype: RIC Flight Data,2022-08-16 15:28:26.085,540 ms
+f36d6e7d4d45840eb1adc7b6f8e7b871,dss-prototype: /WA,2022-08-16 15:28:25.066,12.3 ms
+2a225a442937d5818da682731b345577,dss-prototype: /TE,2022-08-16 15:28:24.051,9.36 ms
+58a9d68d5ff7f84afbed1d7cc48c3f65,dss-prototype: /tracks,2022-08-16 15:28:23.022,5.53 ms
+52ae197e910c1f712a84cf5c8ef9b973,dss-prototype: IAD Flight Data,2022-08-16 15:28:21.693,316 ms
+1978687d81e154a22246519078abe714,dss-prototype: RIC Flight Data,2022-08-16 15:28:20.203,475 ms
+afea0938f7da065629585ffae69fad47,dss-prototype: /WA,2022-08-16 15:28:19.186,12.0 ms
+7a38557000472e992114fa6dd0ff63cb,dss-prototype: /TE,2022-08-16 15:28:18.170,9.80 ms
+db28cf63b528628ed446b3a163908ce2,dss-prototype: /tracks,2022-08-16 15:28:17.158,5.72 ms
+faa107078b2003ac3313a082c910f5ab,dss-prototype: IAD Flight Data,2022-08-16 15:28:15.818,324 ms
+f8aa17b40e3e74ec8906e8eceec65285,dss-prototype: RIC Flight Data,2022-08-16 15:28:14.492,313 ms
+51708ac19d4d1cca0a8f0a0ce53b7e89,dss-prototype: /WA,2022-08-16 15:28:13.473,12.6 ms
+1ab37a95c5600b60772cfb60928aa60d,dss-prototype: /TE,2022-08-16 15:28:12.459,8.40 ms
+acf477b5c89665a234acc88c011fe610,dss-prototype: /tracks,2022-08-16 15:28:11.447,5.36 ms
+9a76e7e5422a00e64a812870261b6282,dss-prototype: IAD Flight Data,2022-08-16 15:28:10.111,323 ms
+8a85f963ae6baf5ec4520d59de669939,dss-prototype: RIC Flight Data,2022-08-16 15:28:08.561,536 ms
+2f1ff1ef205df623027040bd70bfce2b,dss-prototype: /WA,2022-08-16 15:28:07.542,12.2 ms
+c1cbfeffd824fba19ba9e6a7788d0865,dss-prototype: /TE,2022-08-16 15:28:06.527,8.57 ms
+445406b2a83f2b4b694b478104899666,dss-prototype: /tracks,2022-08-16 15:28:05.515,6.30 ms
+3a8d2e7f3bf1f7e85a40f9f0b45a462d,dss-prototype: IAD Flight Data,2022-08-16 15:28:04.183,318 ms
+1e23bbc880412a5ef905bed8c3f0b62f,dss-prototype: RIC Flight Data,2022-08-16 15:28:02.846,322 ms
+9e2fd61cd841b3929c185ea540f8ef36,dss-prototype: /WA,2022-08-16 15:28:01.827,12.0 ms
+7c85fda1fe25507a0e5520da5e9501b0,dss-prototype: /TE,2022-08-16 15:28:00.812,8.94 ms
+43cf222a65701a89f56b75631e6fc386,dss-prototype: /tracks,2022-08-16 15:27:59.800,6.26 ms
+c97882310dfb76103e90c7ef477723c3,dss-prototype: IAD Flight Data,2022-08-16 15:27:58.465,321 ms
+0be58d8ead6c561d0d23513024570908,dss-prototype: RIC Flight Data,2022-08-16 15:27:57.137,314 ms
+835b18d92da225a15ef45083557a0cbd,dss-prototype: /WA,2022-08-16 15:27:56.119,11.5 ms
+6a9174ce23e41bfe13186546666d2d7d,dss-prototype: /TE,2022-08-16 15:27:55.104,9.32 ms
+ce43d7f5d824faaca0a92bb5a7e93a13,dss-prototype: /tracks,2022-08-16 15:27:54.093,5.49 ms
+6e3b2fd7b80b6dc68131403b74e1e3a9,dss-prototype: IAD Flight Data,2022-08-16 15:27:52.765,314 ms
+7204f2be6ecd39f061378ddeec09024d,dss-prototype: RIC Flight Data,2022-08-16 15:27:50.235,1.52 s
+06dd08d784d3e2860f631c582012f0c4,dss-prototype: /WA,2022-08-16 15:27:49.216,11.8 ms
+08beca73757f7dcac514a275cef1d6a1,dss-prototype: /TE,2022-08-16 15:27:48.201,8.97 ms
+880beff4fa6dae1341424c5960d77c68,dss-prototype: /tracks,2022-08-16 15:27:47.189,6.02 ms
+798e830e048bd1a339bf2ca47c55836d,dss-prototype: IAD Flight Data,2022-08-16 15:27:45.814,360 ms
+3a06c11af647536ce363f168080bfd0f,dss-prototype: RIC Flight Data,2022-08-16 15:27:44.470,330 ms
+6b7fc7fefd735b02c29ce51d0b4005ae,dss-prototype: /WA,2022-08-16 15:27:43.451,12.9 ms
+60c5fbcb72f243e70bf2471c867b8ce7,dss-prototype: /TE,2022-08-16 15:27:42.430,8.42 ms
+a822ffb5fb129fbf27144b11659baab5,dss-prototype: /tracks,2022-08-16 15:27:41.419,5.33 ms
+b47fe507ad2755bda63a7cf7fbfa2dc8,dss-prototype: IAD Flight Data,2022-08-16 15:27:40.086,319 ms
+82401ba730ebdaa34d61e600f09dec89,dss-prototype: RIC Flight Data,2022-08-16 15:27:38.760,311 ms
+30d81b58234a0b187e63468e6c092b6e,dss-prototype: /WA,2022-08-16 15:27:37.741,13.3 ms
+49871604ee3e782b39fd14b483bd7f61,dss-prototype: /TE,2022-08-16 15:27:36.580,9.42 ms
+5786656a41bbb0f11c4c36dcee11df07,dss-prototype: /tracks,2022-08-16 15:27:35.569,5.16 ms
+9e323239994823e7017a48b6fd46e440,dss-prototype: IAD Flight Data,2022-08-16 15:27:34.240,315 ms
+c99fa5b3b254024241d0d5442841077b,dss-prototype: RIC Flight Data,2022-08-16 15:27:32.908,318 ms
+3e9bac305a8912da443a0f4d9b6ef0f4,dss-prototype: /WA,2022-08-16 15:27:31.890,11.5 ms
+6fb847a42601bbeb5129d4fd82789560,dss-prototype: /TE,2022-08-16 15:27:30.874,8.45 ms
+46c2705b5bf757f582140db13fac012c,dss-prototype: /tracks,2022-08-16 15:27:29.864,5.11 ms
+3f81ee1ed7df87ed5a823411cd370bf3,dss-prototype: IAD Flight Data,2022-08-16 15:27:28.517,334 ms
+288964d7ce5e834301d3067788bfa708,dss-prototype: RIC Flight Data,2022-08-16 15:27:27.177,326 ms
+684e6bae15cd0ce31e43f70e17f59aa8,dss-prototype: /WA,2022-08-16 15:27:26.159,11.6 ms
+066ce2ba96ce1db6a661ac2aab598177,dss-prototype: /TE,2022-08-16 15:27:25.144,8.40 ms
+ab24db8e7487d3b530b383376fa01f6e,dss-prototype: /tracks,2022-08-16 15:27:24.131,7.51 ms
+58665771173a8f508689f0f8e41f16ac,dss-prototype: IAD Flight Data,2022-08-16 15:27:22.808,309 ms
+9f5637b737bd49f41fd35f76fe762153,dss-prototype: RIC Flight Data,2022-08-16 15:27:21.483,310 ms
+37ab995bcc466831f34c68accc684e0d,dss-prototype: /WA,2022-08-16 15:27:20.464,12.0 ms
+ec2943b63263e1797b425e75551894ef,dss-prototype: /TE,2022-08-16 15:27:19.450,8.41 ms
+69821dfebe5a11939540e880ddf656cf,dss-prototype: /tracks,2022-08-16 15:27:18.438,6.12 ms
+ec627d172f7fedebf4b65f5d12db9809,dss-prototype: IAD Flight Data,2022-08-16 15:27:17.110,314 ms
+2641cc8353f327529b9ed79b9830ad6d,dss-prototype: RIC Flight Data,2022-08-16 15:27:15.770,327 ms
+83585f025bebb15f2006c999232a72a5,dss-prototype: /WA,2022-08-16 15:27:14.752,11.1 ms
+c9026f60893e10e4a1281056e61dc4c9,dss-prototype: /TE,2022-08-16 15:27:13.723,22.8 ms
+0171623d82eeb8390a1bafc82fa6da48,dss-prototype: /tracks,2022-08-16 15:27:12.711,5.16 ms
+c2a09cf4a94e4b86c73bcdeed96180cd,dss-prototype: IAD Flight Data,2022-08-16 15:27:11.386,312 ms
+1e1bf117d657a52324b1e7ed7cf12924,dss-prototype: RIC Flight Data,2022-08-16 15:27:10.045,326 ms
+aaa0a423a4303a866608845dff7f7f32,dss-prototype: /WA,2022-08-16 15:27:09.027,11.7 ms
+f40e01e621f857efdbbc232461882706,dss-prototype: /TE,2022-08-16 15:27:08.013,8.32 ms
+b0fda24d33e6ec93587331adfc9edf46,dss-prototype: /tracks,2022-08-16 15:27:07.002,6.06 ms
+2009d102c523e27f18dd8419cd2771c8,dss-prototype: IAD Flight Data,2022-08-16 15:27:05.673,315 ms
+0646652ed19a7098174f9a144cedf517,dss-prototype: RIC Flight Data,2022-08-16 15:27:04.343,316 ms
+2258c2d25d77598fd6c9f125d1e3e144,dss-prototype: /WA,2022-08-16 15:27:03.324,11.6 ms
+9a8609be6bed43e3f1ff9334649d147d,dss-prototype: /TE,2022-08-16 15:27:02.309,8.85 ms
+cbf124a556a0bfccfc836b0bb2907e24,dss-prototype: /tracks,2022-08-16 15:27:01.298,5.20 ms
+628da6a55cb1be0104775d696a97e0d2,dss-prototype: IAD Flight Data,2022-08-16 15:26:59.971,313 ms
+4a05e5aee06e8eb879de419213baa269,dss-prototype: RIC Flight Data,2022-08-16 15:26:58.630,328 ms
+5d14aed3f4aab55f1d22aecdda0fb8ce,dss-prototype: /WA,2022-08-16 15:26:57.611,11.8 ms
+af360010600109fbe865d4231cf336a4,dss-prototype: /TE,2022-08-16 15:26:56.596,9.18 ms
+3f2a068b743feb7cd37620e3a1e181fb,dss-prototype: /tracks,2022-08-16 15:26:55.586,4.86 ms
+23b615560e277e72ffca8902808c0e95,dss-prototype: IAD Flight Data,2022-08-16 15:26:54.248,324 ms
+081b71fe00c3a01106b36cead0852bca,dss-prototype: RIC Flight Data,2022-08-16 15:26:52.923,311 ms
+9ba760961bc311001c45955d5d12d840,dss-prototype: /WA,2022-08-16 15:26:51.906,11.8 ms
+f022a803ac17a5a20c52d62514208795,dss-prototype: /TE,2022-08-16 15:26:50.892,8.30 ms
+470f9aaa1104cdbbb19e902f195be04e,dss-prototype: /tracks,2022-08-16 15:26:49.881,5.52 ms
+58c0ff210432fe62aad04cb526793298,dss-prototype: IAD Flight Data,2022-08-16 15:26:48.531,336 ms
+24c5d2afcd0eee3ef62d010a6a5abe5e,dss-prototype: RIC Flight Data,2022-08-16 15:26:47.175,341 ms
+cf0aba61c9e94032b0634aaec847ca28,dss-prototype: /WA,2022-08-16 15:26:46.158,11.4 ms
+82aff36986506a690fb9311842e7cbf8,dss-prototype: /TE,2022-08-16 15:26:45.143,8.85 ms
+0e2e5a28c8602ca717cab8f0bac2f88d,dss-prototype: /tracks,2022-08-16 15:26:44.131,5.93 ms
+66f2d605284472bb051e3c7966aba2dc,dss-prototype: IAD Flight Data,2022-08-16 15:26:42.807,309 ms
+974e75d2e8759012b0c084eeb8159e16,dss-prototype: RIC Flight Data,2022-08-16 15:26:41.485,308 ms
+a48d365250239a1e7f7c5a9a7bd8fc75,dss-prototype: /WA,2022-08-16 15:26:40.467,11.5 ms
+73b9b62658ced038f06825fa6a862a91,dss-prototype: /TE,2022-08-16 15:26:39.452,9.71 ms
+d431a14d529e96033f3c745f8628d1f9,dss-prototype: /tracks,2022-08-16 15:26:38.441,6.07 ms
+126c3c0e7ae60e18d17e3c5441f3cbee,dss-prototype: IAD Flight Data,2022-08-16 15:26:37.107,320 ms
+7f3f1b3668d8a44df7a4156de2535e2d,dss-prototype: RIC Flight Data,2022-08-16 15:26:35.554,539 ms
+4268493e7eea7ee0e96faaeae4654bad,dss-prototype: /WA,2022-08-16 15:26:34.535,12.0 ms
+3e75bd6a836d380545fc4b3f1e268f5b,dss-prototype: /TE,2022-08-16 15:26:33.518,9.67 ms
+30d3932198b8010bd33b3330ae99741f,dss-prototype: /tracks,2022-08-16 15:26:32.507,5.45 ms
+906300edd855fc88c8b22c9b9c734d11,dss-prototype: IAD Flight Data,2022-08-16 15:26:31.179,315 ms
+ffb824e4e22ff3793007ef66a3a24afa,dss-prototype: RIC Flight Data,2022-08-16 15:26:29.851,313 ms
+cbf4336b4abad09d2bf4b52a7341c978,dss-prototype: /WA,2022-08-16 15:26:28.833,12.2 ms
+5fa99d48839506ba7f1960b5a0895c99,dss-prototype: /TE,2022-08-16 15:26:27.818,8.95 ms
+ae110fb5d3710b7a9c3761de676a7acb,dss-prototype: /tracks,2022-08-16 15:26:26.805,5.56 ms
+aadc7f9a4303ad3991f9ff0f9efe9953,dss-prototype: IAD Flight Data,2022-08-16 15:26:25.478,313 ms
+e241d4fb6766c7cd9393e53d26183ccf,dss-prototype: RIC Flight Data,2022-08-16 15:26:24.090,373 ms
+b9f5e9f2718adfd22cdcf433695213d6,dss-prototype: /WA,2022-08-16 15:26:23.071,13.1 ms
+2072ebb49a537697dc244f363e417117,dss-prototype: /TE,2022-08-16 15:26:22.054,10.7 ms
+b47de9d34ec24a0870c6adeab2bade22,dss-prototype: /tracks,2022-08-16 15:26:21.043,4.98 ms
+18c097985aa911ab4e832be46901334b,dss-prototype: IAD Flight Data,2022-08-16 15:26:19.719,311 ms
+0a60bb6e45f8e540a1c6ff85428a9bce,dss-prototype: RIC Flight Data,2022-08-16 15:26:18.395,310 ms
+3ea420551d8afbbef328b5f5ef6a297e,dss-prototype: /WA,2022-08-16 15:26:17.377,11.8 ms
+b0e88e8e17d1a36ced1b6e342d4dcff6,dss-prototype: /TE,2022-08-16 15:26:16.363,8.37 ms
+e0839fc7ef0a71e171f8ee9d6ca4ee5a,dss-prototype: /tracks,2022-08-16 15:26:15.351,5.61 ms
+48b3d70eb450d0d01b750341d440c618,dss-prototype: IAD Flight Data,2022-08-16 15:26:14.006,331 ms
+160b45702e5705f95b1f0c4c4c8f72da,dss-prototype: RIC Flight Data,2022-08-16 15:26:12.674,319 ms
+c4fa0f599e32475a64c6b9118d52a8d6,dss-prototype: /WA,2022-08-16 15:26:11.655,12.1 ms
+251f43406a02c310dc63fe279bcb825a,dss-prototype: /TE,2022-08-16 15:26:10.641,8.12 ms
+44f040fb64ac44b1363f2acb4b096d32,dss-prototype: /tracks,2022-08-16 15:26:09.631,5.20 ms
+d1985a4bd2c0755f23a7bad3069f553c,dss-prototype: IAD Flight Data,2022-08-16 15:26:08.295,322 ms
+3be7d93953e7cc46ae4093d640a7c56a,dss-prototype: RIC Flight Data,2022-08-16 15:26:06.965,316 ms
+dfc40c6c548fb1d2a464f877b8f37135,dss-prototype: /WA,2022-08-16 15:26:05.945,12.7 ms
+d56c4aaefad3a1617d8d966c20b2ca00,dss-prototype: /TE,2022-08-16 15:26:04.932,7.98 ms
+03790bf7aa5f36c22f9a8364d918b4f1,dss-prototype: /tracks,2022-08-16 15:26:03.920,6.33 ms
+cea756c65044d88b3f7b3dcbbb27a549,dss-prototype: IAD Flight Data,2022-08-16 15:26:02.579,327 ms
+c52ca231d48bccb76c76b7a5285667cd,dss-prototype: RIC Flight Data,2022-08-16 15:26:01.234,331 ms
+aa322c756cb9ad930768d382a39193ab,dss-prototype: /WA,2022-08-16 15:26:00.217,11.4 ms
+e65371f5a178ddcf57b81e2b9630b97a,dss-prototype: /TE,2022-08-16 15:25:59.202,8.40 ms
+26105d6087b9e3eab87d0ffee365cb1d,dss-prototype: /tracks,2022-08-16 15:25:58.190,6.58 ms
+8f4189e25aaabf5def6b455fec7461e0,dss-prototype: IAD Flight Data,2022-08-16 15:25:56.853,311 ms
+7553489bd4ac8b0d9089561b820a8d56,dss-prototype: RIC Flight Data,2022-08-16 15:25:55.528,311 ms
+c071dc7e419cda3a150a0b91b3dd4fe6,dss-prototype: /WA,2022-08-16 15:25:54.511,11.7 ms
+47c7b2d80d6cc38508f66b60710739c6,dss-prototype: /TE,2022-08-16 15:25:53.496,9.42 ms
+20f4d2f9c2e07c709f210270fdd66219,dss-prototype: /tracks,2022-08-16 15:25:52.484,5.54 ms
+413624146cada832c1be1ed9023fff53,dss-prototype: IAD Flight Data,2022-08-16 15:25:51.142,328 ms
+f9652fc7737a0b78575fb01c864877c3,dss-prototype: RIC Flight Data,2022-08-16 15:25:49.819,309 ms
+afc25b1454c192d0207ea1e9531c180f,dss-prototype: /WA,2022-08-16 15:25:48.800,12.1 ms
+fecd74e85a8d5c23f4d913d6ebafd4e3,dss-prototype: /TE,2022-08-16 15:25:47.786,8.25 ms
+4994d4b0f9936c969e4fa8fc6e298c1e,dss-prototype: /tracks,2022-08-16 15:25:46.774,5.54 ms
+cb587b471db6187d104caf33e867104a,dss-prototype: IAD Flight Data,2022-08-16 15:25:45.446,315 ms
+d18b438eef11a76afb2b0b7baf27efa5,dss-prototype: RIC Flight Data,2022-08-16 15:25:43.107,1.33 s
+d77180926a1e98e1af31ae4faf945be3,dss-prototype: /WA,2022-08-16 15:25:42.089,11.4 ms
+8983e941cda0c9ea94d2acaf056c1cbb,dss-prototype: /TE,2022-08-16 15:25:41.073,9.55 ms
+328aad3722d615d1755052ed15a4b55c,dss-prototype: /tracks,2022-08-16 15:25:40.062,5.41 ms
+4902947a020e32026fcba215a1b93d9a,dss-prototype: IAD Flight Data,2022-08-16 15:25:38.729,319 ms
+bb04ef870b9b83ccafa3f09bd221cbf8,dss-prototype: RIC Flight Data,2022-08-16 15:25:37.184,531 ms
+84bcbcd9f41bd2653b2b182351a3b7ae,dss-prototype: /WA,2022-08-16 15:25:36.164,13.2 ms
+5108bfdafbd44ba79ba8e81e67ed851c,dss-prototype: /TE,2022-08-16 15:25:35.150,8.38 ms
+45787e33133392c146301c07c09e8295,dss-prototype: /tracks,2022-08-16 15:25:34.139,5.92 ms
+71dfdb11b9935a27051b2619bf0c64b3,dss-prototype: IAD Flight Data,2022-08-16 15:25:32.803,323 ms
+c1502f0b7d8fb3ea3c2827a69ac36354,dss-prototype: RIC Flight Data,2022-08-16 15:25:31.470,320 ms
+9ef01d1392e8ae0dd1b7772cf8c6eece,dss-prototype: /WA,2022-08-16 15:25:30.452,11.6 ms
+160cbd123aa1dd3bc98f6a204763719c,dss-prototype: /TE,2022-08-16 15:25:29.438,9.05 ms
+835a6cd71b8bbf42504233d64d3511b0,dss-prototype: /tracks,2022-08-16 15:25:28.425,6.89 ms
+37eab3a988ce6661b03f5a2d5ac63a60,dss-prototype: IAD Flight Data,2022-08-16 15:25:27.091,321 ms
+420809e09532a5fe863166639554384a,dss-prototype: RIC Flight Data,2022-08-16 15:25:25.765,312 ms
+6b217672e294bd76abd2db6a54e32e93,dss-prototype: /WA,2022-08-16 15:25:24.747,12.2 ms
+005cc6702522112b4d108a31a63d1e0c,dss-prototype: /TE,2022-08-16 15:25:23.732,9.40 ms
+11ca3f6cac99367f76b0a7163ceffe87,dss-prototype: /tracks,2022-08-16 15:25:22.720,5.81 ms
+7c64679c46f56e39e59b60965f7903c2,dss-prototype: IAD Flight Data,2022-08-16 15:25:21.399,308 ms
+54a0cd581c9c4c1362d3a81d0b49578a,dss-prototype: RIC Flight Data,2022-08-16 15:25:20.063,321 ms
+3cd998aec91927b34b0e77dfeb67ea0a,dss-prototype: /WA,2022-08-16 15:25:19.043,13.0 ms
+4494da7f230b14b6b0da7804acd298e6,dss-prototype: /TE,2022-08-16 15:25:18.030,8.56 ms
+5a7d0f70f3dc5a63c1725ffffc7e40b5,dss-prototype: /tracks,2022-08-16 15:25:17.018,5.92 ms
+399b1a8e973f53576a250249a94f8a7c,dss-prototype: IAD Flight Data,2022-08-16 15:25:15.675,329 ms
+45d39e3b5e026a4b429cd01243c8bc8b,dss-prototype: RIC Flight Data,2022-08-16 15:25:14.335,327 ms
+3a43814cce413ce08676ae1d5c58132e,dss-prototype: /WA,2022-08-16 15:25:13.317,11.1 ms
+8a531d41b1defd73bd6bb855d50e9833,dss-prototype: /TE,2022-08-16 15:25:12.302,8.46 ms
+50d872ff3a836ece3d9f95f06d86e3a7,dss-prototype: /tracks,2022-08-16 15:25:11.290,5.67 ms
+c2d7a1f299578f470fb4ce4c357434fd,dss-prototype: IAD Flight Data,2022-08-16 15:25:09.955,322 ms
+4b65b71643020747511ff8d7f42220b5,dss-prototype: RIC Flight Data,2022-08-16 15:25:08.629,311 ms
+003751628d436b5003112ac11081aa74,dss-prototype: /WA,2022-08-16 15:25:07.610,11.6 ms
+b7022c1584a0c1997908e14d80665263,dss-prototype: /TE,2022-08-16 15:25:06.596,8.32 ms
+a047190652738718e9830979ad089082,dss-prototype: /tracks,2022-08-16 15:25:05.586,5.30 ms
+69bf015a1b73587a5d04c930286a7887,dss-prototype: IAD Flight Data,2022-08-16 15:25:04.251,320 ms
+06398472931aef397b2437f4a21896fb,dss-prototype: RIC Flight Data,2022-08-16 15:25:02.872,365 ms
+919bde53bdd534322bec1a3db7fe3675,dss-prototype: /WA,2022-08-16 15:25:01.853,12.6 ms
+3ae043592e01bcb8ff4ce93239af2b47,dss-prototype: /TE,2022-08-16 15:25:00.838,8.72 ms
+bcf5b7b11c14f3e749b7132f892e637f,dss-prototype: /tracks,2022-08-16 15:24:59.827,5.75 ms
+b8b366f760d34e8f018a99a1a1540fc9,dss-prototype: IAD Flight Data,2022-08-16 15:24:58.492,321 ms
+c12e7d92739b5c88d543b2063bafae9e,dss-prototype: RIC Flight Data,2022-08-16 15:24:57.166,312 ms
+577f02b6fdefc623454597468c849e00,dss-prototype: /WA,2022-08-16 15:24:56.147,12.8 ms
+309467b5f17f32b6242dea9406fc3c5b,dss-prototype: /TE,2022-08-16 15:24:55.132,8.42 ms
+e789f18bf469e800eac144f071b2197e,dss-prototype: /tracks,2022-08-16 15:24:54.120,6.92 ms
+d0682451a8a1e17b088926aebf78eaee,dss-prototype: IAD Flight Data,2022-08-16 15:24:52.788,318 ms
+de6547711d39806430a2f15e04bae42d,dss-prototype: RIC Flight Data,2022-08-16 15:24:51.465,309 ms
+5af71d64d36b8d83b7c1a500161101a9,dss-prototype: /WA,2022-08-16 15:24:50.445,13.3 ms
+cfdf4edf50a056bf104d6fd47507498a,dss-prototype: /TE,2022-08-16 15:24:49.431,8.39 ms
+031e1c142144d5fdc331f9ac0bb318f1,dss-prototype: /tracks,2022-08-16 15:24:48.419,6.99 ms
+eee73c963647337816ac490cefd56bc0,dss-prototype: IAD Flight Data,2022-08-16 15:24:47.088,313 ms
+2781a41a8f58e711254718d81825cd60,dss-prototype: RIC Flight Data,2022-08-16 15:24:45.752,322 ms
+4906b721560b1cf25e45d16cd54c0373,dss-prototype: /WA,2022-08-16 15:24:44.732,12.8 ms
+7f711dfcc35e7ddcc983c07b15f6e3bc,dss-prototype: /TE,2022-08-16 15:24:43.716,9.71 ms
+95fe845bc9df649f16db1b28cc2c23da,dss-prototype: /tracks,2022-08-16 15:24:42.704,5.22 ms
+59de9d4c244f6be951e04391c6b69a97,dss-prototype: IAD Flight Data,2022-08-16 15:24:41.376,315 ms
+0cbaecda098e1ce9604f5952660e6b2c,dss-prototype: RIC Flight Data,2022-08-16 15:24:39.024,1.34 s
+d66e3acfd016a86d8c06efa18e184bf5,dss-prototype: /WA,2022-08-16 15:24:38.004,12.8 ms
+fa32bb8e2a2778febcada97ad0000853,dss-prototype: /TE,2022-08-16 15:24:36.989,9.31 ms
+92f5393c9199346ec3b07d468c03ffae,dss-prototype: /tracks,2022-08-16 15:24:35.978,5.60 ms
+6a6579b2d65b28ed104b91a3217f3283,dss-prototype: IAD Flight Data,2022-08-16 15:24:34.654,310 ms
+357a2b6cbc96009c0895fde745a2a464,dss-prototype: RIC Flight Data,2022-08-16 15:24:33.310,329 ms
+37c5efa60758f4775f8671f2c85db6f4,dss-prototype: /WA,2022-08-16 15:24:32.291,12.7 ms
+cbf6140e52568fef9628b3c02d84834a,dss-prototype: /TE,2022-08-16 15:24:31.276,8.95 ms
+d096b30b54333726911de4c1c7cf6c8a,dss-prototype: /tracks,2022-08-16 15:24:30.265,4.88 ms
+f6b65e7644d54699a5bafd3b81dea0d2,dss-prototype: IAD Flight Data,2022-08-16 15:24:28.941,311 ms
+18abb7de123696975549463e79db8149,dss-prototype: RIC Flight Data,2022-08-16 15:24:27.610,317 ms
+f556c84a752106a4093ad0e00f0695b8,dss-prototype: /WA,2022-08-16 15:24:26.591,12.6 ms
+b972c46eaffdc6d7052955f1eae9e5af,dss-prototype: /TE,2022-08-16 15:24:25.577,8.24 ms
+39b7ad82ae8701d46a62602a353367ae,dss-prototype: /tracks,2022-08-16 15:24:24.565,6.69 ms
+82a622a156e9eaff3aedd34216af71a0,dss-prototype: IAD Flight Data,2022-08-16 15:24:23.230,321 ms
+e873c1252b7d2bc27e526b2e1456aed4,dss-prototype: RIC Flight Data,2022-08-16 15:24:21.892,324 ms
+4234c0b56cca38a145faaf7a54a11ebc,dss-prototype: /WA,2022-08-16 15:24:20.873,12.6 ms
+d23c20be2d9bb1077d88d0d3434151c8,dss-prototype: /TE,2022-08-16 15:24:19.859,8.19 ms
+36caa3c1e6a556b04f84eaa2a1c59e23,dss-prototype: /tracks,2022-08-16 15:24:18.847,6.48 ms
+7caa595278142af995f57556c64b0142,dss-prototype: IAD Flight Data,2022-08-16 15:24:17.524,309 ms
+d1538ecee9d5bd3762d4b7b08b0fbd16,dss-prototype: RIC Flight Data,2022-08-16 15:24:16.202,308 ms
+6ee596718c8672b26095a231f2417096,dss-prototype: /WA,2022-08-16 15:24:15.183,12.7 ms
+e3efc626e86dc4705f2d665ac4cc9ebf,dss-prototype: /TE,2022-08-16 15:24:14.168,8.99 ms
+daa8047d7246ac879d650d4a5aa7cc84,dss-prototype: /tracks,2022-08-16 15:24:13.143,19.6 ms
+a997f0a60321a968fb63a0174a4ffb6e,dss-prototype: IAD Flight Data,2022-08-16 15:24:11.805,324 ms
+49f8c61049cb7c5f62f48575ad0a3ca8,dss-prototype: RIC Flight Data,2022-08-16 15:24:10.417,373 ms
+d8d60ad664fea4d255b51fc906a0ca28,dss-prototype: /WA,2022-08-16 15:24:09.397,12.9 ms
+215d6c054bae9482671627b975c852f8,dss-prototype: /TE,2022-08-16 15:24:08.381,9.77 ms
+8c6800fd5ecdaf658dda2bfb94d2ba42,dss-prototype: /tracks,2022-08-16 15:24:07.370,5.42 ms
+29a3bd9c765b2452e1d6851f15b34607,dss-prototype: IAD Flight Data,2022-08-16 15:24:06.033,323 ms
+e9dd8db3d65eb5d3d51d7985beef30fa,dss-prototype: RIC Flight Data,2022-08-16 15:24:04.706,312 ms
+949e50b26c538d6ad8b3ffdcf9d97f5d,dss-prototype: /WA,2022-08-16 15:24:03.687,12.4 ms
+bbafce9e6962b588b5ec4da6533950d8,dss-prototype: /TE,2022-08-16 15:24:02.673,8.72 ms
+f724705cfe572866da0b53bc6bee68f3,dss-prototype: /tracks,2022-08-16 15:24:01.661,5.23 ms
+a98fc34ead4735cfb73276cd151c0e92,dss-prototype: IAD Flight Data,2022-08-16 15:24:00.327,320 ms
+c1202236a08f16fb27d0fe9e29f1b952,dss-prototype: RIC Flight Data,2022-08-16 15:23:58.992,321 ms
+fa61af801eef6a2cb36dbb75b0304709,dss-prototype: /WA,2022-08-16 15:23:57.973,12.9 ms
+03733cbfc968c65c70a5605736d0d382,dss-prototype: /TE,2022-08-16 15:23:56.958,9.23 ms
+ecc5a35225357edcfa202c8bd3ea817c,dss-prototype: /tracks,2022-08-16 15:23:55.947,5.10 ms
+5b4cea197bd911beb09e90878bd5dcf1,dss-prototype: IAD Flight Data,2022-08-16 15:23:54.621,313 ms
+95cede049c3527cf43225dd5df612dd2,dss-prototype: RIC Flight Data,2022-08-16 15:23:53.280,325 ms
+deff1e0dae36f92d05cdc239ca76d018,dss-prototype: /WA,2022-08-16 15:23:52.261,13.1 ms
+74b80fc8bbdb6dad0ab5ad164b67f215,dss-prototype: /TE,2022-08-16 15:23:51.232,8.52 ms
+4a45115489ed17f0d5857e33e029cf24,dss-prototype: /tracks,2022-08-16 15:23:50.221,5.16 ms
+478585073dedf1771b0248ac4596c390,dss-prototype: IAD Flight Data,2022-08-16 15:23:48.684,524 ms
+ae0a7b19f76c252dd742c3b1280da5ed,dss-prototype: RIC Flight Data,2022-08-16 15:23:47.359,312 ms
+a40fe013bf6131b34d4551c5b182b615,dss-prototype: /WA,2022-08-16 15:23:46.341,11.5 ms
+3ef5754e4feb6a6c064aa372beb9f4a8,dss-prototype: /TE,2022-08-16 15:23:45.327,9.31 ms
+33d582c149261fbd2afaabdf8da7cc60,dss-prototype: /tracks,2022-08-16 15:23:44.314,6.54 ms
+29a604e3213695fa0ff783db334a6b09,dss-prototype: IAD Flight Data,2022-08-16 15:23:42.990,311 ms
+4f6c58111d0832b34987d024d9c4bb62,dss-prototype: RIC Flight Data,2022-08-16 15:23:41.648,327 ms
+5bd173f9c54da4b56e22e1b1850767b3,dss-prototype: /WA,2022-08-16 15:23:40.627,13.3 ms
+83264ff217b213296edfa05258a5250e,dss-prototype: /TE,2022-08-16 15:23:39.613,8.72 ms
+d6ba4f6a0df056d629496d9a65eed08b,dss-prototype: /tracks,2022-08-16 15:23:38.600,6.41 ms
+bc22062c0b00bfd1ed87d6dfa2d4ea5b,dss-prototype: IAD Flight Data,2022-08-16 15:23:37.203,383 ms
+0f981d2754238ba5f9655ca88e1b32b2,dss-prototype: RIC Flight Data,2022-08-16 15:23:35.831,357 ms
+b919ab3b6246f2639613ca20b5ecf5cf,dss-prototype: /WA,2022-08-16 15:23:34.813,12.2 ms
+d432b3a6f064fe64b408f24f06ced8ef,dss-prototype: /TE,2022-08-16 15:23:33.798,9.40 ms
+78afb959ca13a5d0c03487a1c33904f5,dss-prototype: /tracks,2022-08-16 15:23:32.775,5.81 ms
+ca69235d29a170a738f4bd46d8487e3b,dss-prototype: IAD Flight Data,2022-08-16 15:23:31.452,310 ms
+b8c685c5ab205538a5ae9ae3e1ed402d,dss-prototype: RIC Flight Data,2022-08-16 15:23:30.116,322 ms
+8e761227cbb05874f7486a1a6dde8d9f,dss-prototype: /WA,2022-08-16 15:23:29.097,13.2 ms
+642589824c8d0207ba1d9e86b94bd9d2,dss-prototype: /TE,2022-08-16 15:23:28.082,8.77 ms
+7ffc08ff0e16548203e98b4aa82c42a0,dss-prototype: /tracks,2022-08-16 15:23:27.070,5.85 ms
+f17a9e1f25fbde81badeb55d1f0542a6,dss-prototype: IAD Flight Data,2022-08-16 15:23:25.740,317 ms
+7b9928c51e9909b26b231404921a82a6,dss-prototype: RIC Flight Data,2022-08-16 15:23:24.416,309 ms
+f97c3bc8ab733708473424e1d9b096e0,dss-prototype: /WA,2022-08-16 15:23:23.396,13.8 ms
+4696176e09c6c8e3b0c38106647a4f74,dss-prototype: /TE,2022-08-16 15:23:22.381,9.33 ms
+5dd46f6e087b039daa100585c3ac68e7,dss-prototype: /tracks,2022-08-16 15:23:21.371,5.24 ms
+3cbf340bd104ab4f37d866bb2924e1c7,dss-prototype: IAD Flight Data,2022-08-16 15:23:20.044,312 ms
+b23950c54dec7c7f3c344157503d5e38,dss-prototype: RIC Flight Data,2022-08-16 15:23:18.703,327 ms
+462010004d14e8320bb3a058b53f2377,dss-prototype: /WA,2022-08-16 15:23:17.678,19.3 ms
+e3c3651eda2e354942dc67526377c137,dss-prototype: /TE,2022-08-16 15:23:16.660,12.3 ms
+2dd5cc22afde0a22b2c27b73a9567a85,dss-prototype: /tracks,2022-08-16 15:23:15.647,6.56 ms
+4f444f9b5a043e6e712d7b026c7c7f80,dss-prototype: IAD Flight Data,2022-08-16 15:23:14.313,320 ms
+7ffa440c78e3887b690749337e0f6957,dss-prototype: RIC Flight Data,2022-08-16 15:23:12.981,318 ms
+b6a0aaf177de2deb40e8f7019f0e7a2d,dss-prototype: /WA,2022-08-16 15:23:11.960,13.8 ms
+b80bc188e4679838d69e8fa3a446d9cf,dss-prototype: /TE,2022-08-16 15:23:10.939,8.82 ms
+102ac449c82a7594ad7685f253f74ed8,dss-prototype: /tracks,2022-08-16 15:23:09.928,5.31 ms
+2dfc17d1612a8b434d0b2608453d5f8b,dss-prototype: IAD Flight Data,2022-08-16 15:23:08.587,327 ms
+599421b231138a064654dc79e7553913,dss-prototype: RIC Flight Data,2022-08-16 15:23:07.264,309 ms
+8bdb6f31a840e63e4c1f7160d6a810fc,dss-prototype: /WA,2022-08-16 15:23:06.244,12.3 ms
+687cc232a6b025968deaf73523eecac2,dss-prototype: /TE,2022-08-16 15:23:05.229,8.94 ms
+87cc1c4d76b16791e45f0cb10ef4e25d,dss-prototype: /tracks,2022-08-16 15:23:04.217,6.84 ms
+9411cef0f1025e7bdddbf0c6d9603d4a,dss-prototype: IAD Flight Data,2022-08-16 15:23:02.888,315 ms
+96ec19c40aed5badfc1761a6d8bd1840,dss-prototype: RIC Flight Data,2022-08-16 15:23:01.557,316 ms
+b8bea8a5122d8cea93f2fd5147db8a1f,dss-prototype: /WA,2022-08-16 15:23:00.537,12.7 ms
+c4e35a0ef4c501283690afb5155c5e16,dss-prototype: /TE,2022-08-16 15:22:59.523,8.91 ms
+ec934626d0a12ddf7a1d13a6cb69e901,dss-prototype: /tracks,2022-08-16 15:22:58.510,6.51 ms
+e450bc0184282dd09d5bd85a0085fe2b,dss-prototype: IAD Flight Data,2022-08-16 15:22:57.172,324 ms
+f60dcb53d527d2f82e2a990a43755384,dss-prototype: RIC Flight Data,2022-08-16 15:22:55.807,351 ms
+2247ee5e52cbac4401653cbeeee2f5ad,dss-prototype: /WA,2022-08-16 15:22:54.787,13.0 ms
+623281c5663960b7e81af9b8d76fce5f,dss-prototype: /TE,2022-08-16 15:22:53.772,9.53 ms
+3ed23d9c3bb5de164cc4a91a81277921,dss-prototype: /tracks,2022-08-16 15:22:52.759,6.05 ms
+b0366a9d383ece45f030521ce176b864,dss-prototype: IAD Flight Data,2022-08-16 15:22:51.437,308 ms
+d330efab12058ee5c0899c107394fe11,dss-prototype: RIC Flight Data,2022-08-16 15:22:50.111,312 ms
+345221006fae90c67a120742a1fd3e57,dss-prototype: /WA,2022-08-16 15:22:49.092,12.9 ms
+61e3f3f0042f7d2e9014bced83debaa1,dss-prototype: /TE,2022-08-16 15:22:48.077,8.88 ms
+754b6a64a389e8334facd50eb676ef57,dss-prototype: /tracks,2022-08-16 15:22:47.065,6.18 ms
+ca59f426eea12c0eb56a669fa295fcd9,dss-prototype: IAD Flight Data,2022-08-16 15:22:45.732,319 ms
+4eda692f8cbff9a68b931517a283ffef,dss-prototype: RIC Flight Data,2022-08-16 15:22:43.405,1.31 s
+698b26f74d03d8c8d429176c76ea15b7,dss-prototype: /WA,2022-08-16 15:22:42.384,13.1 ms
+891ac86317670a21c79453b7d024700c,dss-prototype: /TE,2022-08-16 15:22:41.370,8.63 ms
+7a81fa92280226c75fcd11ed8c80081f,dss-prototype: /tracks,2022-08-16 15:22:40.358,5.87 ms
+71e41c8aa61498fb2b7fc1d3dc9be243,dss-prototype: IAD Flight Data,2022-08-16 15:22:39.018,325 ms
+01d1d740a54ab88073c1b1f1f596aacb,dss-prototype: RIC Flight Data,2022-08-16 15:22:37.651,352 ms
+4fd41b9e6a280e1a06a5aa06730f0136,dss-prototype: /WA,2022-08-16 15:22:36.632,13.0 ms
+fff01e0368c74941c845f504bd3a7684,dss-prototype: /TE,2022-08-16 15:22:35.617,8.89 ms
+05c62bdd73b537cc881bf068c4fe203a,dss-prototype: /tracks,2022-08-16 15:22:34.604,7.20 ms
+96ce5714aa712b3ef2d01093ae2aabcb,dss-prototype: IAD Flight Data,2022-08-16 15:22:32.263,1.33 s
+8e174fa122b7bf7a2565eab11427164c,dss-prototype: RIC Flight Data,2022-08-16 15:22:30.935,309 ms
+272a12c6576007f88ac63c7c2a0e2b47,dss-prototype: /WA,2022-08-16 15:22:29.915,14.1 ms
+e721720158cdc8836c16c36034784117,dss-prototype: /TE,2022-08-16 15:22:28.900,9.56 ms
+ad57f02efa6210fe90d33de6ef763cbb,dss-prototype: /tracks,2022-08-16 15:22:27.887,6.25 ms
+0a9892d160b8362efda494e75b819f09,dss-prototype: IAD Flight Data,2022-08-16 15:22:26.558,316 ms
+b5301083f5792e4b75e6a196f7ef463c,dss-prototype: RIC Flight Data,2022-08-16 15:22:25.236,307 ms
+6e41c5e2413fd62bf36f17eeddd5f209,dss-prototype: /WA,2022-08-16 15:22:24.216,12.9 ms
+9139d3736076b98e3b1be943b2893ae5,dss-prototype: /TE,2022-08-16 15:22:23.202,8.51 ms
+d5921cd1552a12374e94c6575b2cc6bc,dss-prototype: /tracks,2022-08-16 15:22:22.190,5.97 ms
+13ff3f4ba87f1e9edb286addd6dcb5f7,dss-prototype: IAD Flight Data,2022-08-16 15:22:20.860,310 ms
+1b1ff3fcb27f7d7cc91779d3e9a3c483,dss-prototype: RIC Flight Data,2022-08-16 15:22:19.472,374 ms
+1aabcb35c24ea844f4ba16395e0836cd,dss-prototype: /WA,2022-08-16 15:22:18.451,13.9 ms
+366f779f9a071ad3948f3b3cdd09f0bf,dss-prototype: /TE,2022-08-16 15:22:17.433,12.4 ms
+aa2689dea23e2b35dd1a3e32cbe9544f,dss-prototype: /tracks,2022-08-16 15:22:16.421,5.80 ms
+a1907998861bcf83ddac418e56abbf9a,dss-prototype: IAD Flight Data,2022-08-16 15:22:15.081,326 ms
+5c0fed00540c595e3b38e4bd701bf4f3,dss-prototype: RIC Flight Data,2022-08-16 15:22:13.747,317 ms
+6d77e170514f60243735f96dd0022b23,dss-prototype: /WA,2022-08-16 15:22:12.728,12.4 ms
+f4ad80ac0cbf9ac01e244b14ad1957da,dss-prototype: /TE,2022-08-16 15:22:11.713,8.80 ms
+f2a2cb1385c25c5e5c6afc78e1493320,dss-prototype: /tracks,2022-08-16 15:22:10.702,5.51 ms
+53ef379a08df1f398b6ce44a8340415c,dss-prototype: IAD Flight Data,2022-08-16 15:22:09.375,313 ms
+b7697d0a27edc8eddc0c0319e71e8b05,dss-prototype: RIC Flight Data,2022-08-16 15:22:07.842,518 ms
+e661f6ba96796875762550c41ee0e30e,dss-prototype: /WA,2022-08-16 15:22:06.823,13.0 ms
+2b39533c64a5f5accf84e18128e9b86a,dss-prototype: /TE,2022-08-16 15:22:05.808,9.04 ms
+47cfbbe284d443ec11252fa9c9befaa8,dss-prototype: /tracks,2022-08-16 15:22:04.797,5.75 ms
+f00e7396252b91f9746a06c139421336,dss-prototype: IAD Flight Data,2022-08-16 15:22:03.470,313 ms
+28faab64546d86c3fbe148f4d4a56747,dss-prototype: RIC Flight Data,2022-08-16 15:22:02.132,324 ms
+b4be277281356bb1647a5e73b96076f4,dss-prototype: /WA,2022-08-16 15:22:01.114,12.1 ms
+84d1d88a7e379154fa1a8a0568e61ca3,dss-prototype: /TE,2022-08-16 15:22:00.099,9.06 ms
+7bc1c21220413598953f7092bb37b342,dss-prototype: /tracks,2022-08-16 15:21:59.086,6.54 ms
+ea0842158d7ce39e7bb4d27b42ca212a,dss-prototype: IAD Flight Data,2022-08-16 15:21:57.757,315 ms
+d93ce8c1cd56ef4e48dfcfa37c77e66e,dss-prototype: RIC Flight Data,2022-08-16 15:21:56.397,347 ms
+f9c83ae2d3b7955003c92f084bc97902,dss-prototype: /WA,2022-08-16 15:21:55.378,11.8 ms
+969dab1528121e07a8ac72a0dfe70880,dss-prototype: /TE,2022-08-16 15:21:54.363,9.64 ms
+c22fd215322ab2c51326c529eaa01995,dss-prototype: /tracks,2022-08-16 15:21:53.350,6.26 ms
+299e44f7016f534f27852e9a27e80878,dss-prototype: IAD Flight Data,2022-08-16 15:21:52.014,323 ms
+c484c7523348452f77f7e160713b1885,dss-prototype: RIC Flight Data,2022-08-16 15:21:50.558,443 ms
+2537be3a43077800a20f23c63f99af81,dss-prototype: /WA,2022-08-16 15:21:49.539,12.0 ms
+f5bf7986d7d77c0bee85d04496bfaa57,dss-prototype: /TE,2022-08-16 15:21:48.523,10.2 ms
+9c607df9aec77ccc8cf99ea9a7d0964b,dss-prototype: /tracks,2022-08-16 15:21:47.511,5.71 ms
+dc3d44a16a4856060fc1448f63a7809a,dss-prototype: IAD Flight Data,2022-08-16 15:21:46.187,311 ms
+3a4de9e04ce53c02a524d18f2f38c663,dss-prototype: RIC Flight Data,2022-08-16 15:21:44.857,317 ms
+8dafa2e97618a1c32067f8e3c1114ccd,dss-prototype: /WA,2022-08-16 15:21:43.837,12.8 ms
+56fcf13a664805c0dfd3b1598c34a3e2,dss-prototype: /TE,2022-08-16 15:21:42.823,8.76 ms
+8fe4f9f44295f92bb832d63ee2759cd3,dss-prototype: /tracks,2022-08-16 15:21:41.812,5.55 ms
+c0915bc2dae4bff89f415c12b5ab8481,dss-prototype: IAD Flight Data,2022-08-16 15:21:40.475,324 ms
+7513acf74e8f97ca62215245dd89fe72,dss-prototype: RIC Flight Data,2022-08-16 15:21:39.137,324 ms
+cadbceac1384c164b755c33b3b2f46c3,dss-prototype: /WA,2022-08-16 15:21:38.119,13.1 ms
+3c75a9228e6c498b95c58de28c8d9168,dss-prototype: /TE,2022-08-16 15:21:37.106,7.99 ms
+52528c85a41227858bf1d99642f2c373,dss-prototype: /tracks,2022-08-16 15:21:36.095,5.09 ms
+b8f072eb3ced2491b852515496ff4643,dss-prototype: IAD Flight Data,2022-08-16 15:21:34.770,312 ms
+7e44e5d6fc5982eab47ff17bcd65e4d1,dss-prototype: RIC Flight Data,2022-08-16 15:21:33.445,311 ms
+9cba34cc518ac988b346f9706d567643,dss-prototype: /WA,2022-08-16 15:21:32.424,11.6 ms
+4c517ccafd3a25c7ff86c99f2aee0ba3,dss-prototype: /TE,2022-08-16 15:21:31.411,7.76 ms
+cbd368e745127fd1b8335507ebe0802c,dss-prototype: /tracks,2022-08-16 15:21:30.400,5.02 ms
+7a127b7bd412c63b22633b9157942554,dss-prototype: IAD Flight Data,2022-08-16 15:21:29.067,320 ms
+6687b789b06788acdac3704542a01acb,dss-prototype: RIC Flight Data,2022-08-16 15:21:27.743,309 ms
+c6265fa8a113aad1b62adbe2b71cdc6c,dss-prototype: /WA,2022-08-16 15:21:26.724,12.6 ms
+e85e088093393b36aacd99244b88aaa7,dss-prototype: /TE,2022-08-16 15:21:25.710,7.98 ms
+08f2989e2d4ab377e67437e14b6c52c1,dss-prototype: /tracks,2022-08-16 15:21:24.699,6.39 ms
+a036f3d4287713af003d4a67939a18d7,dss-prototype: IAD Flight Data,2022-08-16 15:21:23.374,312 ms
+f9d87d82b4e85a0aae5144a35bf98925,dss-prototype: RIC Flight Data,2022-08-16 15:21:21.843,517 ms
+b3e9dcfbbd44b61adfd5ae0ad71f83ec,dss-prototype: /WA,2022-08-16 15:21:20.826,11.8 ms
+9d88a60c81fe8bb54c0bd4df95ad2b2d,dss-prototype: /TE,2022-08-16 15:21:19.813,7.50 ms
+7191667430499664d33d58c9a3e063cc,dss-prototype: /tracks,2022-08-16 15:21:18.802,5.97 ms
+b2cd9b8767947163ae350b86207a1f75,dss-prototype: IAD Flight Data,2022-08-16 15:21:17.472,317 ms
+c3ee63048639ec3569f957608e0aedac,dss-prototype: RIC Flight Data,2022-08-16 15:21:16.134,324 ms
+fc57314e63421fc6879df5504604336c,dss-prototype: /WA,2022-08-16 15:21:15.115,12.9 ms
+9df4fcc45599e929ecd61f1fb00aec4f,dss-prototype: /TE,2022-08-16 15:21:14.101,8.56 ms
+7915ec7a61dae6d100c8219030000f38,dss-prototype: /tracks,2022-08-16 15:21:13.082,13.6 ms
+5942782abbc698217aa7a285b50b4174,dss-prototype: IAD Flight Data,2022-08-16 15:21:11.758,311 ms
+5472092ea1a97626131791c097c055cb,dss-prototype: RIC Flight Data,2022-08-16 15:21:10.417,327 ms
+b69c0a3f4d479bc040024f5b1138a57d,dss-prototype: /WA,2022-08-16 15:21:09.399,12.2 ms
+46c58134f8fd1d381853b99e8a61be53,dss-prototype: /TE,2022-08-16 15:21:08.385,8.27 ms
+8f1f36c5f4f8c470486e1e4ce6389893,dss-prototype: /tracks,2022-08-16 15:21:07.375,5.57 ms
+44a958e9280c1666c389e46ffb9f58db,dss-prototype: IAD Flight Data,2022-08-16 15:21:06.051,309 ms
+2fd01c79f806dc45fce4f34a7db54d3f,dss-prototype: RIC Flight Data,2022-08-16 15:21:04.725,313 ms
+d80039e60ad210ed17b51fd3f6507d77,dss-prototype: /WA,2022-08-16 15:21:03.706,13.2 ms
+b94b562fabbe57502e094877f82b7a58,dss-prototype: /TE,2022-08-16 15:21:02.693,7.90 ms
+847bd06aa8a334b7243298149ddd5cfd,dss-prototype: /tracks,2022-08-16 15:21:01.682,4.96 ms
+bf5722a4efe066bb6999e8c283d19c68,dss-prototype: IAD Flight Data,2022-08-16 15:21:00.359,311 ms
+d7577cc9b2b2af66f3104eadf706c1bf,dss-prototype: RIC Flight Data,2022-08-16 15:20:59.022,321 ms
+d89cea5213081bf27d2c5862a72b135c,dss-prototype: /WA,2022-08-16 15:20:58.004,12.0 ms
+9deecf4908359947b10c52f7ba46c7e2,dss-prototype: /TE,2022-08-16 15:20:56.990,8.74 ms
+b208c0292c9df46928c374883e4f30db,dss-prototype: /tracks,2022-08-16 15:20:55.979,5.29 ms
+3cf7e80923305870f533990885c11e4c,dss-prototype: IAD Flight Data,2022-08-16 15:20:54.649,317 ms
+f75c2682c5f196920e6e44da4ddb801b,dss-prototype: RIC Flight Data,2022-08-16 15:20:53.309,326 ms
+170726f68da8409f8fd20dff3c2e5377,dss-prototype: /WA,2022-08-16 15:20:52.291,12.3 ms
+07d4b931146451d3a28ee60133b32322,dss-prototype: /TE,2022-08-16 15:20:51.278,7.47 ms
+299132bb397a4507b0ed13d9d1561628,dss-prototype: /tracks,2022-08-16 15:20:50.268,5.32 ms
+3592c5e7b0b26d730e337b2b26e5be3c,dss-prototype: IAD Flight Data,2022-08-16 15:20:48.938,316 ms
+c197ec5cafa026c8f4c26f3f44007c67,dss-prototype: RIC Flight Data,2022-08-16 15:20:47.602,323 ms
+eb5ff9463662b71cf145e26bf870f62f,dss-prototype: /WA,2022-08-16 15:20:46.584,11.8 ms
+c262a39853fdec39e7db918bc0d7fbf0,dss-prototype: /TE,2022-08-16 15:20:45.571,7.96 ms
+4b0b42170081b266b1b48fdbc4c5f98b,dss-prototype: /tracks,2022-08-16 15:20:44.561,4.90 ms
+a2126656a1ebfd74a3220946360c6a5e,dss-prototype: IAD Flight Data,2022-08-16 15:20:43.201,347 ms
+7adc3fd7ac62636912e64461667efdeb,dss-prototype: RIC Flight Data,2022-08-16 15:20:41.863,323 ms
+4222ce1a892e43d15dc6d507ff4bf57c,dss-prototype: /WA,2022-08-16 15:20:40.845,12.1 ms
+1ade7fbeae556d50790dbb434e19ba14,dss-prototype: /TE,2022-08-16 15:20:39.832,8.58 ms
+f2d07a0cee413085b134d0fcab6c5ad7,dss-prototype: /tracks,2022-08-16 15:20:38.821,5.80 ms
+eec66e47c4ed4e458941064761d03260,dss-prototype: IAD Flight Data,2022-08-16 15:20:37.489,319 ms
+62059bc394e015947f5ae24a2b4fa686,dss-prototype: RIC Flight Data,2022-08-16 15:20:36.142,334 ms
+97a815156f7ef83d29f93a9bb6c9e074,dss-prototype: /WA,2022-08-16 15:20:35.124,11.8 ms
+c82577522f3423ea17fc60db11466726,dss-prototype: /TE,2022-08-16 15:20:34.110,8.57 ms
+7a0229ea7f8a87d324d00301305d7772,dss-prototype: /tracks,2022-08-16 15:20:33.098,5.98 ms
+d6aac14c014e25c9951db01a04dd1a61,dss-prototype: IAD Flight Data,2022-08-16 15:20:31.775,310 ms
+0df5fee69c9531472bbda4bd46b21624,dss-prototype: RIC Flight Data,2022-08-16 15:20:30.444,319 ms
+d7a8459f498269bafdc6c3b9686088b5,dss-prototype: /WA,2022-08-16 15:20:29.426,11.8 ms
+1db497a7ad8ad33de0ae009a50d8763d,dss-prototype: /TE,2022-08-16 15:20:28.412,8.61 ms
+642f8d0d7aae158f2ec2d0313e57d8bc,dss-prototype: /tracks,2022-08-16 15:20:27.402,4.94 ms
+6a2a8cf886a77f1eba0570f94a8d2629,dss-prototype: IAD Flight Data,2022-08-16 15:20:26.076,313 ms
+b8c682ca3a47f442955ac473afa02f39,dss-prototype: RIC Flight Data,2022-08-16 15:20:24.741,321 ms
+aac9b69873049a3ad91183763bc9551e,dss-prototype: /WA,2022-08-16 15:20:23.722,12.1 ms
+b9d2a9ce593f2a41663bb64b8c0b2ac0,dss-prototype: /TE,2022-08-16 15:20:22.710,7.62 ms
+d8be6e39ca5e18ec8362af9947d92d7b,dss-prototype: /tracks,2022-08-16 15:20:21.698,5.26 ms
+e09bec0f1242b1834bc800b86f361632,dss-prototype: IAD Flight Data,2022-08-16 15:20:20.339,347 ms
+1dca6d7f3eb4ca6e76be3ba487f9e582,dss-prototype: RIC Flight Data,2022-08-16 15:20:19.015,310 ms
+ab9f5140efe5ddc5c97875807b4c5ac5,dss-prototype: /WA,2022-08-16 15:20:17.995,12.5 ms
+5e38c6f2db6c4cf542f766cc49a170a2,dss-prototype: /TE,2022-08-16 15:20:16.980,9.30 ms
+944ab08bb6604f0c6ee3e91741608d7f,dss-prototype: /tracks,2022-08-16 15:20:15.969,5.77 ms
+4af3ebb8b2b570bf57dc46aa7a2a79e3,dss-prototype: IAD Flight Data,2022-08-16 15:20:14.626,329 ms
+ac1003454ae2af01003aaa279c006678,dss-prototype: RIC Flight Data,2022-08-16 15:20:13.199,414 ms
+cccf8d655e7b9ef28c35afcbb1043e06,dss-prototype: /WA,2022-08-16 15:20:12.180,12.7 ms
+a28ec8cc9225f29308b52b86240ddaa7,dss-prototype: /TE,2022-08-16 15:20:11.165,9.32 ms
+ab935775e2ccbc69d899577a41560c14,dss-prototype: /tracks,2022-08-16 15:20:10.154,5.18 ms
+2b18c5e237f10fc15b2dcc6bd86d1124,dss-prototype: IAD Flight Data,2022-08-16 15:20:08.834,308 ms
+162a670979034d559bea7bf29ae64c4b,dss-prototype: RIC Flight Data,2022-08-16 15:20:07.508,313 ms
+131045ad485a48f75fa490b9008d2736,dss-prototype: /WA,2022-08-16 15:20:06.489,12.6 ms
+a4a4ee1f2a3a3753d6866653a61ba29d,dss-prototype: /TE,2022-08-16 15:20:05.474,9.11 ms
+5e043736a146e5f32a3a76a645fd2e77,dss-prototype: /tracks,2022-08-16 15:20:04.463,5.80 ms
+22cccc6b990f46c742ee92993003ae83,dss-prototype: IAD Flight Data,2022-08-16 15:20:03.140,308 ms
+98392c1cd6ed5ef7130598075a5e4c2f,dss-prototype: RIC Flight Data,2022-08-16 15:20:01.811,316 ms
+ddca0e026cc443c35c1af3a0187bd85f,dss-prototype: /WA,2022-08-16 15:20:00.792,12.7 ms
+e2a1a63d3abed8955211daa87e7263c0,dss-prototype: /TE,2022-08-16 15:19:59.777,9.74 ms
+6ceb0145420ea45bfdbe0d9bbe0bbbb0,dss-prototype: /tracks,2022-08-16 15:19:58.764,6.96 ms
+69c2a446351a342dd04d5220885f4a08,dss-prototype: IAD Flight Data,2022-08-16 15:19:57.435,316 ms
+3eecaf6d0df856303cacfb5ecee29383,dss-prototype: RIC Flight Data,2022-08-16 15:19:56.106,314 ms
+f2345523b61ef72ea51f0ead64fde196,dss-prototype: /WA,2022-08-16 15:19:55.088,12.5 ms
+50130289630ba47106873f8409b92c99,dss-prototype: /TE,2022-08-16 15:19:54.073,9.59 ms
+aab5fdd0bd0f8c44d0a93a76626546bc,dss-prototype: /tracks,2022-08-16 15:19:53.061,5.93 ms
+31d766b258cec42da1164f0190de3eb7,dss-prototype: IAD Flight Data,2022-08-16 15:19:51.736,311 ms
+03982f8d522cf57563af2b60f4986aa3,dss-prototype: RIC Flight Data,2022-08-16 15:19:50.398,324 ms
+e06a1913ee9558e75d637bcbc37962d8,dss-prototype: /WA,2022-08-16 15:19:49.379,12.3 ms
+65117a393a3f4fb6263a8c6e1cc7b107,dss-prototype: /TE,2022-08-16 15:19:48.363,10.0 ms
+311c59d7739164b7409b02f7f57d7978,dss-prototype: /tracks,2022-08-16 15:19:47.352,5.86 ms
+4d77b742f04fb4e4075c2d30da8870e5,dss-prototype: IAD Flight Data,2022-08-16 15:19:46.026,313 ms
+b93bad7f5b7e3215520c029f2bbcdc32,dss-prototype: RIC Flight Data,2022-08-16 15:19:44.703,309 ms
+02796d400c042fe8afb3e7804722b81a,dss-prototype: /WA,2022-08-16 15:19:43.684,12.6 ms
+630ddeba208bf7b8c8cbde7885583157,dss-prototype: /TE,2022-08-16 15:19:42.671,7.46 ms
+7545d7129e1efc7b5bb87a757f5f064e,dss-prototype: /tracks,2022-08-16 15:19:41.661,5.24 ms
+f9057310e6cbcad82414c3ef66b4d74b,dss-prototype: IAD Flight Data,2022-08-16 15:19:40.341,307 ms
+fda45e5f4ac7b9903220fe031920982c,dss-prototype: RIC Flight Data,2022-08-16 15:19:39.008,318 ms
+062afda5f695c3217db4b0ab912a90f5,dss-prototype: /WA,2022-08-16 15:19:37.988,13.3 ms
+1f0c7bd18fec25fabc0a7ad30d9c0ddf,dss-prototype: /TE,2022-08-16 15:19:36.974,8.49 ms
+3138117b6d189a0c27dc2cf72f5f07ce,dss-prototype: /tracks,2022-08-16 15:19:35.964,5.01 ms
+610fc17d233ed4a025d3e4a2a394a158,dss-prototype: IAD Flight Data,2022-08-16 15:19:34.641,310 ms
+d6bc6a7ea9dfa2adddc279a73d88d036,dss-prototype: RIC Flight Data,2022-08-16 15:19:33.312,315 ms
+ee28226dfdf958b366518a83e36980b6,dss-prototype: /WA,2022-08-16 15:19:32.292,12.8 ms
+48c9c922795002f30885c108eb93eee0,dss-prototype: /TE,2022-08-16 15:19:31.280,7.76 ms
+728c53de0486c0ecaf490f4377adbb15,dss-prototype: /tracks,2022-08-16 15:19:30.270,5.03 ms
+88d72c812377b12364c53567dd5c7d33,dss-prototype: IAD Flight Data,2022-08-16 15:19:28.927,328 ms
+946746ddc76755af0e24aaf9ee465339,dss-prototype: RIC Flight Data,2022-08-16 15:19:27.591,323 ms
+0a0965ede0d1948322df3a02473480f7,dss-prototype: /WA,2022-08-16 15:19:26.572,12.3 ms
+016c55382d0670884fcee0d56ed0bfb4,dss-prototype: /TE,2022-08-16 15:19:25.559,7.70 ms
+eea09a776599a78a90108f8078009cf7,dss-prototype: /tracks,2022-08-16 15:19:24.546,6.60 ms
+99c0a61351f45b8296c07b4f7723f6c6,dss-prototype: IAD Flight Data,2022-08-16 15:19:23.211,320 ms
+fbd9d445888076e6470f80047f1995a5,dss-prototype: RIC Flight Data,2022-08-16 15:19:21.875,321 ms
+d0e4fb7ad5046728acbd0d36b6bb10ad,dss-prototype: /WA,2022-08-16 15:19:20.855,12.7 ms
+045b3def0dfef826297b908025ba25bd,dss-prototype: /TE,2022-08-16 15:19:19.842,8.02 ms
+21bab2252f8aae74366bd24fc3045435,dss-prototype: /tracks,2022-08-16 15:19:18.831,5.62 ms
+4a3419247e2cea93039ebf339c3236bf,dss-prototype: IAD Flight Data,2022-08-16 15:19:17.507,311 ms
+1b9d30e3adc1f01016d3512401dab3cf,dss-prototype: RIC Flight Data,2022-08-16 15:19:16.174,318 ms
+80aadf6fca267ba35436823c6f2d57da,dss-prototype: /WA,2022-08-16 15:19:15.155,12.2 ms
+d0b985bad5cd09f449e18beb6c57a96b,dss-prototype: /TE,2022-08-16 15:19:14.142,8.28 ms
+75eba374bebd57b2588ffae7e1d7ca75,dss-prototype: /tracks,2022-08-16 15:19:13.119,17.0 ms
+827b0035adf0061daa9e17dd0caff3ba,dss-prototype: IAD Flight Data,2022-08-16 15:19:11.791,316 ms
+7e93c2431ad22bd2a3d439b0ccf3c925,dss-prototype: RIC Flight Data,2022-08-16 15:19:10.460,317 ms
+ed4af46c9d6c6ba48493dc097edfc11a,dss-prototype: /WA,2022-08-16 15:19:09.442,12.3 ms
+6e0f75f459b369ce200639fdf65eb971,dss-prototype: /TE,2022-08-16 15:19:08.427,9.31 ms
+fa3ece5d51d248fd9744f94eab85e2ac,dss-prototype: /tracks,2022-08-16 15:19:07.417,5.04 ms
+10b5ec98508c8a1a7c920d41b7f61a9a,dss-prototype: IAD Flight Data,2022-08-16 15:19:06.095,309 ms
+6ebb2412c72e88fdc28301fb5109a1d9,dss-prototype: RIC Flight Data,2022-08-16 15:19:04.642,439 ms
+138e23e43c95f35740531985a7bdb658,dss-prototype: /WA,2022-08-16 15:19:03.623,12.2 ms
+d6972ed5b05c222c6a67811cbe5053b8,dss-prototype: /TE,2022-08-16 15:19:02.609,8.71 ms
+08e1ba200c5324fa18c73aaa5d8b8a7a,dss-prototype: /tracks,2022-08-16 15:19:01.599,4.87 ms
+70fb47f24c6d2b023003819c82e81c89,dss-prototype: IAD Flight Data,2022-08-16 15:19:00.275,311 ms
+1cd4c2700f44c154a22fa456f3570325,dss-prototype: RIC Flight Data,2022-08-16 15:18:58.938,322 ms
+db5c13746f91cb6d89885ce3a4ad5fe0,dss-prototype: /WA,2022-08-16 15:18:57.917,13.3 ms
+2c0fbc33373262796a72adb0a8aef7bf,dss-prototype: /TE,2022-08-16 15:18:56.904,8.51 ms
+5b841cbcffd94af8035d6d914b214760,dss-prototype: /tracks,2022-08-16 15:18:55.893,6.02 ms
+a52fd7faa56a543727994bfeffd02e81,dss-prototype: IAD Flight Data,2022-08-16 15:18:54.567,312 ms
+3ecf4b3db1bac7ce073c76f5e09ba37c,dss-prototype: RIC Flight Data,2022-08-16 15:18:53.232,320 ms
+b58edf6d0c5761942d0f384cc4616261,dss-prototype: /WA,2022-08-16 15:18:52.211,12.9 ms
+70473bd8584196e125bfe8af76a25e8d,dss-prototype: /TE,2022-08-16 15:18:51.181,7.35 ms
+41ea7bd882c27507e10a11086b8e5a05,dss-prototype: /tracks,2022-08-16 15:18:50.170,5.70 ms
+be9e4e29ff1f4ebcf93eaf1145482092,dss-prototype: IAD Flight Data,2022-08-16 15:18:48.848,310 ms
+8ec76f21a6acfd8014d797b39d528fc1,dss-prototype: RIC Flight Data,2022-08-16 15:18:47.495,338 ms
+c0de440efe7d758b88e2bbcaf608f93f,dss-prototype: /WA,2022-08-16 15:18:46.476,12.4 ms
+67bbe94406fc832a865a01ffeeecd857,dss-prototype: /TE,2022-08-16 15:18:45.461,9.05 ms
+bc14808e9e11bc811045976ddb062c3f,dss-prototype: /tracks,2022-08-16 15:18:44.450,4.83 ms
+5858a26eafedf19b9b16f658aab60fcd,dss-prototype: IAD Flight Data,2022-08-16 15:18:43.120,317 ms
+3e0b92a7b29294d54b4a699a2dbfba6b,dss-prototype: RIC Flight Data,2022-08-16 15:18:41.788,319 ms
+8854289dfe7b4850e4841ea915916eeb,dss-prototype: /WA,2022-08-16 15:18:40.770,12.3 ms
+5d83fc4e94017b72c1bdaa77fab6fd61,dss-prototype: /TE,2022-08-16 15:18:39.758,7.49 ms
+771a083be46446a25cbaef19ed2a4f50,dss-prototype: /tracks,2022-08-16 15:18:38.746,6.45 ms
+50d96517602e8d2c22ba984ee250c8e9,dss-prototype: IAD Flight Data,2022-08-16 15:18:37.422,311 ms
+6789608ff77da66b131fa057fb8fa20e,dss-prototype: RIC Flight Data,2022-08-16 15:18:36.089,318 ms
+01cc9b4a60523839ca26498bc15271ff,dss-prototype: /WA,2022-08-16 15:18:35.071,12.2 ms
+d1706a47c4cfdc529b00af73939e20c0,dss-prototype: /TE,2022-08-16 15:18:34.058,7.95 ms
+6648c660d1408d4d1e5bc5aa344bdd14,dss-prototype: /tracks,2022-08-16 15:18:33.039,7.04 ms
+decf0e1ea7b605a767f7437773bb103e,dss-prototype: IAD Flight Data,2022-08-16 15:18:31.708,311 ms
+0c7c2101c4480388f95aa103d0d0aa6f,dss-prototype: RIC Flight Data,2022-08-16 15:18:30.382,313 ms
+7975af65780b0ddb2211c29d91837370,dss-prototype: /WA,2022-08-16 15:18:29.363,13.0 ms
+3bf295e06b937c2d5cf11c503a0d1329,dss-prototype: /TE,2022-08-16 15:18:28.349,8.74 ms
+00a35338577bddfe2778e13377bab73c,dss-prototype: /tracks,2022-08-16 15:18:27.339,5.97 ms
+bacaf5a23d759c61d18b0be546dd35c8,dss-prototype: IAD Flight Data,2022-08-16 15:18:25.957,310 ms
+d1c85b06e5a0d6afd5841b1287a9d767,dss-prototype: RIC Flight Data,2022-08-16 15:18:24.617,326 ms
+a57cd59c7478c4e89497b397c75a07f1,dss-prototype: /WA,2022-08-16 15:18:23.598,12.1 ms
+987e4fac024cc5da82796420e3253981,dss-prototype: /TE,2022-08-16 15:18:22.585,8.23 ms
+464fd1d8df48a95d49cd3afae920cc03,dss-prototype: /tracks,2022-08-16 15:18:21.575,5.24 ms
+d2c6a9d76327d81266056a26e03184eb,dss-prototype: IAD Flight Data,2022-08-16 15:18:20.245,317 ms
+ed303bed448bebc60688ecf021251c8b,dss-prototype: RIC Flight Data,2022-08-16 15:18:18.906,326 ms
+e313d4d603f09a84570ca3c23919c748,dss-prototype: /WA,2022-08-16 15:18:17.888,11.9 ms
+bd8ab067a7f6b545077db829cb3799ef,dss-prototype: /TE,2022-08-16 15:18:16.874,8.34 ms
+c6ea7bb73918c5f7e3f899729ea41092,dss-prototype: /tracks,2022-08-16 15:18:15.863,5.50 ms
+e313985abcc27ac52a0f46a4a4a0d4c3,dss-prototype: IAD Flight Data,2022-08-16 15:18:14.519,331 ms
+04ba8b6d0506c808e020c16d5d02a42d,dss-prototype: RIC Flight Data,2022-08-16 15:18:13.188,317 ms
+7c14b61630703141820cc6af81827f74,dss-prototype: /WA,2022-08-16 15:18:12.162,13.4 ms
+55e2204c51598bbc2d29a4c23a464ed8,dss-prototype: /TE,2022-08-16 15:18:11.147,8.84 ms
+d56f9b069054501e11ea51be5978eefc,dss-prototype: /tracks,2022-08-16 15:18:10.132,6.47 ms
+f7f5be901568e8d7af4ff140c87075dc,dss-prototype: IAD Flight Data,2022-08-16 15:18:08.807,312 ms
+b0d7f081484ccbe2d60d51dbdc19b135,dss-prototype: RIC Flight Data,2022-08-16 15:18:07.464,327 ms
+e1a95bb159da63269999bc40abfb7229,dss-prototype: /WA,2022-08-16 15:18:06.445,13.1 ms
+6d4a71176e79b7916e1df576159ef62c,dss-prototype: /TE,2022-08-16 15:18:05.430,9.25 ms
+200ca610e90dfed6fc6592465e16a345,dss-prototype: /tracks,2022-08-16 15:18:04.418,6.22 ms
+7d7820fe27b915798a1bad1beac4ea95,dss-prototype: IAD Flight Data,2022-08-16 15:18:03.090,315 ms
+aad66d5613fadec827315d0175eb5a6a,dss-prototype: RIC Flight Data,2022-08-16 15:18:01.735,339 ms
+2f02d848f0c06c2d21bcc20c57a77c14,dss-prototype: /WA,2022-08-16 15:18:00.717,12.5 ms
+cf18bb3bfbe7db83f45d0a070301dae1,dss-prototype: /TE,2022-08-16 15:17:59.703,8.81 ms
+5332772cef79ffee9e94267a424b4229,dss-prototype: /tracks,2022-08-16 15:17:58.690,7.12 ms
+6ed5eafe310b25f10e6713b356a6ee8a,dss-prototype: IAD Flight Data,2022-08-16 15:17:57.367,308 ms
+d580388803f95969420935473879230b,dss-prototype: RIC Flight Data,2022-08-16 15:17:56.033,320 ms
+152469ee8bab26205f7b41a4e728f1fd,dss-prototype: /WA,2022-08-16 15:17:55.014,12.5 ms
+4a36cbd6fc506855b4bfe3815c7baa37,dss-prototype: /TE,2022-08-16 15:17:53.999,9.13 ms
+c24251eaca4ea5bb1223b16240c0bfdf,dss-prototype: /tracks,2022-08-16 15:17:52.987,6.95 ms
+53584ffc95d0c52287cfd988c6114845,dss-prototype: IAD Flight Data,2022-08-16 15:17:51.659,314 ms
+e16a0fe71183a6ebcd309450daf6490c,dss-prototype: RIC Flight Data,2022-08-16 15:17:50.336,310 ms
+bdf3ecdb519837c3626e4be4823cedd7,dss-prototype: /WA,2022-08-16 15:17:49.317,12.7 ms
+9a6a602b5b9dcc309d41f26c1ed3ead1,dss-prototype: /TE,2022-08-16 15:17:48.302,9.53 ms
+2c01f75e5fcdfc79fcc4248673d947b1,dss-prototype: /tracks,2022-08-16 15:17:47.291,6.15 ms
+d264ea6dd646dd278bcec5174ccfd0d0,dss-prototype: IAD Flight Data,2022-08-16 15:17:45.964,314 ms
+fbc76548f47ff09364f2104fa09b45f1,dss-prototype: RIC Flight Data,2022-08-16 15:17:44.630,321 ms
+515cc266a76bc55c9000608b8697cf10,dss-prototype: /WA,2022-08-16 15:17:43.610,12.6 ms
+4b0aec726eadeb4632a352f3a5dd6cef,dss-prototype: /TE,2022-08-16 15:17:42.597,8.54 ms
+2a32cfcf75bebc96557935270e55130b,dss-prototype: /tracks,2022-08-16 15:17:41.586,5.54 ms
+7a17a75119e80504cc8ad7e0928afcc0,dss-prototype: IAD Flight Data,2022-08-16 15:17:40.259,314 ms
+9506444beb21f8eb7f41dfc78fbb7dea,dss-prototype: RIC Flight Data,2022-08-16 15:17:38.935,310 ms
+44f0eba9c346a23fd3cfefbf8adfef47,dss-prototype: /WA,2022-08-16 15:17:37.917,12.2 ms
+458d7c40103c018fb99678684bd6c9c3,dss-prototype: /TE,2022-08-16 15:17:36.902,9.20 ms
+450b8e68f1fc8e053fef6e14be43f16a,dss-prototype: /tracks,2022-08-16 15:17:35.892,5.99 ms
+731fa5abea9c376c2f3184d639a60cfa,dss-prototype: IAD Flight Data,2022-08-16 15:17:34.565,314 ms
+bf2c50ed6126b2cd23d92506d371c0ff,dss-prototype: RIC Flight Data,2022-08-16 15:17:33.234,317 ms
+3b5a1db416107b3157509cd40f64ae6e,dss-prototype: /WA,2022-08-16 15:17:32.214,12.9 ms
+6015a8afe9632341cde16ab29f679c0b,dss-prototype: /TE,2022-08-16 15:17:31.200,8.64 ms
+4352daed92d66f60b121c0429c704aca,dss-prototype: /tracks,2022-08-16 15:17:30.188,6.25 ms
+d91c04fa5b218832ddae8d939734e766,dss-prototype: IAD Flight Data,2022-08-16 15:17:28.857,317 ms
+e20ca8989e718c818b16f40c052c65bc,dss-prototype: RIC Flight Data,2022-08-16 15:17:27.527,316 ms
+dd6c26a58ed6c367945162c84049139c,dss-prototype: /WA,2022-08-16 15:17:26.506,13.1 ms
+64cf7e268c71f782b22821ee78cae2f1,dss-prototype: /TE,2022-08-16 15:17:25.492,9.65 ms
+4ceb2a35fc1aa80d9409e48998a83ac3,dss-prototype: /tracks,2022-08-16 15:17:24.481,6.97 ms
+10f44e0a1a399b0b14652a56134bda3c,dss-prototype: IAD Flight Data,2022-08-16 15:17:23.149,316 ms
+be54721ff5d5c577519228a34bedd76c,dss-prototype: RIC Flight Data,2022-08-16 15:17:21.810,321 ms
+08426bac0228caf1c6d313a7f640cfc0,dss-prototype: /WA,2022-08-16 15:17:20.792,11.9 ms
+e813b755167ee757306e68efb505871e,dss-prototype: /TE,2022-08-16 15:17:19.778,9.09 ms
+3d4eea5118d47aaaed45f7af4c09e22f,dss-prototype: /tracks,2022-08-16 15:17:18.765,7.13 ms
+df5b90f8bd37360164e47a9ff9e3a967,dss-prototype: IAD Flight Data,2022-08-16 15:17:17.428,324 ms
+b97145cc736f074791d39bc35f9280fa,dss-prototype: RIC Flight Data,2022-08-16 15:17:16.097,316 ms
+98cca9dfcc4611d4f3fe72f6b524630c,dss-prototype: /WA,2022-08-16 15:17:15.078,11.9 ms
+3451e6ebff1a42fb374ae8455bf64f5f,dss-prototype: /TE,2022-08-16 15:17:14.064,9.27 ms
+68963a93e2f40678a9142cd670a9a680,dss-prototype: /tracks,2022-08-16 15:17:13.041,17.7 ms
+6dd271a5578f4356aa0b93094caa402b,dss-prototype: IAD Flight Data,2022-08-16 15:17:11.717,311 ms
+cfa95b3e863463dd90c6a35cadd5ebae,dss-prototype: RIC Flight Data,2022-08-16 15:17:10.379,324 ms
+4ed3466f3b0e20b7f107170bfdc130ac,dss-prototype: /WA,2022-08-16 15:17:09.361,11.5 ms
+a070a117276df181eb582bdc1d666b81,dss-prototype: /TE,2022-08-16 15:17:08.346,9.52 ms
+de8abb4629ca6c2a6c493daa9ebb1af5,dss-prototype: /tracks,2022-08-16 15:17:07.334,5.53 ms
+3bfee99375210808d7be96c134dd46b4,dss-prototype: IAD Flight Data,2022-08-16 15:17:06.014,307 ms
+614049c032c0ea24546c08bf364bd1cb,dss-prototype: RIC Flight Data,2022-08-16 15:17:04.689,311 ms
+6f3e8946465a5f70461489909e2be98d,dss-prototype: /WA,2022-08-16 15:17:03.670,11.5 ms
+1b9bfca8ce29578f4562e4b29cdc0b40,dss-prototype: /TE,2022-08-16 15:17:02.656,8.84 ms
+c31cba08050439b9b4116093c50ac44f,dss-prototype: /tracks,2022-08-16 15:17:01.644,5.87 ms
+1abe97466ee2c68acf9d1b2e7d224dad,dss-prototype: IAD Flight Data,2022-08-16 15:17:00.318,313 ms
+e686fa88aaf175a41aee068b588a3ccf,dss-prototype: RIC Flight Data,2022-08-16 15:16:58.976,327 ms
+1bb16eb5a78ecd3e3f21692ceff3f7e3,dss-prototype: /WA,2022-08-16 15:16:57.957,11.5 ms
+26b0c4a895415dad168f2e62fb8cb968,dss-prototype: /TE,2022-08-16 15:16:56.942,9.14 ms
+92a8f2f5b42b6731bc9c53def72f604d,dss-prototype: /tracks,2022-08-16 15:16:55.931,5.64 ms
+c83ef244528f4777a28bde288fbb1513,dss-prototype: IAD Flight Data,2022-08-16 15:16:54.603,312 ms
+a0dd5edc095c7fbab5dbaba30e12c1f7,dss-prototype: RIC Flight Data,2022-08-16 15:16:53.274,314 ms
+fce37be08623bd151acb28783d57a7a3,dss-prototype: /WA,2022-08-16 15:16:52.256,11.7 ms
+ef4128b956dcbaebfd186d1c0da9397d,dss-prototype: /TE,2022-08-16 15:16:51.242,8.56 ms
+ab9311a93bae09be5183232a616d521a,dss-prototype: /tracks,2022-08-16 15:16:50.231,5.56 ms
+22f59cbd4324408c2fea356e1997f765,dss-prototype: IAD Flight Data,2022-08-16 15:16:48.902,316 ms
+80a47323b76393e52f394b77b282dd8c,dss-prototype: RIC Flight Data,2022-08-16 15:16:47.549,339 ms
+c88386496762f5397fcacc0b793a9ebf,dss-prototype: /WA,2022-08-16 15:16:46.530,11.7 ms
+94c06c30b29bb2c26f4ef44ea47c320f,dss-prototype: /TE,2022-08-16 15:16:45.515,9.35 ms
+49cf1ece1cf43b9c604a7f0fa1526eae,dss-prototype: /tracks,2022-08-16 15:16:44.503,5.57 ms
+35ce0721e2b81c477d6f551709f65156,dss-prototype: IAD Flight Data,2022-08-16 15:16:43.145,344 ms
+d4545be3d7d0f0427894aabe04121435,dss-prototype: RIC Flight Data,2022-08-16 15:16:41.814,315 ms
+055c68f6495a33afe67c856eb7309f38,dss-prototype: /WA,2022-08-16 15:16:40.796,11.4 ms
+b91f2dea387b56e21b19e753e8a87e43,dss-prototype: /TE,2022-08-16 15:16:39.781,8.65 ms
+b9aa5e6dd8eec51f969ea572ff1ef30c,dss-prototype: /tracks,2022-08-16 15:16:38.770,6.26 ms
+a778aba035eda7d047f4af062858f92d,dss-prototype: IAD Flight Data,2022-08-16 15:16:37.447,309 ms
+f3c11a1dc3c8212831e55f5da8f8fbd8,dss-prototype: RIC Flight Data,2022-08-16 15:16:36.111,322 ms
+ddf296e3ccaba71d23172badc7ff4576,dss-prototype: /WA,2022-08-16 15:16:35.095,11.2 ms
+ff8641f4995b49566a2957febf64d2d1,dss-prototype: /TE,2022-08-16 15:16:34.079,9.50 ms
+38d19d3c1ec067aa738bd157ce061121,dss-prototype: /tracks,2022-08-16 15:16:33.066,6.40 ms
+66dbfbd8d8efc07e436827d5c39a8b49,dss-prototype: IAD Flight Data,2022-08-16 15:16:31.740,311 ms
+724d017ec08095f5deff5edc21fe4767,dss-prototype: RIC Flight Data,2022-08-16 15:16:30.389,337 ms
+5d891fa770bb4a895f41ebbfc4ad396e,dss-prototype: /WA,2022-08-16 15:16:29.370,11.7 ms
+
