@@ -6,6 +6,18 @@ from datetime import datetime
 from fastapi import FastAPI
 import psutil
 
+
+# psutil.net_io_counters returns a named tuple including the following attributes:
+
+# bytes_sent: number of bytes sent
+# bytes_recv: number of bytes received
+# packets_sent: number of packets sent
+# packets_recv: number of packets received
+# errin: total number of errors while receiving
+# errout: total number of errors while sending
+# dropin: total number of incoming packets which were dropped
+# dropout: total number of outgoing packets which were dropped (always 0 on macOS and BSD)
+
 # opentelemetry libraries
 from opentelemetry import trace
 
@@ -19,7 +31,7 @@ from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
-
+# changed the services name
 trace.set_tracer_provider(
    TracerProvider(
        resource=Resource.create({SERVICE_NAME: "DSS-test-app"})
@@ -48,10 +60,10 @@ app = FastAPI(
 tm_url = "http://tm-server:3200/system_tracks"
 
 # set default values
-num_tests = 5      # consider 50
-num_requests = 5   # number of local requests per test; e.g. 10
+num_tests = 5      # consider 5
+num_requests = 5   # number of local requests per test; e.g. 5
 request_delay = 1   # seconds to wait before sending a request
-                    # to avoid collisions
+                    # to avoid collisions; e.g. 1
                     
 @app.get("/")
 def index():
@@ -84,6 +96,16 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
     supplied number of tests, number of requests, and a request
     delay.
     
+    The "start-test" span will report the following with the
+    span attributes:  
+        cpu.load.avg  
+        num.cpu  
+        net.io.count  
+      
+    Each API request will report the following additional attributes:  
+        start.io.count  
+        end.io.count  
+      
     Parameters
     ----------
     num_tests (int) :   
@@ -137,7 +159,7 @@ def run_tests(num_tests: int = 5, num_requests: int = 5,
             
             span.set_attribute("cpu.load.avg", loadavg)
             span.set_attribute("num.cpu", numcpu)
-            span.set_attribute("net.io.count", net_io_count)
+            span.set_attribute("net.io.count.removeme", net_io_count)
             span.add_event( "start test", {
                 "test.number": (test + 1),
                 "num.tests": num_tests,
