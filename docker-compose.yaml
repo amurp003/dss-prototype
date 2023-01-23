@@ -7,7 +7,7 @@ services:
     volumes:
       - ./src/dss-ui-app:/app
     ports:
-      - 5000:5000
+      - 5001:5000
     networks:
       - dss-net
 
